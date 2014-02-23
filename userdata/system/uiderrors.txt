@@ -1,0 +1,2 @@
+1/1/00 12:00 AM: No settings file; creating initial state
+1/1/00 12:00 AM: Need to read from backup stopped packages file

@@ -1,0 +1,11 @@
+Process: com.android.gallery3d
+Flags: 0x8bc45
+Package: com.android.gallery3d v30682 (1.1.30682)
+Build: pandaboard/pandaboard/pandaboard:4.0.3/IML74K/6:eng/test-keys
+System-App: true
+Uptime-Millis: 119466
+Instance-Count: 2
+
+android.os.StrictMode$InstanceCountViolation: class com.android.gallery3d.app.Gallery; instances=2; limit=1
+	at android.os.StrictMode.setClassInstanceLimit(StrictMode.java:1)
+

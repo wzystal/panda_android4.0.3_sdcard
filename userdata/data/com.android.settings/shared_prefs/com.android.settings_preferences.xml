@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='utf-8' standalone='yes' ?>
+<map>
+<boolean name="force_hw_ui" value="false" />
+<boolean name="show_cpu_usage" value="false" />
+<string name="hdcp_checking">drm-only</string>
+<boolean name="auto_time" value="true" />
+<boolean name="24 hour" value="true" />
+<boolean name="pointer_location" value="false" />
+<string name="date_format"></string>
+<string name="font_size">1.0</string>
+<boolean name="allow_mock_location" value="true" />
+<boolean name="enable_adb" value="true" />
+<boolean name="show_touches" value="false" />
+<boolean name="keep_screen_on" value="true" />
+<boolean name="show_screen_updates" value="false" />
+</map>

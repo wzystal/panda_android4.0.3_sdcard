@@ -1,0 +1,17 @@
+<?xml version='1.0' encoding='utf-8' standalone='yes' ?>
+<map>
+<float name="yCalibration" value="0.0" />
+<boolean name="openFeintIntroAllowed" value="false" />
+<boolean name="use2DModeEnabled" value="false" />
+<int name="vibrationLevel" value="5" />
+<boolean name="invertYAxis" value="false" />
+<boolean name="vibrationEnabled" value="true" />
+<boolean name="shiftingPerspectiveEnabled" value="true" />
+<int name="tiltSensitivity" value="5" />
+<boolean name="swipeToChangeLevelsEnabled" value="true" />
+<boolean name="swapXYAxes" value="true" />
+<float name="xCalibration" value="0.0" />
+<boolean name="soundEnabled" value="true" />
+<boolean name="invertXAxis" value="true" />
+<boolean name="disableVBOsEnabled" value="false" />
+</map>

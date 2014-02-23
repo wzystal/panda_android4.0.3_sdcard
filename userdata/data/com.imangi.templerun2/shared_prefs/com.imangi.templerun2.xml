@@ -1,0 +1,11 @@
+<?xml version='1.0' encoding='utf-8' standalone='yes' ?>
+<map>
+<string name="3.5.7">a7a32681e0d29c9f9cef4f344b99b0b1</string>
+<int name="Screenmanager Is Fullscreen mode" value="0" />
+<int name="Screenmanager Resolution Width" value="600" />
+<string name="NPC">-8588324839049688228</string>
+<float name="TR Music Volume" value="0.5" />
+<float name="TR Sound Volume" value="0.75" />
+<int name="Screenmanager Resolution Height" value="976" />
+<int name="UnityGraphicsQuality" value="1" />
+</map>

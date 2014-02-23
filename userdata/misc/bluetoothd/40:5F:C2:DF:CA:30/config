@@ -1,0 +1,4 @@
+pairable yes
+class 0x1a0000
+mode connectable
+onmode connectable

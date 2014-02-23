@@ -1,0 +1,10 @@
+<?xml version='1.0' encoding='utf-8' standalone='yes' ?>
+<map>
+<string name="preferences_week_start_day">-1</string>
+<string name="preferences_alerts_vibrateWhen">never</string>
+<boolean name="preferences_alerts" value="true" />
+<string name="preferences_alerts_ringtone">content://settings/system/notification_sound</string>
+<boolean name="preferences_home_tz_enabled" value="false" />
+<string name="preferences_default_reminder">10</string>
+<string name="preferences_home_tz">Asia/Shanghai</string>
+</map>

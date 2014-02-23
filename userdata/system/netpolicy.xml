@@ -1,0 +1,4 @@
+<?xml version='1.0' encoding='utf-8' standalone='yes' ?>
+<policy-list version="3" restrictBackground="false">
+<network-policy networkTemplate="1" cycleDay="1" warningBytes="2147483648" limitBytes="-1" lastSnooze="-1" />
+</policy-list>

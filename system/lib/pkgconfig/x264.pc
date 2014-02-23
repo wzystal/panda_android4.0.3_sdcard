@@ -1,0 +1,10 @@
+prefix=/system
+exec_prefix=${prefix}
+libdir=/system/lib
+includedir=${prefix}/include
+
+Name: x264
+Description: H.264 (MPEG4 AVC) encoder library
+Version: 0.120.0+2192 c45e92c
+Libs: -L/system/lib -lx264 
+Cflags: -I${prefix}/include

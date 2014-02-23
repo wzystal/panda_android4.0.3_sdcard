@@ -1,0 +1,6 @@
+Build: pandaboard/pandaboard/pandaboard:4.0.3/IML74K/6:eng/test-keys
+Hardware: unknown
+Bootloader: unknown
+Radio: unknown
+Kernel: Linux version 3.2.0 (root@ubuntu) (gcc version 4.4.1 (Sourcery G++ Lite 2010q1-202) ) #1 SMP PREEMPT Mon May 20 14:32:39 EDT 2013
+

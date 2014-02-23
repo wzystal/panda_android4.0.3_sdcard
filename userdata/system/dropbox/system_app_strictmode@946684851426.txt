@@ -1,0 +1,30 @@
+Process: com.android.bluetooth
+Flags: 0x8be45
+Package: com.android.bluetooth v15 (4.0.3-6)
+Build: pandaboard/pandaboard/pandaboard:4.0.3/IML74K/6:eng/test-keys
+System-App: true
+Uptime-Millis: 50788
+Loop-Violation-Number: 1
+Broadcast-Intent-Action: android.bluetooth.adapter.action.STATE_CHANGED
+Duration-Millis: 105
+
+android.os.StrictMode$StrictModeDiskReadViolation: policy=2695 violation=2
+	at android.os.StrictMode$AndroidBlockGuardPolicy.onReadFromDisk(StrictMode.java:1089)
+	at android.app.SharedPreferencesImpl.awaitLoadedLocked(SharedPreferencesImpl.java:184)
+	at android.app.SharedPreferencesImpl.getBoolean(SharedPreferencesImpl.java:241)
+	at com.android.bluetooth.opp.BluetoothOppManager.restoreApplicationData(BluetoothOppManager.java:149)
+	at com.android.bluetooth.opp.BluetoothOppManager.init(BluetoothOppManager.java:137)
+	at com.android.bluetooth.opp.BluetoothOppManager.getInstance(BluetoothOppManager.java:115)
+	at com.android.bluetooth.opp.BluetoothOppReceiver.onReceive(BluetoothOppReceiver.java:73)
+	at android.app.ActivityThread.handleReceiver(ActivityThread.java:2119)
+	at android.app.ActivityThread.access$1500(ActivityThread.java:123)
+	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1197)
+	at android.os.Handler.dispatchMessage(Handler.java:99)
+	at android.os.Looper.loop(Looper.java:137)
+	at android.app.ActivityThread.main(ActivityThread.java:4424)
+	at java.lang.reflect.Method.invokeNative(Native Method)
+	at java.lang.reflect.Method.invoke(Method.java:511)
+	at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:784)
+	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:551)
+	at dalvik.system.NativeStart.main(Native Method)
+

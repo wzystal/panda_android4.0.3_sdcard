@@ -1,0 +1,58 @@
+Process: com.android.calendar
+Flags: 0x9be45
+Package: com.android.calendar v15 (4.0.3-6)
+Build: pandaboard/pandaboard/pandaboard:4.0.3/IML74K/6:eng/test-keys
+System-App: true
+Uptime-Millis: 35961
+Loop-Violation-Number: 1
+Duration-Millis: 61
+
+android.os.StrictMode$StrictModeDiskReadViolation: policy=2695 violation=2
+	at android.os.StrictMode$AndroidBlockGuardPolicy.onReadFromDisk(StrictMode.java:1089)
+	at android.app.SharedPreferencesImpl.awaitLoadedLocked(SharedPreferencesImpl.java:184)
+	at android.app.SharedPreferencesImpl.getBoolean(SharedPreferencesImpl.java:241)
+	at android.preference.PreferenceManager.setDefaultValues(PreferenceManager.java:458)
+	at com.android.calendar.GeneralPreferences.setDefaultValues(GeneralPreferences.java:120)
+	at com.android.calendar.CalendarApplication.onCreate(CalendarApplication.java:30)
+	at android.app.Instrumentation.callApplicationOnCreate(Instrumentation.java:969)
+	at android.app.ActivityThread.handleBindApplication(ActivityThread.java:3954)
+	at android.app.ActivityThread.access$1300(ActivityThread.java:123)
+	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1185)
+	at android.os.Handler.dispatchMessage(Handler.java:99)
+	at android.os.Looper.loop(Looper.java:137)
+	at android.app.ActivityThread.main(ActivityThread.java:4424)
+	at java.lang.reflect.Method.invokeNative(Native Method)
+	at java.lang.reflect.Method.invoke(Method.java:511)
+	at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:784)
+	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:551)
+	at dalvik.system.NativeStart.main(Native Method)
+
+Process: com.android.calendar
+Flags: 0x9be45
+Package: com.android.calendar v15 (4.0.3-6)
+Build: pandaboard/pandaboard/pandaboard:4.0.3/IML74K/6:eng/test-keys
+System-App: true
+Uptime-Millis: 36004
+Loop-Violation-Number: 2
+Broadcast-Intent-Action: android.intent.action.PROVIDER_CHANGED
+Duration-Millis: 18
+
+android.os.StrictMode$StrictModeDiskReadViolation: policy=2695 violation=2
+	at android.os.StrictMode$AndroidBlockGuardPolicy.onReadFromDisk(StrictMode.java:1089)
+	at android.app.SharedPreferencesImpl.awaitLoadedLocked(SharedPreferencesImpl.java:184)
+	at android.app.SharedPreferencesImpl.getBoolean(SharedPreferencesImpl.java:241)
+	at com.android.calendar.Utils.getHideDeclinedEvents(Utils.java:465)
+	at com.android.calendar.widget.CalendarAppWidgetService$CalendarFactory.initLoader(CalendarAppWidgetService.java:373)
+	at com.android.calendar.widget.CalendarAppWidgetService$CalendarFactory.onReceive(CalendarAppWidgetService.java:542)
+	at android.app.ActivityThread.handleReceiver(ActivityThread.java:2119)
+	at android.app.ActivityThread.access$1500(ActivityThread.java:123)
+	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1197)
+	at android.os.Handler.dispatchMessage(Handler.java:99)
+	at android.os.Looper.loop(Looper.java:137)
+	at android.app.ActivityThread.main(ActivityThread.java:4424)
+	at java.lang.reflect.Method.invokeNative(Native Method)
+	at java.lang.reflect.Method.invoke(Method.java:511)
+	at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:784)
+	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:551)
+	at dalvik.system.NativeStart.main(Native Method)
+

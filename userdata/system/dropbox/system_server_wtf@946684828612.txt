@@ -1,0 +1,31 @@
+Process: system_server
+Subject: NetworkStats
+Build: pandaboard/pandaboard/pandaboard:4.0.3/IML74K/6:eng/test-keys
+
+android.util.Log$TerribleFailure: problem reading network stats
+	at android.util.Log.wtf(Log.java:276)
+	at com.android.server.net.NetworkStatsService.performPollLocked(NetworkStatsService.java:844)
+	at com.android.server.net.NetworkStatsService.updateIfacesLocked(NetworkStatsService.java:743)
+	at com.android.server.net.NetworkStatsService.updateIfaces(NetworkStatsService.java:721)
+	at com.android.server.net.NetworkStatsService.access$000(NetworkStatsService.java:128)
+	at com.android.server.net.NetworkStatsService$1.onReceive(NetworkStatsService.java:612)
+	at android.app.LoadedApk$ReceiverDispatcher$Args.run(LoadedApk.java:728)
+	at android.os.Handler.handleCallback(Handler.java:605)
+	at android.os.Handler.dispatchMessage(Handler.java:92)
+	at android.os.Looper.loop(Looper.java:137)
+	at android.os.HandlerThread.run(HandlerThread.java:60)
+Caused by: java.lang.IllegalStateException: problem parsing idx 1
+	at com.android.internal.net.NetworkStatsFactory.readNetworkStatsDetail(NetworkStatsFactory.java:300)
+	at com.android.server.NetworkManagementService.getNetworkStatsUidDetail(NetworkManagementService.java:1282)
+	at com.android.server.net.NetworkStatsService.performPollLocked(NetworkStatsService.java:831)
+	... 9 more
+Caused by: java.io.FileNotFoundException: /proc/net/xt_qtaguid/stats: open failed: ENOENT (No such file or directory)
+	at libcore.io.IoBridge.open(IoBridge.java:406)
+	at java.io.FileInputStream.<init>(FileInputStream.java:78)
+	at com.android.internal.net.NetworkStatsFactory.readNetworkStatsDetail(NetworkStatsFactory.java:269)
+	... 11 more
+Caused by: libcore.io.ErrnoException: open failed: ENOENT (No such file or directory)
+	at libcore.io.Posix.open(Native Method)
+	at libcore.io.BlockGuardOs.open(BlockGuardOs.java:110)
+	at libcore.io.IoBridge.open(IoBridge.java:390)
+	... 13 more

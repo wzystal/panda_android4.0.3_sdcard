@@ -1,0 +1,552 @@
+/* --- common --- */
+/* _base.scss */
+@font-face {
+  font-family: PTSansBold;
+  src: local("☺"), url(images/game_channel/PTSansBold.svg#webfontpfl2y6jq) format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
+/* --- dashboard/user,  dashboard/profile --- */
+.badge_button {
+  border-width: 0px 5px 0px 5px;
+  -webkit-border-image: url("images/button_gray.mdpi.png") 0 5 0 5 stretch;
+  -webkit-box-sizing: border-box;
+  display: inline-block;
+  padding: 5px 0;
+  position: relative; }
+  .badge_button.touched {
+    border-width: 0px 5px 0px 5px;
+    -webkit-border-image: url("images/button_gray_hit.mdpi.png") 0 5 0 5 stretch;
+    -webkit-box-sizing: border-box; }
+  .badge_button.button_container {
+    display: table;
+    width: 100%; }
+    .badge_button.button_container .icon {
+      background: no-repeat center center;
+      border-right: 1px solid #cccccc;
+      display: table-cell;
+      height: 32px;
+      width: 40px; }
+    .badge_button.button_container .subtitle {
+      border-left: 1px solid #ededed;
+      color: #25731f;
+      display: table-cell;
+      font-size: 15px;
+      font-weight: bold;
+      line-height: 16px;
+      text-align: center;
+      text-shadow: 1px 1px 1px #f9f9f9;
+      vertical-align: middle; }
+  .badge_button .badge {
+    border-width: 0px 3px 0px 3px;
+    -webkit-border-image: url("images/dashboard/badge.mdpi.png") 0 3 0 3 stretch;
+    -webkit-box-sizing: border-box;
+    color: white;
+    font-size: 12px;
+    height: 18px;
+    min-width: 18px;
+    padding-top: 1px;
+    position: absolute;
+    right: -12px;
+    text-align: center;
+    top: -6px;
+    text-shadow: #545454 1px 1px 1px; }
+
+.simple_button {
+  border-width: 0px 8px 0px 8px;
+  -webkit-border-image: url("images/button_gray.mdpi.png") 0 8 0 8 stretch;
+  -webkit-box-sizing: border-box;
+  color: #575757;
+  font-weight: bold;
+  padding: 10px 0;
+  text-align: center; }
+  .simple_button.touched {
+    border-width: 0px 8px 0px 8px;
+    -webkit-border-image: url("images/button_gray_hit.mdpi.png") 0 8 0 8 stretch;
+    -webkit-box-sizing: border-box; }
+
+.action_button {
+  border-width: 0px 8px 0px 8px;
+  -webkit-border-image: url("images/button_orange.mdpi.png") 0 8 0 8 stretch;
+  -webkit-box-sizing: border-box;
+  color: white;
+  font-weight: bold;
+  padding: 10px 0;
+  text-align: center; }
+  .action_button.touched {
+    border-width: 0px 8px 0px 8px;
+    -webkit-border-image: url("images/button_orange_hit.mdpi.png") 0 8 0 8 stretch;
+    -webkit-box-sizing: border-box; }
+  .action_button.disabled {
+    opacity: 0.5; }
+  .action_button.has_maxwidth {
+    border-width: 0px 7px 0px 7px;
+    -webkit-border-image: url("images/button_orange.mdpi.png") 0 7 0 7 stretch;
+    -webkit-box-sizing: border-box;
+    margin: 0 auto;
+    max-width: 290px; }
+  .action_button.has_maxwidth.touched {
+    border-width: 0px 7px 0px 7px;
+    -webkit-border-image: url("images/button_orange_hit.mdpi.png") 0 7 0 7 stretch;
+    -webkit-box-sizing: border-box; }
+  .action_button.store_disabled {
+    border-width: 0px 8px 0px 8px;
+    -webkit-border-image: url("images/button_store_disabled.mdpi.png") 0 8 0 8 stretch;
+    -webkit-box-sizing: border-box; }
+
+.bubble {
+  border-width: 0px 10px 0px 16px;
+  -webkit-border-image: url("images/statusBubble_Portrait.mdpi.png") 0 10 0 16 stretch;
+  -webkit-box-sizing: border-box;
+  padding: 13px 3px; }
+  .bubble.touched {
+    border-width: 0px 10px 0px 16px;
+    -webkit-border-image: url("images/statusBubble_Portrait_Hit.mdpi.png") 0 10 0 16 stretch;
+    -webkit-box-sizing: border-box; }
+  .bubble .status {
+    min-height: 45px; }
+
+body.orientation_landscape .bubble {
+  border-width: 0px 10px 0px 16px;
+  -webkit-border-image: url("images/statusBubble_Portrait.mdpi.png") 0 10 0 16 stretch;
+  -webkit-box-sizing: border-box; }
+  body.orientation_landscape .bubble.touched {
+    border-width: 0px 10px 0px 16px;
+    -webkit-border-image: url("images/statusBubble_Portrait_Hit.mdpi.png") 0 10 0 16 stretch;
+    -webkit-box-sizing: border-box; }
+  body.orientation_landscape .bubble .status {
+    min-height: 20px; }
+
+.stretch_bubble_container .stretch_bubble_center {
+  border-width: 0px 12px 0px 12px;
+  -webkit-border-image: url("images/dashboard/share_item_bubble_center.mdpi.png") 0 12 0 12 stretch;
+  -webkit-box-sizing: border-box;
+  margin-left: 5px; }
+.stretch_bubble_container .stretch_bubble_content {
+  position: relative;
+  top: -8px; }
+.stretch_bubble_container:before {
+  border-width: 25px 9px 0px 16px;
+  -webkit-border-image: url("images/dashboard/share_item_bubble_top.mdpi.png") 25 9 0 16 stretch;
+  -webkit-box-sizing: border-box;
+  border-top-width: 20px;
+  content: "";
+  display: block; }
+.stretch_bubble_container:after {
+  border-width: 0px 9px 8px 9px;
+  -webkit-border-image: url("images/dashboard/share_item_bubble_bottom.mdpi.png") 0 9 8 9 stretch;
+  -webkit-box-sizing: border-box;
+  border-bottom-width: 6px;
+  content: "";
+  display: block;
+  margin-left: 5px; }
+
+.hdpi .stretch_bubble_container .stretch_bubble_center {
+  margin-left: 7px; }
+.hdpi .stretch_bubble_container:after {
+  margin-left: 7px; }
+
+.mdpi .stretch_bubble_container:after {
+  margin-left: 7px; }
+
+.text_field {
+  margin-bottom: 10px; }
+  .text_field label {
+    color: #777777;
+    display: block;
+    margin-bottom: 5px; }
+  .text_field .input_area {
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+    border: 1px solid #595b59;
+    border-color: #595b59 #c6c3c6 #fffbff #c9c6c9;
+    color: #3e3e3e;
+    font-size: 14px;
+    height: 73px;
+    outline: none;
+    padding: 5px;
+    resize: none;
+    width: 100%;
+    background: url("images/textarea_bg.png") repeat-x left top;
+    -webkit-box-sizing: border-box; }
+
+ul.column3_lrfixed .left_column {
+  float: left;
+  width: 60px; }
+ul.column3_lrfixed .right_column {
+  float: right;
+  width: 35px; }
+ul.column3_lrfixed .center_column {
+  margin: 0 40px 0 65px; }
+
+ul.column2_lfixed .left_column {
+  float: left;
+  width: 60px; }
+ul.column2_lfixed .center_column {
+  margin: 0 0 0 65px; }
+
+ul.column2_rfixed .right_column {
+  float: right;
+  width: 65px; }
+ul.column2_rfixed .center_column {
+  margin: 0 75px 0 0; }
+
+ul.cells li.load_more {
+  color: #25731f;
+  font-size: 14px;
+  font-weight: bold;
+  height: auto;
+  padding: 20px 10px;
+  text-align: center; }
+  ul.cells li.load_more.touched {
+    padding-top: 20px; }
+
+.touchable_area {
+  background: url(images/dashboard/icon_disclosure.mdpi.png?5816bf30be090d1b663bef9d8c71aeeded2cf2bd) no-repeat right center;
+  overflow: hidden;
+  -webkit-background-size: 14px; }
+
+ul.column2_lfixed .left_column {
+  float: left;
+  width: 60px; }
+ul.column2_lfixed .center_column {
+  margin: 0 0 0 65px; }
+
+.small_profile_picture {
+  -webkit-border-radius: 8px;
+  border-radius: 8px;
+  background: url(images/icon.user.male.large.mdpi.png?3497a92aeae69d65ec6914756fe940aa3c102883) no-repeat center center;
+  height: 56px;
+  width: 56px;
+  -webkit-background-size: 56px 56px; }
+  .small_profile_picture .overlay {
+    border-width: 8px 8px 8px 8px;
+    -webkit-border-image: url("images/smallFrame.mdpi.png") 8 8 8 8 stretch;
+    -webkit-box-sizing: border-box;
+    height: 58px; }
+
+/* --- settings page --- */
+#settings #header .loader .spinner {
+  background: url(images/loading.spinner.light.mdpi.png?38e429337fa63fdadf284b045d976265b0bc4cfb) no-repeat; }
+
+fieldset {
+  border: none;
+  border-bottom: 1px solid #a8a8a8;
+  color: #595959;
+  margin: 0 0 15px 0;
+  padding: 5px 0 10px; }
+  fieldset legend {
+    font-size: 15px;
+    font-weight: bold;
+    padding: 0; }
+  fieldset .radio_container {
+    padding: 5px 0; }
+    fieldset .radio_container .radio_button {
+      background: url(images/settings/button_radio_off.mdpi.png?c1bf97725474b17c994c4d9a209f8752e6e99610) 1px 1px no-repeat;
+      display: inline-block;
+      font-size: 14px;
+      height: 33px;
+      line-height: 33px;
+      padding-left: 40px;
+      -webkit-background-size: 32px; }
+      fieldset .radio_container .radio_button.on {
+        background-image: url(images/settings/button_radio_on.mdpi.png?b8783d594424da53d5d96a317c8f8a22b6f7534e); }
+
+form fieldset:last-of-type {
+  border-bottom: none;
+  margin-bottom: 0;
+  padding-bottom: 0; }
+
+/* --- intro --- */
+.input_field label.ios {
+  display: none; }
+
+body.ios .input_field label.android {
+  display: none; }
+body.ios .input_field label.ios {
+  display: block; }
+
+/* --- dashboard/offline, dashboard/tabs_home --- */
+#offline {
+  background: #182c33 url(images/game_channel/enable_bg.mdpi.png?593fcd13a6549f07035b17af0b47ef74411f5150) 50% 0 repeat-x;
+  -webkit-background-origin: border-box;
+  -webkit-background-size: 100% 100%;
+  text-align: center;
+  padding: 20px;
+  margin: 0 -10px;
+  font-family: PTSansBold, helvetica;
+  font-weight: normal !important; }
+  #offline h1 {
+    color: white;
+    font-size: 25px;
+    line-height: 28px;
+    margin: 1px 0 12px; }
+  #offline p {
+    font-size: 16px;
+    line-height: 19px;
+    color: white;
+    margin: 12px 0 8px 0; }
+  #offline .sad {
+    height: 178px;
+    -webkit-background-size: 92px 178px;
+    background: url(images/dashboard/offline/ios_sad_face.mdpi.png?5f8a30488459d866976b8cea5ea341e0edca0edd) center center no-repeat; }
+  #offline .retry {
+    font-size: 21px;
+    line-height: 37px;
+    height: 44px;
+    margin: 10px;
+    padding: 5px;
+    color: white; }
+    #offline .retry.touched {
+      border-width: 0px 10px 0px 10px;
+      -webkit-border-image: url("images/dashboard/offline/offline_btn_green_touched.mdpi.png") 0 10 0 10 stretch;
+      -webkit-box-sizing: border-box; }
+  #offline header {
+    display: none; }
+
+body.android #offline {
+  background: #055e2f url(images/game_channel/android_offline_bg.mdpi.png?3c05939e96071708cad0f800e9163be42e6622a1) 50% 0 repeat-x;
+  text-align: center;
+  padding: 1px 0 20px 0;
+  -webkit-background-size: cover;
+  margin: 0; }
+  body.android #offline h1, body.android #offline p {
+    margin: 17px 20px;
+    text-shadow: rgba(0, 0, 0, 0.37) 0px 2px 2px; }
+  body.android #offline .sad {
+    background: transparent url(images/dashboard/offline/and_sad_face.mdpi.png?02fb0fd449790d925ebbadc00a0e6dd00979b5eb) 50% 50% no-repeat;
+    background-size: 104px 179px;
+    height: 220px; }
+  body.android #offline .retry {
+    border-width: 0px 10px 0px 10px;
+    -webkit-border-image: url("images/dashboard/offline/offline_btn_blue.mdpi.png") 0 10 0 10 stretch;
+    -webkit-box-sizing: border-box; }
+    body.android #offline .retry.touched {
+      border-width: 0px 10px 0px 10px;
+      -webkit-border-image: url("images/dashboard/offline/offline_btn_blue_touched.mdpi.png") 0 10 0 10 stretch;
+      -webkit-box-sizing: border-box; }
+
+body.orientation_landscape #offline {
+  background: #233d45 url(images/dashboard/offline/ios_offline_bg_landscape.mdpi.png?3d3975fc5263b5442f776335e04db8bf81f07cd4) 50% 0 repeat-x;
+  padding: 10px 20px; }
+  body.orientation_landscape #offline .sad {
+    background-size: 75px 142px;
+    height: 145px; }
+  body.orientation_landscape #offline .retry {
+    margin: 8px auto; }
+
+body.android.orientation_landscape #offline {
+  background: #078c47 url(images/dashboard/offline/and_offline_bg_landscape.mdpi.png?3a45da39844bf2c89be1460a5b084d59c18d1d92) 50% 0 repeat-x;
+  padding: 10px 0; }
+  body.android.orientation_landscape #offline h1 {
+    margin: 0 20px; }
+  body.android.orientation_landscape #offline .sad {
+    background-size: 82px 140px;
+    height: 160px; }
+  body.android.orientation_landscape #offline p {
+    margin: 0 10px; }
+  body.android.orientation_landscape #offline .retry {
+    max-width: 280px; }
+
+
+/*
+ *    1.5x pixel scale
+ */
+
+body.hdpi .badge_button .badge {
+  -webkit-border-image: url("images/dashboard/badge.hdpi.png") 0 5 0 5 stretch;
+}
+body.hdpi .badge_button.touched {
+  -webkit-border-image: url("images/button_gray_hit.hdpi.png") 0 8 0 8 stretch;
+}
+body.hdpi.android #offline .sad {
+  background: transparent url(images/dashboard/offline/and_sad_face.hdpi.png?3c0663f94888caed42bd4c61f3904cb02202ce83) 50% 50% no-repeat;
+}
+body.hdpi fieldset .radio_container .radio_button {
+  background: url(images/settings/button_radio_off.hdpi.png?e50b2e150e59552f95b82db2573e140d96225874) 1px 1px no-repeat;
+}
+body.hdpi.orientation_landscape #offline {
+  background: #233d45 url(images/dashboard/offline/ios_offline_bg_landscape.hdpi.png?78f7d671b667b6dc43b064d14e4b4f1eb02f25b9) 50% 0 repeat-x;
+}
+body.hdpi #offline {
+  background: #182c33 url(images/game_channel/enable_bg.hdpi.png) 50% 0 repeat-x;
+}
+body.hdpi .small_profile_picture .overlay {
+  -webkit-border-image: url("images/smallFrame.hdpi.png") 12 12 12 12 stretch;
+}
+body.hdpi .stretch_bubble_container .stretch_bubble_center {
+  -webkit-border-image: url("images/dashboard/share_item_bubble_center.hdpi.png") 0 18 0 18 stretch;
+}
+body.hdpi.orientation_landscape .bubble.touched {
+  -webkit-border-image: url("images/statusBubble_Portrait_Hit.hdpi.png") 0 15 0 24 stretch;
+}
+body.hdpi .bubble.touched {
+  -webkit-border-image: url("images/statusBubble_Portrait_Hit.hdpi.png") 0 15 0 24 stretch;
+}
+body.hdpi .simple_button.touched {
+  -webkit-border-image: url("images/button_gray_hit.hdpi.png") 0 12 0 12 stretch;
+}
+body.hdpi.android.orientation_landscape #offline {
+  background: #078c47 url(images/dashboard/offline/and_offline_bg_landscape.hdpi.png?56fbcab511894c9b473ff0aae84b328bd071a34d) 50% 0 repeat-x;
+}
+body.hdpi #offline .retry.touched {
+  -webkit-border-image: url("images/dashboard/offline/offline_btn_green_touched.hdpi.png") 0 15 0 15 stretch;
+}
+body.hdpi #offline .sad {
+  background: url(images/dashboard/offline/ios_sad_face.hdpi.png) center center no-repeat;
+}
+body.hdpi .action_button.has_maxwidth {
+  -webkit-border-image: url("images/button_orange.hdpi.png") 0 11 0 11 stretch;
+}
+body.hdpi .simple_button {
+  -webkit-border-image: url("images/button_gray.hdpi.png") 0 12 0 12 stretch;
+}
+body.hdpi.android #offline .retry {
+  -webkit-border-image: url("images/dashboard/offline/offline_btn_blue.hdpi.png") 0 15 0 15 stretch;
+}
+body.hdpi #settings #header .loader .spinner {
+  background: url(images/loading.spinner.light.hdpi.png?783ec51b5c73dccefa9a0f4a834135c6efc24c9a) no-repeat;
+}
+body.hdpi .action_button.touched {
+  -webkit-border-image: url("images/button_orange_hit.hdpi.png") 0 12 0 12 stretch;
+}
+body.hdpi .badge_button {
+  -webkit-border-image: url("images/button_gray.hdpi.png") 0 8 0 8 stretch;
+}
+body.hdpi.android #offline {
+  background: #055e2f url(images/game_channel/android_offline_bg.hdpi.png?fab93dadde9ff57cbad5b9ec0704b5d2166520fe) 50% 0 repeat-x;
+}
+body.hdpi.orientation_landscape .bubble {
+  -webkit-border-image: url("images/statusBubble_Portrait.hdpi.png") 0 15 0 24 stretch;
+}
+body.hdpi .bubble {
+  -webkit-border-image: url("images/statusBubble_Portrait.hdpi.png") 0 15 0 24 stretch;
+}
+body.hdpi .touchable_area {
+  background: url(images/dashboard/icon_disclosure.hdpi.png?5816bf30be090d1b663bef9d8c71aeeded2cf2bd) no-repeat right center;
+}
+body.hdpi .stretch_bubble_container:before {
+  -webkit-border-image: url("images/dashboard/share_item_bubble_top.hdpi.png") 38 14 0 24 stretch;
+}
+body.hdpi .action_button.store_disabled {
+  -webkit-border-image: url("images/button_store_disabled.hdpi.png") 0 12 0 12 stretch;
+}
+body.hdpi.android #offline .retry.touched {
+  -webkit-border-image: url("images/dashboard/offline/offline_btn_blue_touched.hdpi.png") 0 15 0 15 stretch;
+}
+body.hdpi fieldset .radio_container .radio_button.on {
+  background-image: url(images/settings/button_radio_on.hdpi.png?b22b6a48ce0dad4fc2289d5393e3433ecd04d5b8);
+}
+body.hdpi .small_profile_picture {
+  background: url(images/icon.user.male.large.hdpi.png?11d11f5b125f519956eee9449518881b03d9e100) no-repeat center center;
+}
+body.hdpi .stretch_bubble_container:after {
+  -webkit-border-image: url("images/dashboard/share_item_bubble_bottom.hdpi.png") 0 14 12 14 stretch;
+}
+body.hdpi .action_button.has_maxwidth.touched {
+  -webkit-border-image: url("images/button_orange_hit.hdpi.png") 0 11 0 11 stretch;
+}
+body.hdpi .action_button {
+  -webkit-border-image: url("images/button_orange.hdpi.png") 0 12 0 12 stretch;
+}
+
+/*
+ *    2x pixel scale
+ */
+
+body.udpi .badge_button .badge {
+  -webkit-border-image: url("images/dashboard/badge.udpi.png") 0 6 0 6 stretch;
+}
+body.udpi .badge_button.touched {
+  -webkit-border-image: url("images/button_gray_hit.udpi.png") 0 10 0 10 stretch;
+}
+body.udpi.android #offline .sad {
+  background: transparent url(images/dashboard/offline/and_sad_face.udpi.png?3c0663f94888caed42bd4c61f3904cb02202ce83) 50% 50% no-repeat;
+}
+body.udpi fieldset .radio_container .radio_button {
+  background: url(images/settings/button_radio_off.udpi.png?e50b2e150e59552f95b82db2573e140d96225874) 1px 1px no-repeat;
+}
+body.udpi.orientation_landscape #offline {
+  background: #233d45 url(images/dashboard/offline/ios_offline_bg_landscape.udpi.png?26b9c6f0fc834e97ff37c2f0932f2f63c202f280) 50% 0 repeat-x;
+}
+body.udpi #offline {
+  background: #182c33 url(images/game_channel/enable_bg.udpi.png?db0c766daf2ed1c1dc02a5a39e837b9e3e213295) 50% 0 repeat-x;
+}
+body.udpi .small_profile_picture .overlay {
+  -webkit-border-image: url("images/smallFrame.udpi.png") 16 16 16 16 stretch;
+}
+body.udpi .stretch_bubble_container .stretch_bubble_center {
+  -webkit-border-image: url("images/dashboard/share_item_bubble_center.udpi.png") 0 24 0 24 stretch;
+}
+body.udpi.orientation_landscape .bubble.touched {
+  -webkit-border-image: url("images/statusBubble_Portrait_Hit.udpi.png") 0 20 0 32 stretch;
+}
+body.udpi .bubble.touched {
+  -webkit-border-image: url("images/statusBubble_Portrait_Hit.udpi.png") 0 20 0 32 stretch;
+}
+body.udpi .simple_button.touched {
+  -webkit-border-image: url("images/button_gray_hit.udpi.png") 0 16 0 16 stretch;
+}
+body.udpi.android.orientation_landscape #offline {
+  background: #078c47 url(images/dashboard/offline/and_offline_bg_landscape.udpi.png?56fbcab511894c9b473ff0aae84b328bd071a34d) 50% 0 repeat-x;
+}
+body.udpi #offline .retry.touched {
+  -webkit-border-image: url("images/dashboard/offline/offline_btn_green_touched.udpi.png") 0 20 0 20 stretch;
+}
+body.udpi #offline .sad {
+  background: url(images/dashboard/offline/ios_sad_face.udpi.png?d640e5f4b236d3356e72b4c3167c8438c77ebacd) center center no-repeat;
+}
+body.udpi .action_button.has_maxwidth {
+  -webkit-border-image: url("images/button_orange.udpi.png") 0 14 0 14 stretch;
+}
+body.udpi .simple_button {
+  -webkit-border-image: url("images/button_gray.udpi.png") 0 16 0 16 stretch;
+}
+body.udpi.android #offline .retry {
+  -webkit-border-image: url("images/dashboard/offline/offline_btn_blue.udpi.png") 0 20 0 20 stretch;
+}
+body.udpi #settings #header .loader .spinner {
+  background: url(images/loading.spinner.light.udpi.png?783ec51b5c73dccefa9a0f4a834135c6efc24c9a) no-repeat;
+}
+body.udpi .action_button.touched {
+  -webkit-border-image: url("images/button_orange_hit.udpi.png") 0 16 0 16 stretch;
+}
+body.udpi .badge_button {
+  -webkit-border-image: url("images/button_gray.udpi.png") 0 10 0 10 stretch;
+}
+body.udpi.android #offline {
+  background: #055e2f url(images/game_channel/android_offline_bg.udpi.png?fab93dadde9ff57cbad5b9ec0704b5d2166520fe) 50% 0 repeat-x;
+}
+body.udpi.orientation_landscape .bubble {
+  -webkit-border-image: url("images/statusBubble_Portrait.udpi.png") 0 20 0 32 stretch;
+}
+body.udpi .bubble {
+  -webkit-border-image: url("images/statusBubble_Portrait.udpi.png") 0 20 0 32 stretch;
+}
+body.udpi .touchable_area {
+  background: url(images/dashboard/icon_disclosure.udpi.png?5816bf30be090d1b663bef9d8c71aeeded2cf2bd) no-repeat right center;
+}
+body.udpi .stretch_bubble_container:before {
+  -webkit-border-image: url("images/dashboard/share_item_bubble_top.udpi.png") 50 18 0 32 stretch;
+}
+body.udpi .action_button.store_disabled {
+  -webkit-border-image: url("images/button_store_disabled.udpi.png") 0 16 0 16 stretch;
+}
+body.udpi.android #offline .retry.touched {
+  -webkit-border-image: url("images/dashboard/offline/offline_btn_blue_touched.udpi.png") 0 20 0 20 stretch;
+}
+body.udpi fieldset .radio_container .radio_button.on {
+  background-image: url(images/settings/button_radio_on.udpi.png?b22b6a48ce0dad4fc2289d5393e3433ecd04d5b8);
+}
+body.udpi .small_profile_picture {
+  background: url(images/icon.user.male.large.udpi.png?11d11f5b125f519956eee9449518881b03d9e100) no-repeat center center;
+}
+body.udpi .stretch_bubble_container:after {
+  -webkit-border-image: url("images/dashboard/share_item_bubble_bottom.udpi.png") 0 18 16 18 stretch;
+}
+body.udpi .action_button.has_maxwidth.touched {
+  -webkit-border-image: url("images/button_orange_hit.udpi.png") 0 14 0 14 stretch;
+}
+body.udpi .action_button {
+  -webkit-border-image: url("images/button_orange.udpi.png") 0 16 0 16 stretch;
+}

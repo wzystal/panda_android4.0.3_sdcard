@@ -1,0 +1,9 @@
+<?xml version='1.0' encoding='utf-8' standalone='yes' ?>
+<map>
+<int name="editor-update-image/*" value="65" />
+<boolean name="has-camera" value="true" />
+<int name="camera-update" value="65" />
+<int name="cache-up-to-date" value="1" />
+<boolean name="has-editor-image/*" value="true" />
+<int name="packages-version" value="65" />
+</map>

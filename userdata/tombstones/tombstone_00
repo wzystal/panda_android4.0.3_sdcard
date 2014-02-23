@@ -1,0 +1,3068 @@
+*** *** *** *** *** *** *** *** *** *** *** *** *** *** *** ***
+Build fingerprint: 'pandaboard/pandaboard/pandaboard:4.0.3/IML74K/6:eng/test-keys'
+pid: 1917, tid: 1932  >>> com.gameloft.android.ANMP.GloftAsphalt5.asphalt5 <<<
+signal 11 (SIGSEGV), code 1 (SEGV_MAPERR), fault addr 0000000a
+ r0 01c02118  r1 00000002  r2 00000040  r3 01c020d8
+ r4 400b8424  r5 0235d5c8  r6 000001c8  r7 00000000
+ r8 00000000  r9 00001000  10 400b82cc  fp 5c7d3b48
+ ip 01c02118  sp 5c7d3990  lr 400732c0  pc 400775e4  cpsr 60000130
+ d0  6c2f6176616a4c61  d1  657268542f676e64
+ d2  000003e80000003b  d3  0000000000000000
+ d4  0000ef5000000001  d5  0000000000000000
+ d6  0000000000000000  d7  0000000000000000
+ d8  0000000000000000  d9  0000000000000000
+ d10 0000000000000000  d11 0000000000000000
+ d12 0000000000000000  d13 0000000000000000
+ d14 0000000000000000  d15 0000000000000000
+ d16 0000000000000000  d17 0000000000000000
+ d18 3f8362b9bf971bcd  d19 3f991df3908c33ce
+ d20 3faebadac3cefe36  d21 3fe1bce64ccf66ea
+ d22 3f761d92f81b654a  d23 3fd785304c68a6d9
+ d24 400921fb60000000  d25 400921fb54442d18
+ d26 3ff921fb54442d18  d27 3c8eccdf150020eb
+ d28 3e7c832b12efbe53  d29 3e0148ac4f1e056d
+ d30 3ef7848aaa488fb2  d31 3feffce05090d823
+ scr 20000013
+
+         #00  pc 000155e4  /system/lib/libc.so (dlfree)
+         #01  pc 00016f62  /system/lib/libc.so (free)
+         #02  pc 00017fd6  /system/lib/libutils.so (_ZN7android18BufferedTextOutputD2Ev)
+         #03  pc 00021e64  /system/lib/libutils.so
+         #04  pc 00020e00  /system/lib/libc.so (__cxa_finalize)
+         #05  pc 00021212  /system/lib/libc.so (exit)
+         #06  pc 00044712  /system/lib/libandroid_runtime.so (_ZN7android14AndroidRuntime6onExitEi)
+         #07  pc 00044728  /system/lib/libandroid_runtime.so
+         #08  pc 00086bb4  /system/lib/libdvm.so
+         #09  pc 00066afa  /system/lib/libdvm.so (_Z22dvmResolveNativeMethodPKjP6JValuePK6MethodP6Thread)
+         #10  pc 0003060c  /system/lib/libdvm.so
+         #11  pc 00034fa4  /system/lib/libdvm.so (_Z12dvmInterpretP6ThreadPK6MethodP6JValue)
+         #12  pc 0007d8a6  /system/lib/libdvm.so (_Z14dvmCallMethodVP6ThreadPK6MethodP6ObjectbP6JValueSt9__va_list)
+         #13  pc 0005c15e  /system/lib/libdvm.so
+         #14  pc 0004cf18  /system/lib/libdvm.so
+         #15  pc 0004657c  /data/data/com.gameloft.android.ANMP.GloftAsphalt5.asphalt5/lib/libasphalt5.so (nativeExit)
+         #16  pc 0005f7c0  /data/data/com.gameloft.android.ANMP.GloftAsphalt5.asphalt5/lib/libasphalt5.so (_ZN4Game4ExitEv)
+         #17  pc 000a653c  /data/data/com.gameloft.android.ANMP.GloftAsphalt5.asphalt5/lib/libasphalt5.so (_ZN13GS_IngameMenu6UpdateEv)
+         #18  pc 000646e6  /data/data/com.gameloft.android.ANMP.GloftAsphalt5.asphalt5/lib/libasphalt5.so (_ZN4Game13TimerCallbackEv)
+         #19  pc 0005c69e  /data/data/com.gameloft.android.ANMP.GloftAsphalt5.asphalt5/lib/libasphalt5.so (appRender)
+         #20  pc 000469c6  /data/data/com.gameloft.android.ANMP.GloftAsphalt5.asphalt5/lib/libasphalt5.so (Java_com_gameloft_android_ANMP_GloftAsphalt5_asphalt5_Asphalt5Renderer_nativeRender)
+         #21  pc 0001e7b0  /system/lib/libdvm.so (dvmPlatformInvoke)
+         #22  pc 00063c82  /system/lib/libdvm.so (_Z16dvmCallJNIMethodPKjP6JValuePK6MethodP6Thread)
+         #23  pc 000474a4  /system/lib/libdvm.so (_Z21dvmCheckCallJNIMethodPKjP6JValuePK6MethodP6Thread)
+
+code around pc:
+400775c4 44781480 f7fd4479 68c1fb71 42886987  ..xDyD..q..h.i.B
+400775d4 8121f000 f8d56885 4560c00c 81b8f040  ..!..h....`E@...
+400775e4 c008f8d1 f0404560 692481b3 bf2442a5  ....`E@...$i.B$.
+400775f4 608d60e9 81b2f0c0 f0002f00 f8d0811d  .`.`...../......
+40077604 f8dfc01c f10c4440 447c054a 0585eb04  ....@D..J.|D....
+
+code around lr:
+400732a0 e2177903 1a000017 e5945000 e1a02004  .y.......P... ..
+400732b0 e2055a02 e1a00005 e3851001 ebffef4a  .Z..........J...
+400732c0 e3500000 13856002 1a000001 ea000009  ..P..`..........
+400732d0 ebfffe5f e1a01004 e1a00006 ebffef4a  _...........J...
+400732e0 e1550000 e1a01005 e1a00004 e1a02006  ..U.......... ..
+
+stack:
+    5c7d3950  024d68d0  [heap]
+    5c7d3954  01c020e0  [heap]
+    5c7d3958  400b85f8  
+    5c7d395c  01c020e0  [heap]
+    5c7d3960  40030000  
+    5c7d3964  00000000  
+    5c7d3968  00001000  
+    5c7d396c  01c02108  [heap]
+    5c7d3970  400b85f8  
+    5c7d3974  40030078  
+    5c7d3978  40030000  
+    5c7d397c  00000000  
+    5c7d3980  00001000  
+    5c7d3984  400b82cc  
+    5c7d3988  df0027ad  
+    5c7d398c  00000000  
+#00 5c7d3990  401493a0  /system/lib/libutils.so
+    5c7d3994  40149030  /system/lib/libutils.so
+    5c7d3998  40030078  
+    5c7d399c  40030000  
+    5c7d39a0  00000000  
+    5c7d39a4  40078f65  /system/lib/libc.so
+#01 5c7d39a8  00000000  
+    5c7d39ac  4012dfdb  /system/lib/libutils.so
+#02 5c7d39b0  40148968  /system/lib/libutils.so
+    5c7d39b4  401493a0  /system/lib/libutils.so
+    5c7d39b8  40030084  
+    5c7d39bc  40030078  
+    5c7d39c0  40030000  
+    5c7d39c4  40137e69  /system/lib/libutils.so
+#03 5c7d39c8  00000009  
+    5c7d39cc  40082e03  /system/lib/libc.so
+#04 5c7d39d0  01d3a4f0  [heap]
+    5c7d39d4  40137e55  /system/lib/libutils.so
+    5c7d39d8  401493a0  /system/lib/libutils.so
+    5c7d39dc  40149320  /system/lib/libutils.so
+    5c7d39e0  00000000  
+    5c7d39e4  409a6c68  /system/lib/libdvm.so
+    5c7d39e8  01dc1018  [heap]
+    5c7d39ec  5102ceb0  
+    5c7d39f0  01dc1008  [heap]
+    5c7d39f4  40b9e970  /dev/ashmem/dalvik-heap (deleted)
+    5c7d39f8  409a1f48  /system/lib/libdvm.so
+    5c7d39fc  40083217  /system/lib/libc.so
+#05 5c7d3a00  00008c45  /system/bin/app_process
+    5c7d3a04  401cd715  /system/lib/libandroid_runtime.so
+#06 5c7d3a08  00008c45  /system/bin/app_process
+    5c7d3a0c  401cd72b  /system/lib/libandroid_runtime.so
+#07 5c7d3a10  00000000  
+    5c7d3a14  40953bb7  /system/lib/libdvm.so
+#08 5c7d3a18  01dc1008  [heap]
+    5c7d3a1c  56cecbb0  /dev/ashmem/dalvik-LinearAlloc (deleted)
+    5c7d3a20  40953b95  /system/lib/libdvm.so
+    5c7d3a24  40933afd  /system/lib/libdvm.so
+#09 5c7d3a28  01c132a0  [heap]
+    5c7d3a2c  000009b1  
+    5c7d3a30  574d1592  /data/dalvik-cache/system@framework@core.jar@classes.dex
+    5c7d3a34  5102cecc  
+    5c7d3a38  01dc1008  [heap]
+    5c7d3a3c  40b9e970  /dev/ashmem/dalvik-heap (deleted)
+    5c7d3a40  408eb940  /system/lib/libdvm.so
+    5c7d3a44  00000001  
+    5c7d3a48  5102ce9c  
+    5c7d3a4c  408fd610  /system/lib/libdvm.so
+#10 5c7d3a50  411c10b8  /dev/ashmem/dalvik-heap (deleted)
+    5c7d3a54  01dc1008  [heap]
+    5c7d3a58  56ec1630  /dev/ashmem/dalvik-LinearAlloc (deleted)
+    5c7d3a5c  5c7d3ac4  
+    5c7d3a60  00000000  
+    5c7d3a64  409a1f48  /system/lib/libdvm.so
+    5c7d3a68  fffffe64  
+    5c7d3a6c  00000000  
+    5c7d3a70  5c7d3b48  
+    5c7d3a74  40901fa8  /system/lib/libdvm.so
+#11 5c7d3a78  00000000  
+    5c7d3a7c  00000000  
+    5c7d3a80  00000000  
+    5c7d3a84  00000000  
+    5c7d3a88  00000000  
+    5c7d3a8c  00000000  
+    5c7d3a90  00000000  
+    5c7d3a94  00000000  
+    5c7d3a98  00000000  
+    5c7d3a9c  00000000  
+    5c7d3aa0  00000000  
+    5c7d3aa4  00000000  
+    5c7d3aa8  00000000  
+    5c7d3aac  00000000  
+    5c7d3ab0  00000000  
+    5c7d3ab4  00000000  
+    5c7d3ab8  00000000  
+    5c7d3abc  00000000  
+    5c7d3ac0  01d8a268  [heap]
+    5c7d3ac4  57cdb978  /data/dalvik-cache/system@framework@framework.jar@classes.dex
+    5c7d3ac8  5102cf20  
+    5c7d3acc  56ec6b50  /dev/ashmem/dalvik-LinearAlloc (deleted)
+    5c7d3ad0  01d8a268  [heap]
+    5c7d3ad4  00000001  
+    5c7d3ad8  01d9e470  [heap]
+    5c7d3adc  5c7d3d98  
+    5c7d3ae0  00000000  
+    5c7d3ae4  5c7d3e0c  
+    5c7d3ae8  5c7d3b38  
+    5c7d3aec  01dc1008  [heap]
+    5c7d3af0  56ec1630  /dev/ashmem/dalvik-LinearAlloc (deleted)
+    5c7d3af4  5b754e8f  /data/dalvik-cache/data@app@com.gameloft.android.ANMP.GloftAsphalt5.asphalt5-1.apk@classes.dex
+    5c7d3af8  5c7d3b48  
+    5c7d3afc  5102cf24  
+    5c7d3b00  5c7d3bb4  
+    5c7d3b04  00000001  
+    5c7d3b08  5b754e8e  /data/dalvik-cache/data@app@com.gameloft.android.ANMP.GloftAsphalt5.asphalt5-1.apk@classes.dex
+    5c7d3b0c  4094a8a9  /system/lib/libdvm.so
+#12 5c7d3b10  5c7d3b54  
+    5c7d3b14  4099fc94  /system/lib/libdvm.so
+    5c7d3b18  411c10b8  /dev/ashmem/dalvik-heap (deleted)
+    5c7d3b1c  5c7d3bb4  
+    5c7d3b20  5c7d3b48  
+    5c7d3b24  4099fc94  /system/lib/libdvm.so
+    5c7d3b28  411c10b8  /dev/ashmem/dalvik-heap (deleted)
+    5c7d3b2c  1d20021a  
+    5c7d3b30  00000a80  
+    5c7d3b34  5bdafde8  /data/data/com.gameloft.android.ANMP.GloftAsphalt5.asphalt5/lib/libasphalt5.so
+    5c7d3b38  000007dc  
+    5c7d3b3c  40929163  /system/lib/libdvm.so
+#13 5c7d3b40  5c7d3b48  
+    5c7d3b44  5c7d3bb4  
+    5c7d3b48  1d20021a  
+    5c7d3b4c  56ec1630  /dev/ashmem/dalvik-LinearAlloc (deleted)
+    5c7d3b50  01de0b50  [heap]
+    5c7d3b54  01dc1008  [heap]
+    5c7d3b58  411c10b8  /dev/ashmem/dalvik-heap (deleted)
+    5c7d3b5c  40929141  /system/lib/libdvm.so
+    5c7d3b60  01de0b50  [heap]
+    5c7d3b64  40919f1b  /system/lib/libdvm.so
+#14 5c7d3b68  1d20021a  
+    5c7d3b6c  56ec1630  /dev/ashmem/dalvik-LinearAlloc (deleted)
+    5c7d3b70  00000000  
+    5c7d3b74  00000001  
+    5c7d3b78  01de0b50  [heap]
+    5c7d3b7c  40982bc6  /system/lib/libdvm.so
+    5c7d3b80  00000000  
+    5c7d3b84  00000201  
+    5c7d3b88  4099f840  /system/lib/libdvm.so
+    5c7d3b8c  5c7d3bb4  
+    5c7d3b90  5bdafde8  /data/data/com.gameloft.android.ANMP.GloftAsphalt5.asphalt5/lib/libasphalt5.so
+    5c7d3b94  00000234  
+    5c7d3b98  5bdafde8  /data/data/com.gameloft.android.ANMP.GloftAsphalt5.asphalt5/lib/libasphalt5.so
+    5c7d3b9c  4099f840  /system/lib/libdvm.so
+    5c7d3ba0  5bdafde8  /data/data/com.gameloft.android.ANMP.GloftAsphalt5.asphalt5/lib/libasphalt5.so
+    5c7d3ba4  0204a7a8  [heap]
+    5c7d3ba8  00000a80  
+    5c7d3bac  5bcbd57f  /data/data/com.gameloft.android.ANMP.GloftAsphalt5.asphalt5/lib/libasphalt5.so
+    5c7d3bb0  56ec1630  /dev/ashmem/dalvik-LinearAlloc (deleted)
+    5c7d3bb4  40919e95  /system/lib/libdvm.so
+#15 5c7d3bb8  00000094  
+    5c7d3bbc  00000000  
+    5c7d3bc0  0204a7a8  [heap]
+    5c7d3bc4  5bcd67c5  /data/data/com.gameloft.android.ANMP.GloftAsphalt5.asphalt5/lib/libasphalt5.so
+#16 5c7d3bc8  00000094  
+    5c7d3bcc  5bd1d541  /data/data/com.gameloft.android.ANMP.GloftAsphalt5.asphalt5/lib/libasphalt5.so
+#17 5c7d3bd0  01d8a150  [heap]
+    5c7d3bd4  0204a7a8  [heap]
+    5c7d3bd8  5c7d3c30  
+    5c7d3bdc  5bcd863d  /data/data/com.gameloft.android.ANMP.GloftAsphalt5.asphalt5/lib/libasphalt5.so
+    5c7d3be0  00000000  
+    5c7d3be4  5bdb4e8e  
+    5c7d3be8  5f257008  
+    5c7d3bec  5bcdb6e9  /data/data/com.gameloft.android.ANMP.GloftAsphalt5.asphalt5/lib/libasphalt5.so
+#18 5c7d3bf0  5c7d3c30  
+    5c7d3bf4  5c7d3c30  
+    5c7d3bf8  5102cf4c  
+    5c7d3bfc  4142e580  /dev/ashmem/dalvik-heap (deleted)
+    5c7d3c00  5c7d3c44  
+    5c7d3c04  5bdb0f78  /data/data/com.gameloft.android.ANMP.GloftAsphalt5.asphalt5/lib/libasphalt5.so
+    5c7d3c08  01dc1008  [heap]
+    5c7d3c0c  00000000  
+    5c7d3c10  5102cf54  
+    5c7d3c14  5bcd36a3  /data/data/com.gameloft.android.ANMP.GloftAsphalt5.asphalt5/lib/libasphalt5.so
+#19 5c7d3c18  56ec6ad8  /dev/ashmem/dalvik-LinearAlloc (deleted)
+    5c7d3c1c  01dc1008  [heap]
+    5c7d3c20  00000000  
+    5c7d3c24  5bcbd9cb  /data/data/com.gameloft.android.ANMP.GloftAsphalt5.asphalt5/lib/libasphalt5.so
+#20 5c7d3c28  00000007  
+    5c7d3c2c  408eb7b4  /system/lib/libdvm.so
+#21 5c7d3c30  01dc1018  [heap]
+    5c7d3c34  5b754e8e  /data/dalvik-cache/data@app@com.gameloft.android.ANMP.GloftAsphalt5.asphalt5-1.apk@classes.dex
+    5c7d3c38  5102cf4c  
+    5c7d3c3c  00000001  
+    5c7d3c40  4142e580  /dev/ashmem/dalvik-heap (deleted)
+    5c7d3c44  40930c85  /system/lib/libdvm.so
+#22 5c7d3c48  5102cf4c  
+    5c7d3c4c  5b754e8e  /data/dalvik-cache/data@app@com.gameloft.android.ANMP.GloftAsphalt5.asphalt5-1.apk@classes.dex
+    5c7d3c50  5bcbd9bd  /data/data/com.gameloft.android.ANMP.GloftAsphalt5.asphalt5/lib/libasphalt5.so
+    5c7d3c54  01dc1018  [heap]
+    5c7d3c58  409a1f48  /system/lib/libdvm.so
+    5c7d3c5c  00000000  
+    5c7d3c60  400bf5f0  
+    5c7d3c64  01dc1018  [heap]
+    5c7d3c68  01dc10b0  [heap]
+    5c7d3c6c  409a1f48  /system/lib/libdvm.so
+    5c7d3c70  40c63fa8  /dev/ashmem/dalvik-heap (deleted)
+    5c7d3c74  00000000  
+    5c7d3c78  40986f8c  /system/lib/libdvm.so
+    5c7d3c7c  40986cf0  /system/lib/libdvm.so
+    5c7d3c80  40986f98  /system/lib/libdvm.so
+    5c7d3c84  409a7120  
+    5c7d3c88  57cdb978  /data/dalvik-cache/system@framework@framework.jar@classes.dex
+    5c7d3c8c  00000002  
+    5c7d3c90  409a7120  
+    5c7d3c94  01dc1008  [heap]
+    5c7d3c98  ffffbfff  
+    5c7d3c9c  00000001  
+    5c7d3ca0  01dc1030  [heap]
+    5c7d3ca4  01dc1008  [heap]
+    5c7d3ca8  01dc1008  [heap]
+    5c7d3cac  01ec3050  [heap]
+    5c7d3cb0  409a1f48  /system/lib/libdvm.so
+    5c7d3cb4  00000000  
+    5c7d3cb8  00000008  
+    5c7d3cbc  40966829  /system/lib/libdvm.so
+    5c7d3cc0  00000002  
+    5c7d3cc4  01dc1008  [heap]
+    5c7d3cc8  00000000  
+    5c7d3ccc  409a1f48  /system/lib/libdvm.so
+    5c7d3cd0  00000002  
+    5c7d3cd4  0000002a  
+    5c7d3cd8  0000000d  
+    5c7d3cdc  00000013  
+    5c7d3ce0  5c7d3d48  
+    5c7d3ce4  00000003  
+    5c7d3ce8  00000084  
+    5c7d3cec  0000000d  
+    5c7d3cf0  00000006  
+    5c7d3cf4  000001dd  
+    5c7d3cf8  40b300b8  /dev/ashmem/dalvik-heap (deleted)
+    5c7d3cfc  580594fc  /data/dalvik-cache/system@framework@framework.jar@classes.dex
+    5c7d3d00  00000038  
+    5c7d3d04  00000001  
+    5c7d3d08  0000000d  
+    5c7d3d0c  00000010  
+    5c7d3d10  40c63fa8  /dev/ashmem/dalvik-heap (deleted)
+    5c7d3d14  5102cf44  
+    5c7d3d18  00000071  
+    5c7d3d1c  00000005  
+    5c7d3d20  00000000  
+    5c7d3d24  ba6c5529  
+    5c7d3d28  00000000  
+    5c7d3d2c  000002d1  
+    5c7d3d30  000021cc  
+    5c7d3d34  00001000  
+    5c7d3d38  000002d1  
+    5c7d3d3c  ba6c5529  
+    5c7d3d40  57cdb9aa  /data/dalvik-cache/system@framework@framework.jar@classes.dex
+    5c7d3d44  00000001  
+    5c7d3d48  4142dc50  /dev/ashmem/dalvik-heap (deleted)
+    5c7d3d4c  ba6c5529  
+    5c7d3d50  00000058  
+    5c7d3d54  56ec6ad8  /dev/ashmem/dalvik-LinearAlloc (deleted)
+    5c7d3d58  5102cf60  
+    5c7d3d5c  01dc1008  [heap]
+    5c7d3d60  01dc1018  [heap]
+    5c7d3d64  40914499  /system/lib/libdvm.so
+    5c7d3d68  00000000  
+    5c7d3d6c  5102cf38  
+    5c7d3d70  5c7d3ea8  
+    5c7d3d74  409144a9  /system/lib/libdvm.so
+#23 5c7d3d78  00000001  
+    5c7d3d7c  5102cf84  
+    5c7d3d80  5b6dfff8  /data/dalvik-cache/data@app@com.gameloft.android.ANMP.GloftAsphalt5.asphalt5-1.apk@classes.dex
+    5c7d3d84  5102cf60  
+    5c7d3d88  01dc1008  [heap]
+    5c7d3d8c  00000000  
+    5c7d3d90  40914499  /system/lib/libdvm.so
+    5c7d3d94  5ca4b218  /dev/ashmem/dalvik-jit-code-cache (deleted)
+    5c7d3d98  01de0b70  [heap]
+    5c7d3d9c  01dc1008  [heap]
+    5c7d3da0  56ec79d0  /dev/ashmem/dalvik-LinearAlloc (deleted)
+    5c7d3da4  5c7d3e0c  
+    5c7d3da8  00000000  
+    5c7d3dac  409a1f48  /system/lib/libdvm.so
+    5c7d3db0  fffffe64  
+    5c7d3db4  00000000  
+    5c7d3db8  5c7d3ea8  
+    5c7d3dbc  40901fa8  /system/lib/libdvm.so
+--------- tail end of log /dev/log/main
+05-19 09:57:52.606  1917  1932 D dalvikvm: GC_FOR_ALLOC freed <1K, 10% free 9705K/10759K, paused 9ms
+05-19 09:57:52.676  1917  1932 D dalvikvm: GC_FOR_ALLOC freed 1001K, 20% free 8705K/10759K, paused 14ms
+05-19 09:57:52.676  1917  1932 I dalvikvm-heap: Grow heap (frag case) to 9.553MB for 1024016-byte allocation
+05-19 09:57:52.708  1917  1918 D dalvikvm: GC_CONCURRENT freed <1K, 10% free 9705K/10759K, paused 1ms+3ms
+05-19 09:59:07.419  1917  1932 F libc    : Fatal signal 11 (SIGSEGV) at 0x0000000a (code=1)
+--- --- --- --- --- --- --- --- --- --- --- --- --- --- --- ---
+pid: 1917, tid: 1917
+ r0 01c02124  r1 00000080  r2 00000002  r3 00000000
+ r4 01c02124  r5 00000000  r6 00000002  r7 000000f0
+ r8 dead10cc  r9 02340540  10 4142d270  fp bef6b6cc
+ ip 00000002  sp bef6b540  lr 400732d4  pc 4006f02c  cpsr 60000110
+ d0  4004630600000000  d1  4004630600000000
+ d2  4004630600000000  d3  4004630700000000
+ d4  4004630700000084  d5  4004630600000083
+ d6  4004630600000085  d7  4004630700000086
+ d8  0000000000000000  d9  0000000000000000
+ d10 0000000000000000  d11 0000000000000000
+ d12 0000000000000000  d13 0000000000000000
+ d14 0000000000000000  d15 0000000000000000
+ d16 0248cac00248ca80  d17 0000000000000000
+ d18 0000000000000000  d19 0000000000000000
+ d20 000000030815a5dc  d21 3ff0000000000000
+ d22 3f4de16b9c24a98f  d23 be206435816bc5ca
+ d24 3fede16b9c24a98f  d25 3f733c3b597385d3
+ d26 bf66c0c55ca9076a  d27 3f1155e54e7e8408
+ d28 bebbbc6c1a570a20  d29 0000000000000006
+ d30 0000022200000222  d31 0000000000000005
+ scr 80000012
+
+         #00  pc 0000d02c  /system/lib/libc.so (__futex_syscall3)
+         #01  pc 000112d0  /system/lib/libc.so (pthread_mutex_lock)
+         #02  pc 00019d50  /system/lib/libbinder.so (_ZN7android9HeapCache9free_heapERKNS_2wpINS_7IBinderEEE)
+         #03  pc 00019e44  /system/lib/libbinder.so (_ZN7android9HeapCache9free_heapERKNS_2spINS_7IBinderEEE)
+         #04  pc 0001a02a  /system/lib/libbinder.so (_ZN7android12BpMemoryHeapD1Ev)
+         #05  pc 0001a064  /system/lib/libbinder.so (_ZN7android12BpMemoryHeapD0Ev)
+         #06  pc 0001a5ea  /system/lib/libutils.so (_ZN7android7RefBase12weakref_type7decWeakEPKv)
+         #07  pc 00019146  /system/lib/libbinder.so (_ZN7android8BpMemoryD1Ev)
+         #08  pc 000191ac  /system/lib/libbinder.so (_ZN7android8BpMemoryD0Ev)
+         #09  pc 0001a5ea  /system/lib/libutils.so (_ZN7android7RefBase12weakref_type7decWeakEPKv)
+         #10  pc 00003d56  /system/lib/libsoundpool.so (_ZN7android6SampleD1Ev)
+         #11  pc 00003d8c  /system/lib/libsoundpool.so (_ZN7android6SampleD0Ev)
+         #12  pc 0001a624  /system/lib/libutils.so (_ZNK7android7RefBase9decStrongEPKv)
+         #13  pc 00003e2c  /system/lib/libsoundpool.so (_ZNK7android12SortedVectorINS_16key_value_pair_tIiNS_2spINS_6SampleEEEEEE10do_destroyEPvj)
+         #14  pc 00025ad6  /system/lib/libutils.so (_ZN7android10VectorImpl7_shrinkEjj)
+         #15  pc 00025b2c  /system/lib/libutils.so (_ZN7android10VectorImpl13removeItemsAtEjj)
+         #16  pc 00025cee  /system/lib/libutils.so (_ZN7android16SortedVectorImpl6removeEPKv)
+         #17  pc 00004106  /system/lib/libsoundpool.so (_ZN7android9SoundPool6unloadEi)
+         #18  pc 0001e7b0  /system/lib/libdvm.so (dvmPlatformInvoke)
+         #19  pc 00063c82  /system/lib/libdvm.so (_Z16dvmCallJNIMethodPKjP6JValuePK6MethodP6Thread)
+         #20  pc 000474a4  /system/lib/libdvm.so (_Z21dvmCheckCallJNIMethodPKjP6JValuePK6MethodP6Thread)
+         #21  pc 0003060c  /system/lib/libdvm.so
+         #22  pc 00034fa4  /system/lib/libdvm.so (_Z12dvmInterpretP6ThreadPK6MethodP6JValue)
+         #23  pc 0007d50a  /system/lib/libdvm.so (_Z15dvmInvokeMethodP6ObjectPK6MethodP11ArrayObjectS5_P11ClassObjectb)
+         #24  pc 00087de6  /system/lib/libdvm.so
+         #25  pc 0003060c  /system/lib/libdvm.so
+         #26  pc 00034fa4  /system/lib/libdvm.so (_Z12dvmInterpretP6ThreadPK6MethodP6JValue)
+         #27  pc 0007d8a6  /system/lib/libdvm.so (_Z14dvmCallMethodVP6ThreadPK6MethodP6ObjectbP6JValueSt9__va_list)
+         #28  pc 0005c15e  /system/lib/libdvm.so
+         #29  pc 0004ce76  /system/lib/libdvm.so
+         #30  pc 00044830  /system/lib/libandroid_runtime.so
+         #31  pc 000454b2  /system/lib/libandroid_runtime.so (_ZN7android14AndroidRuntime5startEPKcS2_)
+
+code around pc:
+4006f00c e1912f9f e1813f90 e3330000 1afffffb  ./...?....3.....
+4006f01c e1a00002 e12fff1e e92d0090 e3a070f0  ....../...-..p..
+4006f02c ef000000 e8bd0090 e12fff1e e92d0090  ........../...-.
+4006f03c e1a03002 e1a02001 e3a01000 e3a070f0  .0... .......p..
+4006f04c ef000000 e8bd0090 e12fff1e e92d0090  ........../...-.
+
+code around lr:
+400732b4 e1a00005 e3851001 ebffef4a e3500000  ........J.....P.
+400732c4 13856002 1a000001 ea000009 ebfffe5f  .`.........._...
+400732d4 e1a01004 e1a00006 ebffef4a e1550000  ........J.....U.
+400732e4 e1a01005 e1a00004 e1a02006 e3a03000  ......... ...0..
+400732f4 1afffff5 f57ff05f e3a00000 e28dd00c  ...._...........
+
+stack:
+    bef6b500  024d68d0  [heap]
+    bef6b504  02261180  [heap]
+    bef6b508  02261180  [heap]
+    bef6b50c  40177c45  /system/lib/libbinder.so
+    bef6b510  0248ca80  [heap]
+    bef6b514  00000000  
+    bef6b518  02261120  [heap]
+    bef6b51c  02261130  [heap]
+    bef6b520  0248ca80  [heap]
+    bef6b524  01c02128  [heap]
+    bef6b528  0000000c  
+    bef6b52c  40177ba5  /system/lib/libbinder.so
+    bef6b530  022610b0  [heap]
+    bef6b534  00000008  
+    bef6b538  02261120  [heap]
+    bef6b53c  4142d270  /dev/ashmem/dalvik-heap (deleted)
+#00 bef6b540  01c02124  [heap]
+    bef6b544  00000000  
+#01 bef6b548  00000007  
+    bef6b54c  00000008  
+    bef6b550  bef6b578  [stack]
+    bef6b554  01c02124  [heap]
+    bef6b558  bef6b5b0  [stack]
+    bef6b55c  fffffec4  
+    bef6b560  01c02120  [heap]
+    bef6b564  00000001  
+    bef6b568  02340540  [heap]
+    bef6b56c  4142d270  /dev/ashmem/dalvik-heap (deleted)
+    bef6b570  bef6b6cc  [stack]
+    bef6b574  40178d53  /system/lib/libbinder.so
+#02 bef6b578  400bf5f0  
+    bef6b57c  40914e0b  /system/lib/libdvm.so
+    bef6b580  0248c9e8  [heap]
+    bef6b584  00000000  
+    bef6b588  00000000  
+    bef6b58c  4142d270  /dev/ashmem/dalvik-heap (deleted)
+    bef6b590  bef6b6cc  [stack]
+    bef6b594  bef6b5b0  [stack]
+    bef6b598  01c02120  [heap]
+    bef6b59c  fffffec4  
+    bef6b5a0  02340544  [heap]
+    bef6b5a4  00000001  
+    bef6b5a8  02340540  [heap]
+    bef6b5ac  40178e49  /system/lib/libbinder.so
+#03 bef6b5b0  0248cd18  [heap]
+    bef6b5b4  0248cd58  [heap]
+    bef6b5b8  bef6b5cc  [stack]
+    bef6b5bc  0248cd70  [heap]
+    bef6b5c0  40188668  /system/lib/libbinder.so
+    bef6b5c4  4017902f  /system/lib/libbinder.so
+#04 bef6b5c8  0248cd18  [heap]
+    bef6b5cc  0248cd18  [heap]
+    bef6b5d0  0248cd70  [heap]
+    bef6b5d4  0248cce4  [heap]
+    bef6b5d8  fffffe9c  
+    bef6b5dc  40179069  /system/lib/libbinder.so
+#05 bef6b5e0  0248cdb0  [heap]
+    bef6b5e4  401305ed  /system/lib/libutils.so
+#06 bef6b5e8  00000001  
+    bef6b5ec  0248ccd0  [heap]
+    bef6b5f0  40188668  /system/lib/libbinder.so
+    bef6b5f4  40178149  /system/lib/libbinder.so
+#07 bef6b5f8  0248ccd0  [heap]
+    bef6b5fc  0244328c  [heap]
+    bef6b600  02443258  [heap]
+    bef6b604  401781b1  /system/lib/libbinder.so
+#08 bef6b608  0248cd00  [heap]
+    bef6b60c  401305ed  /system/lib/libutils.so
+#09 bef6b610  00000001  
+    bef6b614  02443258  [heap]
+    bef6b618  0244328c  [heap]
+    bef6b61c  5e7ebd59  /system/lib/libsoundpool.so
+#10 bef6b620  00000000  
+    bef6b624  02443258  [heap]
+    bef6b628  02340544  [heap]
+    bef6b62c  5e7ebd91  /system/lib/libsoundpool.so
+#11 bef6b630  02443298  [heap]
+    bef6b634  40130627  /system/lib/libutils.so
+#12 bef6b638  02340548  [heap]
+    bef6b63c  00000001  
+    bef6b640  02340540  [heap]
+    bef6b644  5e7ebe2f  /system/lib/libsoundpool.so
+#13 bef6b648  5e7ebe15  /system/lib/libsoundpool.so
+    bef6b64c  01d8de04  [heap]
+    bef6b650  00000009  
+    bef6b654  00000000  
+    bef6b658  02340540  [heap]
+    bef6b65c  4013bad9  /system/lib/libutils.so
+#14 bef6b660  00000000  
+    bef6b664  00000001  
+    bef6b668  00000007  
+    bef6b66c  50b32c58  
+    bef6b670  bef6b6b8  [stack]
+    bef6b674  50b32c50  
+    bef6b678  4142d270  /dev/ashmem/dalvik-heap (deleted)
+    bef6b67c  4013bb31  /system/lib/libutils.so
+#15 bef6b680  00000000  
+    bef6b684  00000000  
+    bef6b688  01d8de04  [heap]
+    bef6b68c  4013bcf3  /system/lib/libutils.so
+#16 bef6b690  00000000  
+    bef6b694  01d8ddd8  [heap]
+    bef6b698  0000003e  
+    bef6b69c  5e7ec109  /system/lib/libsoundpool.so
+#17 bef6b6a0  0000003e  
+    bef6b6a4  00000000  
+    bef6b6a8  50b32c50  
+    bef6b6ac  56ec97c8  /dev/ashmem/dalvik-LinearAlloc (deleted)
+    bef6b6b0  01c09830  [heap]
+    bef6b6b4  408eb7b4  /system/lib/libdvm.so
+#18 bef6b6b8  01c09840  [heap]
+    bef6b6bc  5802348a  /data/dalvik-cache/system@framework@framework.jar@classes.dex
+    bef6b6c0  50b32c4c  
+    bef6b6c4  00000001  
+    bef6b6c8  00000000  
+    bef6b6cc  40930c85  /system/lib/libdvm.so
+#19 bef6b6d0  50b32c4c  
+    bef6b6d4  5802348a  /data/dalvik-cache/system@framework@framework.jar@classes.dex
+    bef6b6d8  5e7eba4d  /system/lib/libsoundpool.so
+    bef6b6dc  01c09840  [heap]
+    bef6b6e0  409a1f48  /system/lib/libdvm.so
+    bef6b6e4  00000000  
+    bef6b6e8  400bf5f0  
+    bef6b6ec  01c09840  [heap]
+    bef6b6f0  409a7154  
+    bef6b6f4  00000000  
+    bef6b6f8  56c3ef70  /dev/ashmem/dalvik-LinearAlloc (deleted)
+    bef6b6fc  bef6b764  [stack]
+    bef6b700  00000000  
+    bef6b704  5b6e1f14  /data/dalvik-cache/data@app@com.gameloft.android.ANMP.GloftAsphalt5.asphalt5-1.apk@classes.dex
+    bef6b708  00000000  
+    bef6b70c  00000002  
+    bef6b710  5b6e1f14  /data/dalvik-cache/data@app@com.gameloft.android.ANMP.GloftAsphalt5.asphalt5-1.apk@classes.dex
+    bef6b714  00000002  
+    bef6b718  409a7120  
+    bef6b71c  01c09830  [heap]
+    bef6b720  ffffbfff  
+    bef6b724  00000001  
+    bef6b728  01c09858  [heap]
+    bef6b72c  01c09830  [heap]
+    bef6b730  01c09830  [heap]
+    bef6b734  02246e50  [heap]
+    bef6b738  409a1f48  /system/lib/libdvm.so
+    bef6b73c  00000000  
+    bef6b740  00000008  
+    bef6b744  40966829  /system/lib/libdvm.so
+    bef6b748  00000044  
+    bef6b74c  00000001  
+    bef6b750  0000000d  
+    bef6b754  400fe28b  /system/lib/libcutils.so
+    bef6b758  00000002  
+    bef6b75c  0000002d  
+    bef6b760  00000001  
+    bef6b764  00000002  
+    bef6b768  409a6c68  /system/lib/libdvm.so
+    bef6b76c  00000044  
+    bef6b770  ffffffdf  
+    bef6b774  41190018  /dev/ashmem/dalvik-heap (deleted)
+    bef6b778  00000020  
+    bef6b77c  00000001  
+    bef6b780  41438d00  /dev/ashmem/dalvik-heap (deleted)
+    bef6b784  41438d00  /dev/ashmem/dalvik-heap (deleted)
+    bef6b788  00000002  
+    bef6b78c  00000002  
+    bef6b790  40b3dd78  /dev/ashmem/dalvik-heap (deleted)
+    bef6b794  41433738  /dev/ashmem/dalvik-heap (deleted)
+    bef6b798  00000818  
+    bef6b79c  00000025  
+    bef6b7a0  56ec90f8  /dev/ashmem/dalvik-LinearAlloc (deleted)
+    bef6b7a4  5b765499  /data/dalvik-cache/data@app@com.gameloft.android.ANMP.GloftAsphalt5.asphalt5-1.apk@classes.dex
+    bef6b7a8  bef6b7f8  [stack]
+    bef6b7ac  00000001  
+    bef6b7b0  00000000  
+    bef6b7b4  409597f1  /system/lib/libdvm.so
+    bef6b7b8  00003bb8  
+    bef6b7bc  00000001  
+    bef6b7c0  000004fa  
+    bef6b7c4  5b765499  /data/dalvik-cache/data@app@com.gameloft.android.ANMP.GloftAsphalt5.asphalt5-1.apk@classes.dex
+    bef6b7c8  41433738  /dev/ashmem/dalvik-heap (deleted)
+    bef6b7cc  0000027f  
+    bef6b7d0  01d8a268  [heap]
+    bef6b7d4  ba6c5529  
+    bef6b7d8  5b6cf114  /data/dalvik-cache/data@app@com.gameloft.android.ANMP.GloftAsphalt5.asphalt5-1.apk@classes.dex
+    bef6b7dc  56ec97c8  /dev/ashmem/dalvik-LinearAlloc (deleted)
+    bef6b7e0  50b32c68  
+    bef6b7e4  01c09830  [heap]
+    bef6b7e8  01c09840  [heap]
+    bef6b7ec  408eb940  /system/lib/libdvm.so
+    bef6b7f0  00000006  
+    bef6b7f4  50b32c38  
+    bef6b7f8  ffffffff  
+    bef6b7fc  409144a9  /system/lib/libdvm.so
+#20 bef6b800  01c09830  [heap]
+    bef6b804  409666ef  /system/lib/libdvm.so
+    bef6b808  5b6e20c0  /data/dalvik-cache/data@app@com.gameloft.android.ANMP.GloftAsphalt5.asphalt5-1.apk@classes.dex
+    bef6b80c  50b32c68  
+    bef6b810  01c09830  [heap]
+    bef6b814  414346d0  /dev/ashmem/dalvik-heap (deleted)
+    bef6b818  408eb940  /system/lib/libdvm.so
+    bef6b81c  408fd610  /system/lib/libdvm.so
+#21 bef6b820  00000001  
+    bef6b824  01c09830  [heap]
+    bef6b828  56ccfc88  /dev/ashmem/dalvik-LinearAlloc (deleted)
+    bef6b82c  bef6b894  [stack]
+    bef6b830  00000000  
+    bef6b834  409a1f48  /system/lib/libdvm.so
+    bef6b838  fffffe64  
+    bef6b83c  00000000  
+    bef6b840  bef6b8f8  [stack]
+    bef6b844  40901fa8  /system/lib/libdvm.so
+#22 bef6b848  00000001  
+    bef6b84c  00000000  
+    bef6b850  00000000  
+    bef6b854  00000000  
+    bef6b858  00000000  
+    bef6b85c  00000000  
+    bef6b860  00000000  
+    bef6b864  00000000  
+    bef6b868  00000000  
+    bef6b86c  00000000  
+    bef6b870  00000000  
+    bef6b874  00000000  
+    bef6b878  00000000  
+    bef6b87c  00000000  
+    bef6b880  00000000  
+    bef6b884  00000000  
+    bef6b888  00000000  
+    bef6b88c  00000000  
+    bef6b890  bef6b8d8  [stack]
+    bef6b894  57e53008  /data/dalvik-cache/system@framework@framework.jar@classes.dex
+    bef6b898  50b32ec8  
+    bef6b89c  56c3b2a8  /dev/ashmem/dalvik-LinearAlloc (deleted)
+    bef6b8a0  01c132d8  [heap]
+    bef6b8a4  4119ca78  /dev/ashmem/dalvik-heap (deleted)
+    bef6b8a8  ba6c5529  
+    bef6b8ac  bef6b990  [stack]
+    bef6b8b0  00000000  
+    bef6b8b4  bef6ba04  [stack]
+    bef6b8b8  01dc8268  [heap]
+    bef6b8bc  56ccfc88  /dev/ashmem/dalvik-LinearAlloc (deleted)
+    bef6b8c0  4119cb20  /dev/ashmem/dalvik-heap (deleted)
+    bef6b8c4  4119ca30  /dev/ashmem/dalvik-heap (deleted)
+    bef6b8c8  00000001  
+    bef6b8cc  4119cb24  /dev/ashmem/dalvik-heap (deleted)
+    bef6b8d0  4119ca34  /dev/ashmem/dalvik-heap (deleted)
+    bef6b8d4  00000001  
+    bef6b8d8  01c09830  [heap]
+    bef6b8dc  4094a50d  /system/lib/libdvm.so
+#23 bef6b8e0  00000050  
+    bef6b8e4  41190018  /dev/ashmem/dalvik-heap (deleted)
+    bef6b8e8  56ccfc88  /dev/ashmem/dalvik-LinearAlloc (deleted)
+    bef6b8ec  409a1f48  /system/lib/libdvm.so
+    bef6b8f0  400bf5f0  
+    bef6b8f4  40b2f2a8  /dev/ashmem/dalvik-heap (deleted)
+    bef6b8f8  00000014  
+    bef6b8fc  00000001  
+    bef6b900  40b2fe90  /dev/ashmem/dalvik-heap (deleted)
+    bef6b904  400fe28b  /system/lib/libcutils.so
+    bef6b908  01c07748  [heap]
+    bef6b90c  409a1f48  /system/lib/libdvm.so
+    bef6b910  00000000  
+    bef6b914  4095f143  /system/lib/libdvm.so
+    bef6b918  409a6c68  /system/lib/libdvm.so
+    bef6b91c  00000014  
+    bef6b920  409a1f48  /system/lib/libdvm.so
+    bef6b924  4119cb10  /dev/ashmem/dalvik-heap (deleted)
+    bef6b928  00000001  
+    bef6b92c  40900714  /system/lib/libdvm.so
+    bef6b930  01c0cc00  [heap]
+    bef6b934  ba6c5529  
+    bef6b938  409a1f48  /system/lib/libdvm.so
+    bef6b93c  01c09840  [heap]
+    bef6b940  40b2f2a8  /dev/ashmem/dalvik-heap (deleted)
+    bef6b944  4119ca20  /dev/ashmem/dalvik-heap (deleted)
+    bef6b948  00000000  
+    bef6b94c  56ccfc88  /dev/ashmem/dalvik-LinearAlloc (deleted)
+    bef6b950  00000000  
+    bef6b954  4119cb10  /dev/ashmem/dalvik-heap (deleted)
+    bef6b958  00000000  
+    bef6b95c  40954deb  /system/lib/libdvm.so
+#24 bef6b960  40b2f2a8  /dev/ashmem/dalvik-heap (deleted)
+    bef6b964  00000000  
+    bef6b968  50b32f14  
+    bef6b96c  574dbb92  /data/dalvik-cache/system@framework@core.jar@classes.dex
+    bef6b970  50b32f34  
+    bef6b974  01c09830  [heap]
+    bef6b978  40b332e0  /dev/ashmem/dalvik-heap (deleted)
+    bef6b97c  408eb940  /system/lib/libdvm.so
+    bef6b980  00000006  
+    bef6b984  50b32eec  
+    bef6b988  bef6ba88  [stack]
+    bef6b98c  408fd610  /system/lib/libdvm.so
+#25 bef6b990  00000000  
+    bef6b994  01c09830  [heap]
+    bef6b998  56cbb0b8  /dev/ashmem/dalvik-LinearAlloc (deleted)
+    bef6b99c  bef6ba04  [stack]
+    bef6b9a0  00000000  
+    bef6b9a4  409a1f48  /system/lib/libdvm.so
+    bef6b9a8  fffffe64  
+    bef6b9ac  00000000  
+    bef6b9b0  bef6ba88  [stack]
+    bef6b9b4  40901fa8  /system/lib/libdvm.so
+#26 bef6b9b8  58237fcf  /data/dalvik-cache/system@framework@framework.jar@classes.dex
+    bef6b9bc  00000075  
+    bef6b9c0  00000000  
+    bef6b9c4  00000000  
+    bef6b9c8  00000000  
+    bef6b9cc  00000000  
+    bef6b9d0  00000000  
+    bef6b9d4  00000000  
+    bef6b9d8  00000000  
+    bef6b9dc  00000000  
+    bef6b9e0  00000000  
+    bef6b9e4  00000000  
+    bef6b9e8  00000000  
+    bef6b9ec  00000000  
+    bef6b9f0  00000000  
+    bef6b9f4  00000000  
+    bef6b9f8  00000000  
+    bef6b9fc  00000000  
+    bef6ba00  616a4c5b  
+    bef6ba04  00000000  
+    bef6ba08  50b32fa8  
+    bef6ba0c  00000000  
+    bef6ba10  00000000  
+    bef6ba14  00000000  
+    bef6ba18  00000000  
+    bef6ba1c  00000000  
+    bef6ba20  00000000  
+    bef6ba24  00000000  
+    bef6ba28  00000000  
+    bef6ba2c  01c09830  [heap]
+    bef6ba30  56cbb0b8  /dev/ashmem/dalvik-LinearAlloc (deleted)
+    bef6ba34  58019c2c  /data/dalvik-cache/system@framework@framework.jar@classes.dex
+    bef6ba38  bef6ba88  [stack]
+    bef6ba3c  50b32fc0  
+    bef6ba40  bef6bb00  [stack]
+    bef6ba44  00000001  
+    bef6ba48  58019c2a  /data/dalvik-cache/system@framework@framework.jar@classes.dex
+    bef6ba4c  4094a8a9  /system/lib/libdvm.so
+#27 bef6ba50  bef6ba94  [stack]
+    bef6ba54  1d400015  
+    bef6ba58  4099fc94  /system/lib/libdvm.so
+    bef6ba5c  bef6bafc  [stack]
+    bef6ba60  bef6ba88  [stack]
+    bef6ba64  1d400015  
+    bef6ba68  4099fc94  /system/lib/libdvm.so
+    bef6ba6c  00000000  
+    bef6ba70  409819fc  /system/lib/libdvm.so
+    bef6ba74  bef6bafc  [stack]
+    bef6ba78  00000001  
+    bef6ba7c  40929163  /system/lib/libdvm.so
+#28 bef6ba80  bef6ba88  [stack]
+    bef6ba84  bef6bafc  [stack]
+    bef6ba88  00000001  
+    bef6ba8c  01c062c8  [heap]
+    bef6ba90  56cbb0b8  /dev/ashmem/dalvik-LinearAlloc (deleted)
+    bef6ba94  01c09830  [heap]
+    bef6ba98  00000001  
+    bef6ba9c  40929141  /system/lib/libdvm.so
+    bef6baa0  56cbb0b8  /dev/ashmem/dalvik-LinearAlloc (deleted)
+    bef6baa4  40919e79  /system/lib/libdvm.so
+#29 bef6baa8  1d400015  
+    bef6baac  56cbb0b8  /dev/ashmem/dalvik-LinearAlloc (deleted)
+    bef6bab0  40981be0  /system/lib/libdvm.so
+    bef6bab4  01c062c8  [heap]
+    bef6bab8  40982ca6  /system/lib/libdvm.so
+    bef6babc  00000000  
+    bef6bac0  4021dc01  /system/lib/libandroid_runtime.so
+    bef6bac4  1d400015  
+    bef6bac8  40919e09  /system/lib/libdvm.so
+    bef6bacc  00009140  /system/bin/app_process
+    bef6bad0  1d400015  
+    bef6bad4  4091ba1d  /system/lib/libdvm.so
+    bef6bad8  01c95398  [heap]
+    bef6badc  000090d0  /system/bin/app_process
+    bef6bae0  1eb00009  
+    bef6bae4  401cd833  /system/lib/libandroid_runtime.so
+#30 bef6bae8  00009140  /system/bin/app_process
+    bef6baec  bef6bafc  [stack]
+    bef6baf0  40246674  /system/lib/libandroid_runtime.so
+    bef6baf4  401ce4b7  /system/lib/libandroid_runtime.so
+    bef6baf8  56cbb0b8  /dev/ashmem/dalvik-LinearAlloc (deleted)
+    bef6bafc  1eb00009  
+#31 bef6bb00  bef6bb20  [stack]
+    bef6bb04  400fba35  /system/lib/libcutils.so
+    bef6bb08  400bf5f0  
+    bef6bb0c  401062e8  /system/lib/libcutils.so
+    bef6bb10  01c06d00  [heap]
+    bef6bb14  400fb9c3  /system/lib/libcutils.so
+    bef6bb18  00000000  
+    bef6bb1c  b000b170  
+    bef6bb20  00000000  
+    bef6bb24  00000000  
+    bef6bb28  0000a15c  /system/bin/app_process
+    bef6bb2c  0000002d  
+    bef6bb30  00000001  
+    bef6bb34  4013b7ff  /system/lib/libutils.so
+    bef6bb38  00000000  
+    bef6bb3c  bef6bbc4  [stack]
+    bef6bb40  bef6bb70  [stack]
+    bef6bb44  00000001  
+--- --- --- --- --- --- --- --- --- --- --- --- --- --- --- ---
+pid: 1917, tid: 1918
+ r0 01c077e0  r1 00000080  r2 fffffea8  r3 00000000
+ r4 01c077dc  r5 01c077e0  r6 fffffea8  r7 000000f0
+ r8 00000000  r9 00000000  10 409a89c8  fp 00000034
+ ip 409a1fec  sp 100ffe48  lr 40074174  pc 4006f02c  cpsr 60000110
+ d0  6573756170202c4b  d1  0000000000000030
+ d2  0000000000000037  d3  0000000000000035
+ d4  0000000000000000  d5  0000000000000000
+ d6  4b17a4c800a81fe0  d7  0000005a4e6cf178
+ d8  0000000000000000  d9  0000000000000000
+ d10 0000000000000000  d11 0000000000000000
+ d12 0000000000000000  d13 0000000000000000
+ d14 0000000000000000  d15 0000000000000000
+ d16 004c4b4000000000  d17 3b9aca00ffffffff
+ d18 0000000000000000  d19 0000000000000000
+ d20 000000030815a5dc  d21 bfb1be5a93a83e1d
+ d22 3f4de16b9c24a98f  d23 be206435816bc5ca
+ d24 3fede16b9c24a98f  d25 3f733c3b597385d3
+ d26 bf66c0c55ca9076a  d27 3f1155e54e7e8408
+ d28 bebbbc6c1a570a20  d29 0000000000000006
+ d30 0000022200000222  d31 0000000000000005
+ scr 80000012
+
+         #00  pc 0000d02c  /system/lib/libc.so (__futex_syscall3)
+         #01  pc 00012170  /system/lib/libc.so (__pthread_cond_timedwait_relative)
+         #02  pc 000121f0  /system/lib/libc.so (__pthread_cond_timedwait)
+         #03  pc 000917e6  /system/lib/libdvm.so
+         #04  pc 0006c602  /system/lib/libdvm.so
+         #05  pc 000120d8  /system/lib/libc.so (__thread_entry)
+         #06  pc 00011bf4  /system/lib/libc.so (pthread_create)
+
+code around pc:
+4006f00c e1912f9f e1813f90 e3330000 1afffffb  ./...?....3.....
+4006f01c e1a00002 e12fff1e e92d0090 e3a070f0  ....../...-..p..
+4006f02c ef000000 e8bd0090 e12fff1e e92d0090  ........../...-.
+4006f03c e1a03002 e1a02001 e3a01000 e3a070f0  .0... .......p..
+4006f04c ef000000 e8bd0090 e12fff1e e92d0090  ........../...-.
+
+code around lr:
+40074154 e5956000 ebfffcb0 e5951000 e1a03007  .`...........0..
+40074164 e1a02006 e1a00005 e2011001 ebfffab7  . ..............
+40074174 e1a05000 e1a00004 ebfffc40 e375006e  .P......@...n.u.
+40074184 03a0006e 13a00000 e8bd80f8 e92d4070  n...........p@-.
+40074194 e2524000 e24dd010 e1a06000 e1a05001  .@R...M..`...P..
+
+stack:
+    100ffe08  00001000  
+    100ffe0c  00000000  
+    100ffe10  400b85e0  
+    100ffe14  025c5000  
+    100ffe18  00000000  
+    100ffe1c  00000da8  
+    100ffe20  00000000  
+    100ffe24  400750db  /system/lib/libc.so
+    100ffe28  00000000  
+    100ffe2c  400741f4  /system/lib/libc.so
+    100ffe30  00000000  
+    100ffe34  00000056  
+    100ffe38  01c077dc  [heap]
+    100ffe3c  01c077e0  [heap]
+    100ffe40  fffffea8  
+    100ffe44  00000000  
+#00 100ffe48  01c077dc  [heap]
+    100ffe4c  00000000  
+#01 100ffe50  00000000  
+    100ffe54  00000000  
+    100ffe58  01c077dc  [heap]
+    100ffe5c  01c077e0  [heap]
+    100ffe60  409a89c8  
+    100ffe64  400741f4  /system/lib/libc.so
+#02 100ffe68  00000001  
+    100ffe6c  4095e8c1  /system/lib/libdvm.so
+    100ffe70  4095e8c1  /system/lib/libdvm.so
+    100ffe74  409a6c68  /system/lib/libdvm.so
+    100ffe78  4095e8c1  /system/lib/libdvm.so
+    100ffe7c  409a6c68  /system/lib/libdvm.so
+    100ffe80  409a89c8  
+    100ffe84  4095e7e9  /system/lib/libdvm.so
+#03 100ffe88  00000000  
+    100ffe8c  40938689  /system/lib/libdvm.so
+    100ffe90  40b3cfa8  /dev/ashmem/dalvik-heap (deleted)
+    100ffe94  409a1f48  /system/lib/libdvm.so
+    100ffe98  4095e8c1  /system/lib/libdvm.so
+    100ffe9c  409a89c8  
+    100ffea0  000ee000  
+    100ffea4  00182000  
+    100ffea8  00000078  
+    100ffeac  01d7bfb8  [heap]
+    100ffeb0  409a1f48  /system/lib/libdvm.so
+    100ffeb4  bef6b848  [stack]
+    100ffeb8  00000078  
+    100ffebc  40939579  /system/lib/libdvm.so
+    100ffec0  00100000  
+    100ffec4  01d7bfb8  [heap]
+    100ffec8  00000001  
+    100ffecc  40939605  /system/lib/libdvm.so
+#04 100ffed0  40939579  /system/lib/libdvm.so
+    100ffed4  00010002  
+    100ffed8  01d78878  [heap]
+    100ffedc  40b3cfa8  /dev/ashmem/dalvik-heap (deleted)
+    100ffee0  100fff00  
+    100ffee4  40939579  /system/lib/libdvm.so
+    100ffee8  01d7bfb8  [heap]
+    100ffeec  400740dc  /system/lib/libc.so
+#05 100ffef0  01d40570  [heap]
+    100ffef4  100fff00  
+    100ffef8  bef6b830  [stack]
+    100ffefc  40073bf8  /system/lib/libc.so
+#06 100fff00  100fff00  
+    100fff04  01d40570  [heap]
+    100fff08  00000000  
+    100fff0c  00000000  
+    100fff10  00000000  
+    100fff14  00000000  
+    100fff18  01d8bb40  [heap]
+    100fff1c  00000000  
+    100fff20  00000000  
+    100fff24  00000000  
+    100fff28  00000000  
+    100fff2c  00000000  
+    100fff30  00000000  
+    100fff34  00000000  
+    100fff38  00000000  
+    100fff3c  00000000  
+    100fff40  00000000  
+    100fff44  00000000  
+--- --- --- --- --- --- --- --- --- --- --- --- --- --- --- ---
+pid: 1917, tid: 1922
+ r0 fffffffc  r1 00000000  r2 00000000  r3 00000008
+ r4 58f6fe90  r5 409a6c68  r6 01dae210  r7 000000b1
+ r8 40939579  r9 00100000  10 01d5c188  fp 40988aac
+ ip 409a2114  sp 58f6fe30  lr 4007c267  pc 4006e948  cpsr 20000110
+ d0  41198ff841198ff8  d1  000000000000008f
+ d2  ffffffff00000019  d3  00000006ffffff41
+ d4  0000001800100103  d5  ffffffff00000014
+ d6  4aca0190006a0ff0  d7  0000005f4e1dd138
+ d8  0000000000000000  d9  0000000000000000
+ d10 0000000000000000  d11 0000000000000000
+ d12 0000000000000000  d13 0000000000000000
+ d14 0000000000000000  d15 0000000000000000
+ d16 0000100000000020  d17 0000000000000000
+ d18 0000000000000000  d19 0000000000000000
+ d20 000000030815a5dc  d21 bfb1be5a93a83e1d
+ d22 3f4de16b9c24a98f  d23 be206435816bc5ca
+ d24 3fede16b9c24a98f  d25 3f733c3b597385d3
+ d26 bf66c0c55ca9076a  d27 3f1155e54e7e8408
+ d28 bebbbc6c1a570a20  d29 0000000000000006
+ d30 0000022200000222  d31 0000000000000005
+ scr 80000012
+
+         #00  pc 0000c948  /system/lib/libc.so (__rt_sigtimedwait)
+         #01  pc 0001a264  /system/lib/libc.so (sigwait)
+         #02  pc 00069700  /system/lib/libdvm.so
+         #03  pc 0006c602  /system/lib/libdvm.so
+         #04  pc 000120d8  /system/lib/libc.so (__thread_entry)
+         #05  pc 00011bf4  /system/lib/libc.so (pthread_create)
+
+code around pc:
+4006e928 ef000000 e8bd0090 e1b00000 512fff1e  ............../Q
+4006e938 ea00ea5f e92d0090 e3a070b1 ef000000  _.....-..p......
+4006e948 e8bd0090 e1b00000 512fff1e ea00ea58  ........../QX...
+4006e958 e92d0090 e3a07049 ef000000 e8bd0090  ..-.Ip..........
+4006e968 e1b00000 512fff1e ea00ea51 e92d0090  ....../QQ.....-.
+
+code around lr:
+4007c244 b082b510 9201460c e0049300 fd2af7f8  .....F........*.
+4007c254 280b6800 2100d10c 46682308 f7f2460a  .h.(...!.#hF.F..
+4007c264 2800eb6c 2300dbf2 46186020 bd10b002  l..(...# `.F....
+4007c274 fd18f7f8 29046801 f7f8d0ed 6803fd13  .....h.).......h
+4007c284 bf00e7f3 b5001e03 bfb8b083 4300f06f  ............o..C
+
+stack:
+    58f6fdf0  542f676e  /dev/ashmem/dalvik-mark-stack (deleted)
+    58f6fdf4  00000000  
+    58f6fdf8  5100ffa0  
+    58f6fdfc  00000000  
+    58f6fe00  00000000  
+    58f6fe04  00000000  
+    58f6fe08  00000000  
+    58f6fe0c  00000000  
+    58f6fe10  00000000  
+    58f6fe14  00000000  
+    58f6fe18  41199018  /dev/ashmem/dalvik-heap (deleted)
+    58f6fe1c  01dae210  [heap]
+    58f6fe20  56c34520  /dev/ashmem/dalvik-LinearAlloc (deleted)
+    58f6fe24  5763f7d6  /data/dalvik-cache/system@framework@core.jar@classes.dex
+    58f6fe28  58f6fea0  
+    58f6fe2c  58f6fe98  
+#00 58f6fe30  58f6fe90  
+    58f6fe34  00000078  
+#01 58f6fe38  00000204  
+    58f6fe3c  00000000  
+    58f6fe40  58f6fe98  
+    58f6fe44  40936703  /system/lib/libdvm.so
+#02 58f6fe48  575fdc68  /data/dalvik-cache/system@framework@core.jar@classes.dex
+    58f6fe4c  58f6fe90  
+    58f6fe50  58f6fea0  
+    58f6fe54  41198ff8  /dev/ashmem/dalvik-heap (deleted)
+    58f6fe58  41198f88  /dev/ashmem/dalvik-heap (deleted)
+    58f6fe5c  41198fe0  /dev/ashmem/dalvik-heap (deleted)
+    58f6fe60  00000001  
+    58f6fe64  40988a7c  /system/lib/libdvm.so
+    58f6fe68  40988a88  /system/lib/libdvm.so
+    58f6fe6c  40988a7c  /system/lib/libdvm.so
+    58f6fe70  40988a7c  /system/lib/libdvm.so
+    58f6fe74  40988b8c  /system/lib/libdvm.so
+    58f6fe78  01dae210  [heap]
+    58f6fe7c  58f6fe90  
+    58f6fe80  01dae210  [heap]
+    58f6fe84  01dae210  [heap]
+    58f6fe88  409a6c68  /system/lib/libdvm.so
+    58f6fe8c  40938689  /system/lib/libdvm.so
+    58f6fe90  40b3cfa8  /dev/ashmem/dalvik-heap (deleted)
+    58f6fe94  41198ff8  /dev/ashmem/dalvik-heap (deleted)
+    58f6fe98  00000204  
+    58f6fe9c  01dae210  [heap]
+    58f6fea0  409a1f48  /system/lib/libdvm.so
+    58f6fea4  00000001  
+    58f6fea8  00000078  
+    58f6feac  01d5c188  [heap]
+    58f6feb0  409a1f48  /system/lib/libdvm.so
+    58f6feb4  bef6b858  [stack]
+    58f6feb8  00000078  
+    58f6febc  40939579  /system/lib/libdvm.so
+    58f6fec0  00100000  
+    58f6fec4  01d5c188  [heap]
+    58f6fec8  00000001  
+    58f6fecc  40939605  /system/lib/libdvm.so
+#03 58f6fed0  40939579  /system/lib/libdvm.so
+    58f6fed4  00010002  
+    58f6fed8  01d775a8  [heap]
+    58f6fedc  40b3cfa8  /dev/ashmem/dalvik-heap (deleted)
+    58f6fee0  58f6ff00  
+    58f6fee4  40939579  /system/lib/libdvm.so
+    58f6fee8  01d5c188  [heap]
+    58f6feec  400740dc  /system/lib/libc.so
+#04 58f6fef0  01d492d0  [heap]
+    58f6fef4  58f6ff00  
+    58f6fef8  bef6b840  [stack]
+    58f6fefc  40073bf8  /system/lib/libc.so
+#05 58f6ff00  58f6ff00  
+    58f6ff04  01d492d0  [heap]
+    58f6ff08  00000000  
+    58f6ff0c  00000000  
+    58f6ff10  00000000  
+    58f6ff14  00000000  
+    58f6ff18  01dae210  [heap]
+    58f6ff1c  00000000  
+    58f6ff20  00000000  
+    58f6ff24  00000000  
+    58f6ff28  00000000  
+    58f6ff2c  00000000  
+    58f6ff30  00000000  
+    58f6ff34  00000000  
+    58f6ff38  00000000  
+    58f6ff3c  00000000  
+    58f6ff40  00000000  
+    58f6ff44  00000000  
+--- --- --- --- --- --- --- --- --- --- --- --- --- --- --- ---
+pid: 1917, tid: 1923
+ r0 0000001e  r1 5906fe28  r2 00000000  r3 ba6c5529
+ r4 01cad460  r5 400bf5f0  r6 5906fe50  r7 00000129
+ r8 00000021  r9 000003e8  10 01cad470  fp 4098df14
+ ip 409a21bc  sp 5906fe18  lr 4094ae83  pc 4006eb4c  cpsr 60000110
+ d0  411990f0411990f0  d1  00000d7d01c10090
+ d2  0003a354400b3519  d3  40073344400b8341
+ d4  052140000000002e  d5  0000000041198e18
+ d6  bef6b8d0400bf5f0  d7  000003f700000bbb
+ d8  0000000000000000  d9  0000000000000000
+ d10 0000000000000000  d11 0000000000000000
+ d12 0000000000000000  d13 0000000000000000
+ d14 0000000000000000  d15 0000000000000000
+ d16 0000100000000020  d17 0000000000000000
+ d18 0000000000000000  d19 0000000000000000
+ d20 000000030815a5dc  d21 bfb1be5a93a83e1d
+ d22 3f4de16b9c24a98f  d23 be206435816bc5ca
+ d24 3fede16b9c24a98f  d25 3f733c3b597385d3
+ d26 bf66c0c55ca9076a  d27 3f1155e54e7e8408
+ d28 bebbbc6c1a570a20  d29 0000000000000006
+ d30 0000022200000222  d31 0000000000000005
+ scr 80000012
+
+         #00  pc 0000cb4c  /system/lib/libc.so (recvmsg)
+         #01  pc 0007de80  /system/lib/libdvm.so
+         #02  pc 0007dfb2  /system/lib/libdvm.so
+         #03  pc 000831de  /system/lib/libdvm.so
+         #04  pc 0006c602  /system/lib/libdvm.so
+         #05  pc 000120d8  /system/lib/libc.so (__thread_entry)
+         #06  pc 00011bf4  /system/lib/libc.so (pthread_create)
+
+code around pc:
+4006eb2c e3a07f4a ef000000 e8bd0090 e1b00000  J...............
+4006eb3c 512fff1e ea00e9dd e92d0090 e59f7010  ../Q......-..p..
+4006eb4c ef000000 e8bd0090 e1b00000 512fff1e  ............../Q
+4006eb5c ea00e9d6 00000129 e92d0090 e3a0709c  ....).....-..p..
+4006eb6c ef000000 e8bd0090 e1b00000 512fff1e  ............../Q
+
+code around lr:
+4094ae60 920e920d 91039102 f8cd9108 9606c010  ................
+4094ae70 970c9707 e03cf8cd 68a02200 f7a0a902  ......<..".h....
+4094ae80 2800eb26 bf18db09 d01a68f0 682b9a11  &..(.....h....+h
+4094ae90 d11d429a e8bdb012 f7a081f0 6801e8d8  .B.............h
+4094aea0 d0e92904 f7a068a6 6800e8d2 e8d4f7a0  .)...h.....h....
+
+stack:
+    5906fdd8  00000004  
+    5906fddc  5906fe7c  
+    5906fde0  00000208  
+    5906fde4  00000006  
+    5906fde8  000003e8  
+    5906fdec  01cad470  [heap]
+    5906fdf0  4098df14  /system/lib/libdvm.so
+    5906fdf4  4007ef71  /system/lib/libc.so
+    5906fdf8  5906fe84  
+    5906fdfc  00000000  
+    5906fe00  00000000  
+    5906fe04  ffff0208  [vectors]
+    5906fe08  5906fe80  
+    5906fe0c  00000004  
+    5906fe10  00000000  
+    5906fe14  00000000  
+#00 5906fe18  01cad460  [heap]
+    5906fe1c  00000010  
+#01 5906fe20  56c34520  /dev/ashmem/dalvik-LinearAlloc (deleted)
+    5906fe24  5763f7d6  /data/dalvik-cache/system@framework@core.jar@classes.dex
+    5906fe28  00000000  
+    5906fe2c  00000000  
+    5906fe30  5906fe44  
+    5906fe34  00000001  
+    5906fe38  5906fe50  
+    5906fe3c  00000010  
+    5906fe40  00000000  
+    5906fe44  5906fe4f  
+    5906fe48  00000001  
+    5906fe4c  2100000c  
+    5906fe50  00000010  
+    5906fe54  00000001  
+    5906fe58  00000001  
+    5906fe5c  ffffffff  
+    5906fe60  00000000  
+    5906fe64  ba6c5529  
+    5906fe68  01cad460  [heap]
+    5906fe6c  00000001  
+    5906fe70  01caf47c  [heap]
+    5906fe74  01caf480  [heap]
+    5906fe78  00000006  
+    5906fe7c  4094afb7  /system/lib/libdvm.so
+#02 5906fe80  64373730  
+    5906fe84  01c8ec00  [heap]
+    5906fe88  409a6c68  /system/lib/libdvm.so
+    5906fe8c  01d55bf0  [heap]
+    5906fe90  4098f13c  /system/lib/libdvm.so
+    5906fe94  4098f100  /system/lib/libdvm.so
+    5906fe98  01d55c5c  [heap]
+    5906fe9c  4098f100  /system/lib/libdvm.so
+    5906fea0  4098f13c  /system/lib/libdvm.so
+    5906fea4  01d45168  [heap]
+    5906fea8  00000001  
+    5906feac  409501e1  /system/lib/libdvm.so
+#03 5906feb0  00000001  
+    5906feb4  01d45168  [heap]
+    5906feb8  409a1f48  /system/lib/libdvm.so
+    5906febc  bef6b838  [stack]
+    5906fec0  00000078  
+    5906fec4  40939579  /system/lib/libdvm.so
+    5906fec8  00100000  
+    5906fecc  40939605  /system/lib/libdvm.so
+#04 5906fed0  40939579  /system/lib/libdvm.so
+    5906fed4  00010002  
+    5906fed8  01d31cf8  [heap]
+    5906fedc  40b3cfa8  /dev/ashmem/dalvik-heap (deleted)
+    5906fee0  5906ff00  
+    5906fee4  40939579  /system/lib/libdvm.so
+    5906fee8  01d45168  [heap]
+    5906feec  400740dc  /system/lib/libc.so
+#05 5906fef0  01d37630  [heap]
+    5906fef4  5906ff00  
+    5906fef8  bef6b820  [stack]
+    5906fefc  40073bf8  /system/lib/libc.so
+#06 5906ff00  5906ff00  
+    5906ff04  01d37630  [heap]
+    5906ff08  00000000  
+    5906ff0c  00000000  
+    5906ff10  00000000  
+    5906ff14  00000000  
+    5906ff18  01c8ec88  [heap]
+    5906ff1c  00000000  
+    5906ff20  00000000  
+    5906ff24  00000000  
+    5906ff28  00000000  
+    5906ff2c  00000000  
+    5906ff30  00000000  
+    5906ff34  00000000  
+    5906ff38  00000000  
+    5906ff3c  00000000  
+    5906ff40  00000000  
+    5906ff44  00000000  
+--- --- --- --- --- --- --- --- --- --- --- --- --- --- --- ---
+pid: 1917, tid: 1924
+cannot get registers: No such process
+         #00  pc 0000d02c  /system/lib/libc.so (__futex_syscall3)
+         #01  pc 00012170  /system/lib/libc.so (__pthread_cond_timedwait_relative)
+         #02  pc 000121f0  /system/lib/libc.so (__pthread_cond_timedwait)
+         #03  pc 00092d8a  /system/lib/libdvm.so
+         #04  pc 0006c602  /system/lib/libdvm.so
+         #05  pc 000120d8  /system/lib/libc.so (__thread_entry)
+         #06  pc 00011bf4  /system/lib/libc.so (pthread_create)
+
+code around pc:
+4006f00c e1912f9f e1813f90 e3330000 1afffffb  ./...?....3.....
+4006f01c e1a00002 e12fff1e e92d0090 e3a070f0  ....../...-..p..
+4006f02c ef000000 e8bd0090 e12fff1e e92d0090  ........../...-.
+4006f03c e1a03002 e1a02001 e3a01000 e3a070f0  .0... .......p..
+4006f04c ef000000 e8bd0090 e12fff1e e92d0090  ........../...-.
+
+code around lr:
+40074154 e5956000 ebfffcb0 e5951000 e1a03007  .`...........0..
+40074164 e1a02006 e1a00005 e2011001 ebfffab7  . ..............
+40074174 e1a05000 e1a00004 ebfffc40 e375006e  .P......@...n.u.
+40074184 03a0006e 13a00000 e8bd80f8 e92d4070  n...........p@-.
+40074194 e2524000 e24dd010 e1a06000 e1a05001  .@R...M..`...P..
+
+stack:
+    5b1bdce8  0000000d  
+    5b1bdcec  01e125c4  [heap]
+    5b1bdcf0  0000000d  
+    5b1bdcf4  0000000d  
+    5b1bdcf8  01e12884  [heap]
+    5b1bdcfc  00000000  
+    5b1bdd00  00000000  
+    5b1bdd04  01e12874  [heap]
+    5b1bdd08  00000000  
+    5b1bdd0c  00000000  
+    5b1bdd10  00000000  
+    5b1bdd14  00000000  
+    5b1bdd18  409a7154  
+    5b1bdd1c  409a715c  
+    5b1bdd20  fffffa80  
+    5b1bdd24  00000000  
+#00 5b1bdd28  409a7154  
+    5b1bdd2c  00000000  
+#01 5b1bdd30  00000000  
+    5b1bdd34  00000000  
+    5b1bdd38  409a7154  
+    5b1bdd3c  409a715c  
+    5b1bdd40  00000000  
+    5b1bdd44  400741f4  /system/lib/libc.so
+#02 5b1bdd48  00000001  
+    5b1bdd4c  409a7170  
+    5b1bdd50  409a7160  
+    5b1bdd54  00000000  
+    5b1bdd58  409a7120  
+    5b1bdd5c  00000001  
+    5b1bdd60  409a7170  
+    5b1bdd64  4095fd8d  /system/lib/libdvm.so
+#03 5b1bdd68  0000000a  
+    5b1bdd6c  40b3cff0  /dev/ashmem/dalvik-heap (deleted)
+    5b1bdd70  409a1f48  /system/lib/libdvm.so
+    5b1bdd74  409a7120  
+    5b1bdd78  409a7120  
+    5b1bdd7c  409a7120  
+    5b1bdd80  409a7160  
+    5b1bdd84  40994978  /system/lib/libdvm.so
+    5b1bdd88  40994b5c  /system/lib/libdvm.so
+    5b1bdd8c  409a7160  
+    5b1bdd90  4278f501  /dev/ashmem/dalvik-heap (deleted)
+    5b1bdd94  00001204  
+    5b1bdd98  00000000  
+    5b1bdd9c  00000000  
+    5b1bdda0  00000000  
+    5b1bdda4  00000000  
+    5b1bdda8  00000000  
+    5b1bddac  00000000  
+    5b1bddb0  00000000  
+    5b1bddb4  00000000  
+    5b1bddb8  00000000  
+    5b1bddbc  00000000  
+    5b1bddc0  00000000  
+    5b1bddc4  00000000  
+    5b1bddc8  00000000  
+    5b1bddcc  00000000  
+    5b1bddd0  00000000  
+    5b1bddd4  00000000  
+    5b1bddd8  80000012  
+    5b1bdddc  00000000  
+    5b1bdde0  409a7280  
+    5b1bdde4  409a7170  
+    5b1bdde8  00000000  
+    5b1bddec  40939579  /system/lib/libdvm.so
+    5b1bddf0  00100000  
+    5b1bddf4  01d33ef8  [heap]
+    5b1bddf8  00000001  
+    5b1bddfc  409a2258  /system/lib/libdvm.so
+    5b1bde00  5b1bdd68  
+    5b1bde04  4095fd3f  /system/lib/libdvm.so
+    5b1bde08  00000000  
+    5b1bde0c  00000000  
+    5b1bde10  00000000  
+    5b1bde14  00000000  
+    5b1bde18  411991f8  /dev/ashmem/dalvik-heap (deleted)
+    5b1bde1c  01dcda38  [heap]
+    5b1bde20  56c34520  /dev/ashmem/dalvik-LinearAlloc (deleted)
+    5b1bde24  5763f7d6  /data/dalvik-cache/system@framework@core.jar@classes.dex
+    5b1bde28  5b1bdea0  
+    5b1bde2c  51017fc4  
+    5b1bde30  5b1bdea0  
+    5b1bde34  00000000  
+    5b1bde38  5763f7d1  /data/dalvik-cache/system@framework@core.jar@classes.dex
+    5b1bde3c  4094a8a9  /system/lib/libdvm.so
+    5b1bde40  01d7d040  [heap]
+    5b1bde44  56c34534  /dev/ashmem/dalvik-LinearAlloc (deleted)
+    5b1bde48  575fdc68  /data/dalvik-cache/system@framework@core.jar@classes.dex
+    5b1bde4c  5b1bde90  
+    5b1bde50  5b1bdea0  
+    5b1bde54  411991d8  /dev/ashmem/dalvik-heap (deleted)
+    5b1bde58  41199168  /dev/ashmem/dalvik-heap (deleted)
+    5b1bde5c  411991c0  /dev/ashmem/dalvik-heap (deleted)
+    5b1bde60  00000001  
+    5b1bde64  40b3cfa8  /dev/ashmem/dalvik-heap (deleted)
+    5b1bde68  01d95b90  [heap]
+    5b1bde6c  40935f27  /system/lib/libdvm.so
+    5b1bde70  411991d8  /dev/ashmem/dalvik-heap (deleted)
+    5b1bde74  4093aa25  /system/lib/libdvm.so
+    5b1bde78  01dcda38  [heap]
+    5b1bde7c  5b1bde90  
+    5b1bde80  01dcda38  [heap]
+    5b1bde84  01dcda38  [heap]
+    5b1bde88  409a6c68  /system/lib/libdvm.so
+    5b1bde8c  40938689  /system/lib/libdvm.so
+    5b1bde90  5b6e1f14  /data/dalvik-cache/data@app@com.gameloft.android.ANMP.GloftAsphalt5.asphalt5-1.apk@classes.dex
+    5b1bde94  00000002  
+    5b1bde98  02246e50  [heap]
+    5b1bde9c  5ca61983  /dev/ashmem/dalvik-jit-code-cache (deleted)
+    5b1bdea0  00000003  
+    5b1bdea4  0000000a  
+    5b1bdea8  00000000  
+    5b1bdeac  01c09830  [heap]
+    5b1bdeb0  00000000  
+    5b1bdeb4  5b1bdd90  
+    5b1bdeb8  01d33ef8  [heap]
+    5b1bdebc  01d33ef8  [heap]
+    5b1bdec0  409a1f48  /system/lib/libdvm.so
+    5b1bdec4  bef6b858  [stack]
+    5b1bdec8  00000078  
+    5b1bdecc  40939605  /system/lib/libdvm.so
+#04 5b1bded0  40939579  /system/lib/libdvm.so
+    5b1bded4  00010002  
+    5b1bded8  01d7d040  [heap]
+    5b1bdedc  40b3cfa8  /dev/ashmem/dalvik-heap (deleted)
+    5b1bdee0  5b1bdf00  
+    5b1bdee4  40939579  /system/lib/libdvm.so
+    5b1bdee8  01d33ef8  [heap]
+    5b1bdeec  400740dc  /system/lib/libc.so
+#05 5b1bdef0  01d525e0  [heap]
+    5b1bdef4  5b1bdf00  
+    5b1bdef8  bef6b840  [stack]
+    5b1bdefc  40073bf8  /system/lib/libc.so
+#06 5b1bdf00  5b1bdf00  
+    5b1bdf04  01d525e0  [heap]
+    5b1bdf08  00000000  
+    5b1bdf0c  00000000  
+    5b1bdf10  00000000  
+    5b1bdf14  00000000  
+    5b1bdf18  01dcda38  [heap]
+    5b1bdf1c  00000000  
+    5b1bdf20  00000000  
+    5b1bdf24  00000000  
+    5b1bdf28  00000000  
+    5b1bdf2c  00000000  
+    5b1bdf30  00000000  
+    5b1bdf34  00000000  
+    5b1bdf38  00000000  
+    5b1bdf3c  00000000  
+    5b1bdf40  00000000  
+    5b1bdf44  00000000  
+--- --- --- --- --- --- --- --- --- --- --- --- --- --- --- ---
+pid: 1917, tid: 1925
+cannot get registers: No such process
+         #00  pc 0000d02c  /system/lib/libc.so (__futex_syscall3)
+         #01  pc 00012170  /system/lib/libc.so (__pthread_cond_timedwait_relative)
+         #02  pc 000121f0  /system/lib/libc.so (__pthread_cond_timedwait)
+         #03  pc 0006a3c6  /system/lib/libdvm.so
+         #04  pc 00086ac0  /system/lib/libdvm.so
+
+code around pc:
+4006f00c e1912f9f e1813f90 e3330000 1afffffb  ./...?....3.....
+4006f01c e1a00002 e12fff1e e92d0090 e3a070f0  ....../...-..p..
+4006f02c ef000000 e8bd0090 e12fff1e e92d0090  ........../...-.
+4006f03c e1a03002 e1a02001 e3a01000 e3a070f0  .0... .......p..
+4006f04c ef000000 e8bd0090 e12fff1e e92d0090  ........../...-.
+
+code around lr:
+40074154 e5956000 ebfffcb0 e5951000 e1a03007  .`...........0..
+40074164 e1a02006 e1a00005 e2011001 ebfffab7  . ..............
+40074174 e1a05000 e1a00004 ebfffc40 e375006e  .P......@...n.u.
+40074184 03a0006e 13a00000 e8bd80f8 e92d4070  n...........p@-.
+40074194 e2524000 e24dd010 e1a06000 e1a05001  .@R...M..`...P..
+
+stack:
+    5b2bdcb8  00000028  
+    5b2bdcbc  40966829  /system/lib/libdvm.so
+    5b2bdcc0  00000000  
+    5b2bdcc4  01de1630  [heap]
+    5b2bdcc8  01de19c0  [heap]
+    5b2bdccc  00000000  
+    5b2bdcd0  00000003  
+    5b2bdcd4  0000000b  
+    5b2bdcd8  00000001  
+    5b2bdcdc  01de19c0  [heap]
+    5b2bdce0  00000000  
+    5b2bdce4  fffffeaa  
+    5b2bdce8  01de19c0  [heap]
+    5b2bdcec  01de19d0  [heap]
+    5b2bdcf0  fffffea8  
+    5b2bdcf4  00000000  
+#00 5b2bdcf8  01de19c0  [heap]
+    5b2bdcfc  00000000  
+#01 5b2bdd00  00000000  
+    5b2bdd04  00000000  
+    5b2bdd08  01de19c0  [heap]
+    5b2bdd0c  01de19d0  [heap]
+    5b2bdd10  00000000  
+    5b2bdd14  400741f4  /system/lib/libc.so
+#02 5b2bdd18  01de19c0  [heap]
+    5b2bdd1c  01c920a8  [heap]
+    5b2bdd20  01de1630  [heap]
+    5b2bdd24  01de19c0  [heap]
+    5b2bdd28  01de1630  [heap]
+    5b2bdd2c  01de19c0  [heap]
+    5b2bdd30  01c920a8  [heap]
+    5b2bdd34  409373c9  /system/lib/libdvm.so
+#03 5b2bdd38  00000a64  
+    5b2bdd3c  ba6c5529  
+    5b2bdd40  574d0062  /data/dalvik-cache/system@framework@core.jar@classes.dex
+    5b2bdd44  00000001  
+    5b2bdd48  40b344f8  /dev/ashmem/dalvik-heap (deleted)
+    5b2bdd4c  1dcd64ff  
+    5b2bdd50  00000030  
+    5b2bdd54  40b344f8  /dev/ashmem/dalvik-heap (deleted)
+    5b2bdd58  00000000  
+    5b2bdd5c  00000001  
+    5b2bdd60  00000004  
+    5b2bdd64  00000000  
+    5b2bdd68  00000000  
+    5b2bdd6c  5146ff60  
+    5b2bdd70  5b2bdea8  
+    5b2bdd74  40953ac5  /system/lib/libdvm.so
+#04 5b2bdd78  00000000  
+    5b2bdd7c  00000001  
+    5b2bdd80  00000000  
+    5b2bdd84  00000000  
+    5b2bdd88  00000000  
+    5b2bdd8c  5146ff98  
+    5b2bdd90  01de1630  [heap]
+    5b2bdd94  5ca4b9e4  /dev/ashmem/dalvik-jit-code-cache (deleted)
+    5b2bdd98  01d95c38  [heap]
+    5b2bdd9c  01de1630  [heap]
+    5b2bdda0  56c34d40  /dev/ashmem/dalvik-LinearAlloc (deleted)
+    5b2bdda4  5b2bde0c  
+    5b2bdda8  00000000  
+    5b2bddac  409a1f48  /system/lib/libdvm.so
+    5b2bddb0  fffffe64  
+    5b2bddb4  00000000  
+    5b2bddb8  5b2bdea8  
+    5b2bddbc  40901fa8  /system/lib/libdvm.so
+--- --- --- --- --- --- --- --- --- --- --- --- --- --- --- ---
+pid: 1917, tid: 1926
+cannot get registers: No such process
+         #00  pc 0000d02c  /system/lib/libc.so (__futex_syscall3)
+         #01  pc 00012170  /system/lib/libc.so (__pthread_cond_timedwait_relative)
+         #02  pc 000121f0  /system/lib/libc.so (__pthread_cond_timedwait)
+         #03  pc 0006a3c6  /system/lib/libdvm.so
+         #04  pc 00086ac0  /system/lib/libdvm.so
+         #05  pc 0003060c  /system/lib/libdvm.so
+         #06  pc 00034fa4  /system/lib/libdvm.so (_Z12dvmInterpretP6ThreadPK6MethodP6JValue)
+         #07  pc 0007d8a6  /system/lib/libdvm.so (_Z14dvmCallMethodVP6ThreadPK6MethodP6ObjectbP6JValueSt9__va_list)
+         #08  pc 0007d900  /system/lib/libdvm.so (_Z13dvmCallMethodP6ThreadPK6MethodP6ObjectP6JValuez)
+         #09  pc 0006cf64  /system/lib/libdvm.so
+         #10  pc 000120d8  /system/lib/libc.so (__thread_entry)
+         #11  pc 00011bf4  /system/lib/libc.so (pthread_create)
+
+code around pc:
+4006f00c e1912f9f e1813f90 e3330000 1afffffb  ./...?....3.....
+4006f01c e1a00002 e12fff1e e92d0090 e3a070f0  ....../...-..p..
+4006f02c ef000000 e8bd0090 e12fff1e e92d0090  ........../...-.
+4006f03c e1a03002 e1a02001 e3a01000 e3a070f0  .0... .......p..
+4006f04c ef000000 e8bd0090 e12fff1e e92d0090  ........../...-.
+
+code around lr:
+40074154 e5956000 ebfffcb0 e5951000 e1a03007  .`...........0..
+40074164 e1a02006 e1a00005 e2011001 ebfffab7  . ..............
+40074174 e1a05000 e1a00004 ebfffc40 e375006e  .P......@...n.u.
+40074184 03a0006e 13a00000 e8bd80f8 e92d4070  n...........p@-.
+40074194 e2524000 e24dd010 e1a06000 e1a05001  .@R...M..`...P..
+
+stack:
+    5b4c7cb8  00000028  
+    5b4c7cbc  40966829  /system/lib/libdvm.so
+    5b4c7cc0  00000000  
+    5b4c7cc4  01dc7e18  [heap]
+    5b4c7cc8  00000000  
+    5b4c7ccc  409a1f48  /system/lib/libdvm.so
+    5b4c7cd0  574c9d46  /data/dalvik-cache/system@framework@core.jar@classes.dex
+    5b4c7cd4  40966a35  /system/lib/libdvm.so
+    5b4c7cd8  00000001  
+    5b4c7cdc  01dc81a8  [heap]
+    5b4c7ce0  00000000  
+    5b4c7ce4  fffffea8  
+    5b4c7ce8  01dc81a8  [heap]
+    5b4c7cec  01dc81b8  [heap]
+    5b4c7cf0  fffffea6  
+    5b4c7cf4  00000000  
+#00 5b4c7cf8  01dc81a8  [heap]
+    5b4c7cfc  00000000  
+#01 5b4c7d00  00000000  
+    5b4c7d04  00000000  
+    5b4c7d08  01dc81a8  [heap]
+    5b4c7d0c  01dc81b8  [heap]
+    5b4c7d10  00000000  
+    5b4c7d14  400741f4  /system/lib/libc.so
+#02 5b4c7d18  01dc81a8  [heap]
+    5b4c7d1c  01c8dc10  [heap]
+    5b4c7d20  01dc7e18  [heap]
+    5b4c7d24  01dc81a8  [heap]
+    5b4c7d28  01dc7e18  [heap]
+    5b4c7d2c  01dc81a8  [heap]
+    5b4c7d30  01c8dc10  [heap]
+    5b4c7d34  409373c9  /system/lib/libdvm.so
+#03 5b4c7d38  000004c7  
+    5b4c7d3c  ba6c5529  
+    5b4c7d40  574c9d4c  /data/dalvik-cache/system@framework@core.jar@classes.dex
+    5b4c7d44  00000001  
+    5b4c7d48  40b345d0  /dev/ashmem/dalvik-heap (deleted)
+    5b4c7d4c  1dcd64ff  
+    5b4c7d50  00000038  
+    5b4c7d54  40b345d0  /dev/ashmem/dalvik-heap (deleted)
+    5b4c7d58  00000000  
+    5b4c7d5c  00000001  
+    5b4c7d60  40b2f890  /dev/ashmem/dalvik-heap (deleted)
+    5b4c7d64  408eb940  /system/lib/libdvm.so
+    5b4c7d68  00000000  
+    5b4c7d6c  5b355efc  
+    5b4c7d70  5b4c7ea8  
+    5b4c7d74  40953ac5  /system/lib/libdvm.so
+#04 5b4c7d78  00000000  
+    5b4c7d7c  00000001  
+    5b4c7d80  00000000  
+    5b4c7d84  00000000  
+    5b4c7d88  574a8372  /data/dalvik-cache/system@framework@core.jar@classes.dex
+    5b4c7d8c  5b355f34  
+    5b4c7d90  01dc7e18  [heap]
+    5b4c7d94  408fd610  /system/lib/libdvm.so
+#05 5b4c7d98  01d48720  [heap]
+    5b4c7d9c  01dc7e18  [heap]
+    5b4c7da0  56c34d40  /dev/ashmem/dalvik-LinearAlloc (deleted)
+    5b4c7da4  5b4c7e0c  
+    5b4c7da8  00000000  
+    5b4c7dac  409a1f48  /system/lib/libdvm.so
+    5b4c7db0  fffffe64  
+    5b4c7db4  00000000  
+    5b4c7db8  5b4c7ea8  
+    5b4c7dbc  40901fa8  /system/lib/libdvm.so
+#06 5b4c7dc0  00000000  
+    5b4c7dc4  00000000  
+    5b4c7dc8  00000000  
+    5b4c7dcc  00000000  
+    5b4c7dd0  00000000  
+    5b4c7dd4  00000000  
+    5b4c7dd8  00000000  
+    5b4c7ddc  00000000  
+    5b4c7de0  00000000  
+    5b4c7de4  00000000  
+    5b4c7de8  00000000  
+    5b4c7dec  00000000  
+    5b4c7df0  00000000  
+    5b4c7df4  00000000  
+    5b4c7df8  00000000  
+    5b4c7dfc  00000000  
+    5b4c7e00  00000000  
+    5b4c7e04  00000000  
+    5b4c7e08  00000000  
+    5b4c7e0c  00000000  
+    5b4c7e10  5b355fe4  
+    5b4c7e14  00000000  
+    5b4c7e18  00000000  
+    5b4c7e1c  00000000  
+    5b4c7e20  00000000  
+    5b4c7e24  00000000  
+    5b4c7e28  00000000  
+    5b4c7e2c  00000000  
+    5b4c7e30  00000000  
+    5b4c7e34  01dc7e18  [heap]
+    5b4c7e38  56c34d40  /dev/ashmem/dalvik-LinearAlloc (deleted)
+    5b4c7e3c  5763f1d5  /data/dalvik-cache/system@framework@core.jar@classes.dex
+    5b4c7e40  5b4c7ea8  
+    5b4c7e44  5b355fec  
+    5b4c7e48  5b4c7ea8  
+    5b4c7e4c  00000000  
+    5b4c7e50  5763f1d4  /data/dalvik-cache/system@framework@core.jar@classes.dex
+    5b4c7e54  4094a8a9  /system/lib/libdvm.so
+#07 5b4c7e58  0000001c  
+    5b4c7e5c  409a89b0  
+    5b4c7e60  01d48700  [heap]
+    5b4c7e64  5b4c7ea8  
+    5b4c7e68  5b4c7ea8  
+    5b4c7e6c  00000022  
+    5b4c7e70  409a6f58  /system/lib/libdvm.so
+    5b4c7e74  409a6f5c  /system/lib/libdvm.so
+    5b4c7e78  409a6c68  /system/lib/libdvm.so
+    5b4c7e7c  01dc7e18  [heap]
+    5b4c7e80  00000001  
+    5b4c7e84  4094a905  /system/lib/libdvm.so
+#08 5b4c7e88  5b4c7ea8  
+    5b4c7e8c  5b4c7ea8  
+    5b4c7e90  5b4c7eb0  
+    5b4c7e94  5b4c7ea8  
+    5b4c7e98  400bf5f0  
+    5b4c7e9c  5b4c7eb0  
+    5b4c7ea0  40939f69  /system/lib/libdvm.so
+    5b4c7ea4  5b4c7ea8  
+#09 5b4c7ea8  00000000  
+    5b4c7eac  00000000  
+    5b4c7eb0  616e6946  
+    5b4c7eb4  657a696c  /dev/ashmem/decode_fd (deleted)
+    5b4c7eb8  65614472  
+    5b4c7ebc  006e6f6d  
+    5b4c7ec0  5b4c7ebf  
+    5b4c7ec4  5b4c7eb0  
+    5b4c7ec8  00000000  
+    5b4c7ecc  ba6c5529  
+    5b4c7ed0  40939ebd  /system/lib/libdvm.so
+    5b4c7ed4  5b4c7f00  
+    5b4c7ed8  40939ebd  /system/lib/libdvm.so
+    5b4c7edc  01dc7e18  [heap]
+    5b4c7ee0  00000078  
+    5b4c7ee4  40939ebd  /system/lib/libdvm.so
+    5b4c7ee8  00100000  
+    5b4c7eec  400740dc  /system/lib/libc.so
+#10 5b4c7ef0  01d57740  [heap]
+    5b4c7ef4  5b4c7f00  
+    5b4c7ef8  bef6b94c  [stack]
+    5b4c7efc  40073bf8  /system/lib/libc.so
+#11 5b4c7f00  5b4c7f00  
+    5b4c7f04  01d57740  [heap]
+    5b4c7f08  00000000  
+    5b4c7f0c  00000000  
+    5b4c7f10  00000000  
+    5b4c7f14  00000000  
+    5b4c7f18  01dc7e18  [heap]
+    5b4c7f1c  00000000  
+    5b4c7f20  00000000  
+    5b4c7f24  00000000  
+    5b4c7f28  00000000  
+    5b4c7f2c  01d35a98  [heap]
+    5b4c7f30  00000000  
+    5b4c7f34  00000000  
+    5b4c7f38  00000000  
+    5b4c7f3c  00000000  
+    5b4c7f40  00000000  
+    5b4c7f44  00000000  
+--- --- --- --- --- --- --- --- --- --- --- --- --- --- --- ---
+pid: 1917, tid: 1927
+cannot get registers: No such process
+         #00  pc 0000d030  /system/lib/libc.so (__futex_syscall3)
+         #01  pc 00012170  /system/lib/libc.so (__pthread_cond_timedwait_relative)
+         #02  pc 000121f0  /system/lib/libc.so (__pthread_cond_timedwait)
+         #03  pc 0006a39c  /system/lib/libdvm.so
+         #04  pc 0006aa50  /system/lib/libdvm.so (_Z14dvmThreadSleepyj)
+         #05  pc 0003060c  /system/lib/libdvm.so
+         #06  pc 00034fa4  /system/lib/libdvm.so (_Z12dvmInterpretP6ThreadPK6MethodP6JValue)
+         #07  pc 0007d8a6  /system/lib/libdvm.so (_Z14dvmCallMethodVP6ThreadPK6MethodP6ObjectbP6JValueSt9__va_list)
+         #08  pc 0007d900  /system/lib/libdvm.so (_Z13dvmCallMethodP6ThreadPK6MethodP6ObjectP6JValuez)
+         #09  pc 0006cf64  /system/lib/libdvm.so
+         #10  pc 000120d8  /system/lib/libc.so (__thread_entry)
+         #11  pc 00011bf4  /system/lib/libc.so (pthread_create)
+
+code around pc:
+4006f010 e1813f90 e3330000 1afffffb e1a00002  .?....3.........
+4006f020 e12fff1e e92d0090 e3a070f0 ef000000  ../...-..p......
+4006f030 e8bd0090 e12fff1e e92d0090 e1a03002  ....../...-..0..
+4006f040 e1a02001 e3a01000 e3a070f0 ef000000  . .......p......
+4006f050 e8bd0090 e12fff1e e92d0090 e1a02001  ....../...-.. ..
+
+code around lr:
+40074154 e5956000 ebfffcb0 e5951000 e1a03007  .`...........0..
+40074164 e1a02006 e1a00005 e2011001 ebfffab7  . ..............
+40074174 e1a05000 e1a00004 ebfffc40 e375006e  .P......@...n.u.
+40074184 03a0006e 13a00000 e8bd80f8 e92d4070  n...........p@-.
+40074194 e2524000 e24dd010 e1a06000 e1a05001  .@R...M..`...P..
+
+stack:
+    5b6b0cb0  00000000  
+    5b6b0cb4  fffffd76  
+    5b6b0cb8  00000000  
+    5b6b0cbc  409a6c68  /system/lib/libdvm.so
+    5b6b0cc0  00000001  
+    5b6b0cc4  0009c400  
+    5b6b0cc8  0000fa00  
+    5b6b0ccc  400724dc  /system/lib/libc.so
+    5b6b0cd0  00000000  
+    5b6b0cd4  01d29238  [heap]
+    5b6b0cd8  00000000  
+    5b6b0cdc  00000000  
+    5b6b0ce0  01d29238  [heap]
+    5b6b0ce4  01d29248  [heap]
+    5b6b0ce8  00000000  
+    5b6b0cec  5b6b0d18  
+#00 5b6b0cf0  01d29238  [heap]
+    5b6b0cf4  5b6b0d18  
+#01 5b6b0cf8  0000000a  
+    5b6b0cfc  5b6b0d40  
+    5b6b0d00  01d29238  [heap]
+    5b6b0d04  01d29248  [heap]
+    5b6b0d08  00000000  
+    5b6b0d0c  400741f4  /system/lib/libc.so
+#02 5b6b0d10  01d29238  [heap]
+    5b6b0d14  01c077f0  [heap]
+    5b6b0d18  0000000a  
+    5b6b0d1c  00000000  
+    5b6b0d20  01d28ea8  [heap]
+    5b6b0d24  01d29238  [heap]
+    5b6b0d28  01c077f0  [heap]
+    5b6b0d2c  4093739f  /system/lib/libdvm.so
+#03 5b6b0d30  000000aa  
+    5b6b0d34  00000000  
+    5b6b0d38  00000000  
+    5b6b0d3c  00000000  
+    5b6b0d40  000000aa  
+    5b6b0d44  30c81abd  
+    5b6b0d48  00000000  
+    5b6b0d4c  01c077f0  [heap]
+    5b6b0d50  01d28ea8  [heap]
+    5b6b0d54  00000000  
+    5b6b0d58  00000001  
+    5b6b0d5c  00002710  
+    5b6b0d60  409a1f48  /system/lib/libdvm.so
+    5b6b0d64  5b58ef20  
+    5b6b0d68  5b6b0ea8  
+    5b6b0d6c  40937a55  /system/lib/libdvm.so
+#04 5b6b0d70  00000000  
+    5b6b0d74  00000001  
+    5b6b0d78  5b58ef78  
+    5b6b0d7c  574cf228  /data/dalvik-cache/system@framework@core.jar@classes.dex
+    5b6b0d80  5b58ef54  
+    5b6b0d84  01d28ea8  [heap]
+    5b6b0d88  40b30670  /dev/ashmem/dalvik-heap (deleted)
+    5b6b0d8c  408eb940  /system/lib/libdvm.so
+    5b6b0d90  00000000  
+    5b6b0d94  408fd610  /system/lib/libdvm.so
+#05 5b6b0d98  01d4e8f8  [heap]
+    5b6b0d9c  01d28ea8  [heap]
+    5b6b0da0  56c34d40  /dev/ashmem/dalvik-LinearAlloc (deleted)
+    5b6b0da4  5b6b0e0c  
+    5b6b0da8  00000000  
+    5b6b0dac  409a1f48  /system/lib/libdvm.so
+    5b6b0db0  fffffe64  
+    5b6b0db4  00000000  
+    5b6b0db8  5b6b0ea8  
+    5b6b0dbc  40901fa8  /system/lib/libdvm.so
+#06 5b6b0dc0  00000000  
+    5b6b0dc4  00000000  
+    5b6b0dc8  00000000  
+    5b6b0dcc  00000000  
+    5b6b0dd0  00000000  
+    5b6b0dd4  00000000  
+    5b6b0dd8  00000000  
+    5b6b0ddc  00000000  
+    5b6b0de0  00000000  
+    5b6b0de4  00000000  
+    5b6b0de8  00000000  
+    5b6b0dec  00000000  
+    5b6b0df0  00000000  
+    5b6b0df4  00000000  
+    5b6b0df8  00000000  
+    5b6b0dfc  00000000  
+    5b6b0e00  00000000  
+    5b6b0e04  00000000  
+    5b6b0e08  00000000  
+    5b6b0e0c  00000000  
+    5b6b0e10  5b58efe4  
+    5b6b0e14  00000000  
+    5b6b0e18  00000000  
+    5b6b0e1c  00000000  
+    5b6b0e20  00000000  
+    5b6b0e24  00000000  
+    5b6b0e28  00000000  
+    5b6b0e2c  00000000  
+    5b6b0e30  00000000  
+    5b6b0e34  01d28ea8  [heap]
+    5b6b0e38  56c34d40  /dev/ashmem/dalvik-LinearAlloc (deleted)
+    5b6b0e3c  5763f1d5  /data/dalvik-cache/system@framework@core.jar@classes.dex
+    5b6b0e40  5b6b0ea8  
+    5b6b0e44  5b58efec  
+    5b6b0e48  5b6b0ea8  
+    5b6b0e4c  00000000  
+    5b6b0e50  5763f1d4  /data/dalvik-cache/system@framework@core.jar@classes.dex
+    5b6b0e54  4094a8a9  /system/lib/libdvm.so
+#07 5b6b0e58  0000001c  
+    5b6b0e5c  409a89b0  
+    5b6b0e60  01d4e8d8  [heap]
+    5b6b0e64  5b6b0ea8  
+    5b6b0e68  5b6b0ea8  
+    5b6b0e6c  00000022  
+    5b6b0e70  409a6f58  /system/lib/libdvm.so
+    5b6b0e74  409a6f5c  /system/lib/libdvm.so
+    5b6b0e78  409a6c68  /system/lib/libdvm.so
+    5b6b0e7c  01d28ea8  [heap]
+    5b6b0e80  00000001  
+    5b6b0e84  4094a905  /system/lib/libdvm.so
+#08 5b6b0e88  5b6b0ea8  
+    5b6b0e8c  5b6b0ea8  
+    5b6b0e90  5b6b0eb0  
+    5b6b0e94  5b6b0ea8  
+    5b6b0e98  400bf5f0  
+    5b6b0e9c  5b6b0eb0  
+    5b6b0ea0  40939f69  /system/lib/libdvm.so
+    5b6b0ea4  5b6b0ea8  
+#09 5b6b0ea8  00000000  
+    5b6b0eac  00000000  
+    5b6b0eb0  01c02c78  [heap]
+    5b6b0eb4  00000000  
+    5b6b0eb8  00000000  
+    5b6b0ebc  00000000  
+    5b6b0ec0  01c02c77  [heap]
+    5b6b0ec4  01c02c60  [heap]
+    5b6b0ec8  00000000  
+    5b6b0ecc  ba6c5529  
+    5b6b0ed0  40939ebd  /system/lib/libdvm.so
+    5b6b0ed4  5b6b0f00  
+    5b6b0ed8  40939ebd  /system/lib/libdvm.so
+    5b6b0edc  01d28ea8  [heap]
+    5b6b0ee0  00000078  
+    5b6b0ee4  40939ebd  /system/lib/libdvm.so
+    5b6b0ee8  00100000  
+    5b6b0eec  400740dc  /system/lib/libc.so
+#10 5b6b0ef0  01d2d6c0  [heap]
+    5b6b0ef4  5b6b0f00  
+    5b6b0ef8  bef6b94c  [stack]
+    5b6b0efc  40073bf8  /system/lib/libc.so
+#11 5b6b0f00  5b6b0f00  
+    5b6b0f04  01d2d6c0  [heap]
+    5b6b0f08  00000000  
+    5b6b0f0c  00000000  
+    5b6b0f10  00000000  
+    5b6b0f14  00000000  
+    5b6b0f18  01d28ea8  [heap]
+    5b6b0f1c  00000000  
+    5b6b0f20  00000000  
+    5b6b0f24  00000000  
+    5b6b0f28  00000000  
+    5b6b0f2c  00000000  
+    5b6b0f30  00000000  
+    5b6b0f34  00000000  
+    5b6b0f38  00000000  
+    5b6b0f3c  00000000  
+    5b6b0f40  00000000  
+    5b6b0f44  00000000  
+--- --- --- --- --- --- --- --- --- --- --- --- --- --- --- ---
+pid: 1917, tid: 1933
+ r0 400b85dc  r1 00000080  r2 00000002  r3 00000000
+ r4 400b85dc  r5 00000000  r6 00000002  r7 000000f0
+ r8 00000001  r9 00000000  10 00000000  fp 5ce88c44
+ ip 00000002  sp 5ce888c8  lr 400732d4  pc 4006f02c  cpsr 60000110
+ d0  0000002577c22c60  d1  0000000000000000
+ d2  56cd940800000000  d3  0075010100000000
+ d4  007600450072006f  d5  00430074006e0065
+ d6  0065006e006e006f  d7  006f006900740063
+ d8  0000000000000000  d9  0000000000000000
+ d10 0000000000000000  d11 0000000000000000
+ d12 0000000000000000  d13 0000000000000000
+ d14 0000000000000000  d15 0000000000000000
+ d16 0000000000000000  d17 0000000000000000
+ d18 0000000000000000  d19 0000000000000000
+ d20 000000030815a5dc  d21 3ff0000000000000
+ d22 3f4de16b9c24a98f  d23 be206435816bc5ca
+ d24 3fede16b9c24a98f  d25 3f733c3b597385d3
+ d26 bf66c0c55ca9076a  d27 3f1155e54e7e8408
+ d28 bebbbc6c1a570a20  d29 0000000000000006
+ d30 0000022200000222  d31 0000000000000005
+ scr 20000012
+
+         #00  pc 0000d02c  /system/lib/libc.so (__futex_syscall3)
+         #01  pc 000112d0  /system/lib/libc.so (pthread_mutex_lock)
+         #02  pc 00013348  /system/lib/libc.so (dlmalloc)
+         #03  pc 00016f46  /system/lib/libc.so (malloc)
+         #04  pc 00021d56  /system/lib/libutils.so (_ZN7android12SharedBuffer5allocEj)
+         #05  pc 00025a2c  /system/lib/libutils.so (_ZN7android10VectorImpl7_shrinkEjj)
+         #06  pc 0002b24c  /system/lib/libutils.so (_ZN7android6Looper9pollInnerEi)
+         #07  pc 0002b48a  /system/lib/libutils.so (_ZN7android6Looper8pollOnceEiPiS1_PPv)
+         #08  pc 00018b10  /system/lib/libgui.so (_ZNK7android16SensorEventQueue12waitForEventEv)
+         #09  pc 000841c8  /system/lib/libandroid_runtime.so
+         #10  pc 0001e7b0  /system/lib/libdvm.so (dvmPlatformInvoke)
+         #11  pc 00063c82  /system/lib/libdvm.so (_Z16dvmCallJNIMethodPKjP6JValuePK6MethodP6Thread)
+         #12  pc 000474a4  /system/lib/libdvm.so (_Z21dvmCheckCallJNIMethodPKjP6JValuePK6MethodP6Thread)
+
+code around pc:
+4006f00c e1912f9f e1813f90 e3330000 1afffffb  ./...?....3.....
+4006f01c e1a00002 e12fff1e e92d0090 e3a070f0  ....../...-..p..
+4006f02c ef000000 e8bd0090 e12fff1e e92d0090  ........../...-.
+4006f03c e1a03002 e1a02001 e3a01000 e3a070f0  .0... .......p..
+4006f04c ef000000 e8bd0090 e12fff1e e92d0090  ........../...-.
+
+code around lr:
+400732b4 e1a00005 e3851001 ebffef4a e3500000  ........J.....P.
+400732c4 13856002 1a000001 ea000009 ebfffe5f  .`.........._...
+400732d4 e1a01004 e1a00006 ebffef4a e1550000  ........J.....U.
+400732e4 e1a01005 e1a00004 e1a02006 e3a03000  ......... ...0..
+400732f4 1afffff5 f57ff05f e3a00000 e28dd00c  ...._...........
+
+stack:
+    5ce88888  00000000  
+    5ce8888c  00000000  
+    5ce88890  00000000  
+    5ce88894  00000000  
+    5ce88898  00000000  
+    5ce8889c  00000060  
+    5ce888a0  400b85f8  
+    5ce888a4  00000001  
+    5ce888a8  00000068  
+    5ce888ac  00021904  
+    5ce888b0  01de1418  [heap]
+    5ce888b4  00000001  
+    5ce888b8  00000001  
+    5ce888bc  4007533b  /system/lib/libc.so
+    5ce888c0  00000000  
+    5ce888c4  00000000  
+#00 5ce888c8  400b85dc  
+    5ce888cc  00000000  
+#01 5ce888d0  400b85f8  
+    5ce888d4  00000000  
+    5ce888d8  0000006b  
+    5ce888dc  00000060  
+    5ce888e0  400b85f8  
+    5ce888e4  00000000  
+    5ce888e8  00000001  
+    5ce888ec  00000001  
+    5ce888f0  00000000  
+    5ce888f4  00000000  
+    5ce888f8  5ce88c44  
+    5ce888fc  4007534b  /system/lib/libc.so
+#02 5ce88900  00000000  
+    5ce88904  00000000  
+    5ce88908  00000000  
+    5ce8890c  00000000  
+    5ce88910  00000000  
+    5ce88914  00000000  
+    5ce88918  00000000  
+    5ce8891c  00000000  
+    5ce88920  00000000  
+    5ce88924  00000000  
+    5ce88928  00000000  
+    5ce8892c  00000000  
+    5ce88930  00000000  
+    5ce88934  00000000  
+    5ce88938  00000000  
+    5ce8893c  00000000  
+    5ce88940  00000000  
+    5ce88944  00000000  
+    5ce88948  00000000  
+    5ce8894c  00000000  
+    5ce88950  00000000  
+    5ce88954  00000000  
+    5ce88958  00000000  
+    5ce8895c  00000000  
+    5ce88960  00000000  
+    5ce88964  00000050  
+    5ce88968  00000000  
+    5ce8896c  00000001  
+    5ce88970  00000001  
+    5ce88974  00000001  
+    5ce88978  400b85dc  
+    5ce8897c  00000000  
+    5ce88980  00000001  
+    5ce88984  4013b7ff  /system/lib/libutils.so
+    5ce88988  00000000  
+    5ce8898c  021ab9f0  [heap]
+    5ce88990  00000001  
+    5ce88994  4013b7ff  /system/lib/libutils.so
+    5ce88998  00000000  
+    5ce8899c  01d35360  [heap]
+    5ce889a0  5ce889d4  
+    5ce889a4  00000050  
+    5ce889a8  00000000  
+    5ce889ac  00000000  
+    5ce889b0  00000001  
+    5ce889b4  00000001  
+    5ce889b8  00000000  
+    5ce889bc  00000000  
+    5ce889c0  5ce88c44  
+    5ce889c4  40078f49  /system/lib/libc.so
+#03 5ce889c8  00000004  
+    5ce889cc  40137d59  /system/lib/libutils.so
+#04 5ce889d0  01d35360  [heap]
+    5ce889d4  4013ba31  /system/lib/libutils.so
+#05 5ce889d8  01d35318  [heap]
+    5ce889dc  ffffffff  
+    5ce889e0  00000000  
+    5ce889e4  00000001  
+    5ce889e8  00000000  
+    5ce889ec  00000000  
+    5ce889f0  00000000  
+    5ce889f4  40141251  /system/lib/libutils.so
+#06 5ce889f8  00000001  
+    5ce889fc  40074180  /system/lib/libc.so
+    5ce88a00  4014598c  /system/lib/libutils.so
+    5ce88a04  40145cb8  /system/lib/libutils.so
+    5ce88a08  4014598c  /system/lib/libutils.so
+    5ce88a0c  40145cf4  /system/lib/libutils.so
+    5ce88a10  00000001  
+    5ce88a14  400741f4  /system/lib/libc.so
+    5ce88a18  00000030  
+    5ce88a1c  00000000  
+    5ce88a20  01cb4f90  [heap]
+    5ce88a24  00000007  
+    5ce88a28  409a6f68  /system/lib/libdvm.so
+    5ce88a2c  409a6f64  /system/lib/libdvm.so
+    5ce88a30  409a6c68  /system/lib/libdvm.so
+    5ce88a34  4093837b  /system/lib/libdvm.so
+    5ce88a38  5ce88b54  
+    5ce88a3c  00000007  
+    5ce88a40  0000005b  
+    5ce88a44  40981a61  /system/lib/libdvm.so
+    5ce88a48  5ce88b64  
+    5ce88a4c  409a1f48  /system/lib/libdvm.so
+    5ce88a50  0000005b  
+    5ce88a54  409a6c68  /system/lib/libdvm.so
+    5ce88a58  400bf5f0  
+    5ce88a5c  40914e0b  /system/lib/libdvm.so
+    5ce88a60  00000000  
+    5ce88a64  00000001  
+    5ce88a68  409819fc  /system/lib/libdvm.so
+    5ce88a6c  4098191c  /system/lib/libdvm.so
+    5ce88a70  40980df0  /system/lib/libdvm.so
+    5ce88a74  409818f8  /system/lib/libdvm.so
+    5ce88a78  409819fc  /system/lib/libdvm.so
+    5ce88a7c  4098191c  /system/lib/libdvm.so
+    5ce88a80  40980df0  /system/lib/libdvm.so
+    5ce88a84  409818f8  /system/lib/libdvm.so
+    5ce88a88  40980df0  /system/lib/libdvm.so
+    5ce88a8c  40981928  /system/lib/libdvm.so
+    5ce88a90  00000000  
+    5ce88a94  01d3534c  [heap]
+    5ce88a98  5ce88b60  
+    5ce88a9c  00000001  
+    5ce88aa0  00000000  
+    5ce88aa4  40140651  /system/lib/libutils.so
+    5ce88aa8  5ce88afc  
+    5ce88aac  00000001  
+    5ce88ab0  00000001  
+    5ce88ab4  5ce88afc  
+    5ce88ab8  01d3534c  [heap]
+    5ce88abc  01d3532c  [heap]
+    5ce88ac0  01d3534c  [heap]
+    5ce88ac4  4013bc33  /system/lib/libutils.so
+    5ce88ac8  00000030  
+    5ce88acc  5ce88b00  
+    5ce88ad0  01d3532c  [heap]
+    5ce88ad4  01d3534c  [heap]
+    5ce88ad8  fffffffe  
+    5ce88adc  401410a5  /system/lib/libutils.so
+    5ce88ae0  01d8a518  [heap]
+    5ce88ae4  01d35318  [heap]
+    5ce88ae8  00000030  
+    5ce88aec  00000000  
+    5ce88af0  00000001  
+    5ce88af4  01cb4f90  [heap]
+    5ce88af8  00000001  
+    5ce88afc  00000000  
+    5ce88b00  01cb4f90  [heap]
+    5ce88b04  01cb4f90  [heap]
+    5ce88b08  00000001  
+    5ce88b0c  00000000  
+    5ce88b10  01cb4f90  [heap]
+    5ce88b14  00000001  
+    5ce88b18  414323e8  /dev/ashmem/dalvik-heap (deleted)
+    5ce88b1c  ba6c5529  
+    5ce88b20  4099fc94  /system/lib/libdvm.so
+    5ce88b24  4092b041  /system/lib/libdvm.so
+    5ce88b28  00000000  
+    5ce88b2c  414323d8  /dev/ashmem/dalvik-heap (deleted)
+    5ce88b30  4099fc94  /system/lib/libdvm.so
+    5ce88b34  01d35318  [heap]
+    5ce88b38  ffffffff  
+    5ce88b3c  00000002  
+    5ce88b40  00000001  
+    5ce88b44  00000000  
+    5ce88b48  00000000  
+    5ce88b4c  00000000  
+    5ce88b50  5ce88c44  
+    5ce88b54  4014148f  /system/lib/libutils.so
+#07 5ce88b58  00000030  
+    5ce88b5c  00000000  
+    5ce88b60  01d833d8  [heap]
+    5ce88b64  414323a0  /dev/ashmem/dalvik-heap (deleted)
+    5ce88b68  5ce88c30  
+    5ce88b6c  5b2f7f74  
+    5ce88b70  40b7e1b0  /dev/ashmem/dalvik-heap (deleted)
+    5ce88b74  40823b13  /system/lib/libgui.so
+#08 5ce88b78  00000000  
+    5ce88b7c  408239fd  /system/lib/libgui.so
+    5ce88b80  01d35318  [heap]
+    5ce88b84  01d833f8  [heap]
+    5ce88b88  01d96ed0  [heap]
+    5ce88b8c  414323d8  /dev/ashmem/dalvik-heap (deleted)
+    5ce88b90  414323c0  /dev/ashmem/dalvik-heap (deleted)
+    5ce88b94  4020d1cb  /system/lib/libandroid_runtime.so
+#09 5ce88b98  5ce88bb0  
+    5ce88b9c  00000000  
+    5ce88ba0  00000068  
+    5ce88ba4  00000000  
+    5ce88ba8  00000001  
+    5ce88bac  00000000  
+    5ce88bb0  77c22c60  
+    5ce88bb4  00000025  
+    5ce88bb8  3fba538c  
+    5ce88bbc  6f3456f7  
+    5ce88bc0  0000f424  
+    5ce88bc4  400724dc  /system/lib/libc.so
+    5ce88bc8  00000000  
+    5ce88bcc  00000000  
+    5ce88bd0  00000000  
+    5ce88bd4  00000000  
+    5ce88bd8  00000000  
+    5ce88bdc  000f4240  
+    5ce88be0  00000000  
+    5ce88be4  77c56f71  
+    5ce88be8  00000025  
+    5ce88bec  5ce88c30  
+    5ce88bf0  5b2f7ef0  
+    5ce88bf4  40b46178  /dev/ashmem/dalvik-heap (deleted)
+    5ce88bf8  5ce88c44  
+    5ce88bfc  40070f34  /system/lib/libc.so
+    5ce88c00  00000000  
+    5ce88c04  56c70510  /dev/ashmem/dalvik-LinearAlloc (deleted)
+    5ce88c08  01d833d8  [heap]
+    5ce88c0c  00000003  
+    5ce88c10  5b2f7ef8  
+    5ce88c14  56cbcc68  /dev/ashmem/dalvik-LinearAlloc (deleted)
+    5ce88c18  01cb4f90  [heap]
+    5ce88c1c  00000004  
+    5ce88c20  5b2f7f84  
+    5ce88c24  408eb7b4  /system/lib/libdvm.so
+#10 5ce88c28  414323c0  /dev/ashmem/dalvik-heap (deleted)
+    5ce88c2c  414323d8  /dev/ashmem/dalvik-heap (deleted)
+    5ce88c30  01cb4fa0  [heap]
+    5ce88c34  57f81899  /data/dalvik-cache/system@framework@framework.jar@classes.dex
+    5ce88c38  5b2f7f74  
+    5ce88c3c  00000001  
+    5ce88c40  40b7e1b0  /dev/ashmem/dalvik-heap (deleted)
+    5ce88c44  40930c85  /system/lib/libdvm.so
+#11 5ce88c48  5b2f7f74  
+    5ce88c4c  57f81899  /data/dalvik-cache/system@framework@framework.jar@classes.dex
+    5ce88c50  4020d139  /system/lib/libandroid_runtime.so
+    5ce88c54  01cb4fa0  [heap]
+    5ce88c58  409a1f48  /system/lib/libdvm.so
+    5ce88c5c  00000000  
+    5ce88c60  400bf5f0  
+    5ce88c64  01cb4fa0  [heap]
+    5ce88c68  01cb5038  [heap]
+    5ce88c6c  409a1f48  /system/lib/libdvm.so
+    5ce88c70  40b7e1b0  /dev/ashmem/dalvik-heap (deleted)
+    5ce88c74  40b7e1b0  /dev/ashmem/dalvik-heap (deleted)
+    5ce88c78  40986f8c  /system/lib/libdvm.so
+    5ce88c7c  40986cf0  /system/lib/libdvm.so
+    5ce88c80  40986f98  /system/lib/libdvm.so
+    5ce88c84  409a7120  
+    5ce88c88  57cef348  /data/dalvik-cache/system@framework@framework.jar@classes.dex
+    5ce88c8c  00000002  
+    5ce88c90  409a7120  
+    5ce88c94  01cb4f90  [heap]
+    5ce88c98  ffffbfff  
+    5ce88c9c  00000001  
+    5ce88ca0  01cb4fb8  [heap]
+    5ce88ca4  01cb4f90  [heap]
+    5ce88ca8  01cb4f90  [heap]
+    5ce88cac  01d7a3e8  [heap]
+    5ce88cb0  409a1f48  /system/lib/libdvm.so
+    5ce88cb4  00000000  
+    5ce88cb8  00000008  
+    5ce88cbc  40966829  /system/lib/libdvm.so
+    5ce88cc0  01cb4f90  [heap]
+    5ce88cc4  01cb4f90  [heap]
+    5ce88cc8  00000000  
+    5ce88ccc  00000000  
+    5ce88cd0  00000002  
+    5ce88cd4  0000008a  
+    5ce88cd8  00000005  
+    5ce88cdc  00000006  
+    5ce88ce0  409a6c68  /system/lib/libdvm.so
+    5ce88ce4  0000001c  
+    5ce88ce8  00000009  
+    5ce88cec  00000009  
+    5ce88cf0  00000003  
+    5ce88cf4  00000000  
+    5ce88cf8  00000001  
+    5ce88cfc  00000000  
+    5ce88d00  0000003c  
+    5ce88d04  00000001  
+    5ce88d08  00000004  
+    5ce88d0c  00000006  
+    5ce88d10  00000007  
+    5ce88d14  40955465  /system/lib/libdvm.so
+    5ce88d18  00000071  
+    5ce88d1c  00000005  
+    5ce88d20  00000000  
+    5ce88d24  00000001  
+    5ce88d28  41434308  /dev/ashmem/dalvik-heap (deleted)
+    5ce88d2c  000007d3  
+    5ce88d30  00005de4  
+    5ce88d34  00001000  
+    5ce88d38  000007d3  
+    5ce88d3c  ba6c5529  
+    5ce88d40  57cef356  /data/dalvik-cache/system@framework@framework.jar@classes.dex
+    5ce88d44  00000001  
+    5ce88d48  40bba920  /dev/ashmem/dalvik-heap (deleted)
+    5ce88d4c  ba6c5529  
+    5ce88d50  00000068  
+    5ce88d54  56cbcc68  /dev/ashmem/dalvik-LinearAlloc (deleted)
+    5ce88d58  5b2f7f98  
+    5ce88d5c  01cb4f90  [heap]
+    5ce88d60  01cb4fa0  [heap]
+    5ce88d64  40914499  /system/lib/libdvm.so
+    5ce88d68  00000000  
+    5ce88d6c  5b2f7f60  
+    5ce88d70  40c03bd8  /dev/ashmem/dalvik-heap (deleted)
+    5ce88d74  409144a9  /system/lib/libdvm.so
+#12 5ce88d78  00000001  
+    5ce88d7c  5b2f7f98  
+    5ce88d80  57c34faa  /data/dalvik-cache/system@framework@framework.jar@classes.dex
+    5ce88d84  5b2f7f98  
+    5ce88d88  01cb4f90  [heap]
+    5ce88d8c  00000004  
+    5ce88d90  40914499  /system/lib/libdvm.so
+    5ce88d94  5ca4b218  /dev/ashmem/dalvik-jit-code-cache (deleted)
+    5ce88d98  00000023  
+    5ce88d9c  01cb4f90  [heap]
+    5ce88da0  56c34d40  /dev/ashmem/dalvik-LinearAlloc (deleted)
+    5ce88da4  5ce88e0c  
+    5ce88da8  00000000  
+    5ce88dac  409a1f48  /system/lib/libdvm.so
+    5ce88db0  fffffe64  
+    5ce88db4  00000000  
+    5ce88db8  5ce88ea8  
+    5ce88dbc  40901fa8  /system/lib/libdvm.so
+--- --- --- --- --- --- --- --- --- --- --- --- --- --- --- ---
+pid: 1917, tid: 1940
+ r0 01d8dde0  r1 00000080  r2 ffffff8e  r3 00000000
+ r4 01d8dddc  r5 01d8dde0  r6 ffffff8e  r7 000000f0
+ r8 01d8ddd8  r9 00100000  10 01d3f818  fp 00000001
+ ip 5e7ef2b8  sp 5f15fe50  lr 40074174  pc 4006f02c  cpsr 60000110
+ d0  5b79f0285b79f028  d1  0000000000000000
+ d2  000003f500000000  d3  0000000000000000
+ d4  0000795000000001  d5  000000a200000001
+ d6  0000000000000000  d7  0000000000000000
+ d8  0000000000000000  d9  0000000000000000
+ d10 0000000000000000  d11 0000000000000000
+ d12 0000000000000000  d13 0000000000000000
+ d14 0000000000000000  d15 0000000000000000
+ d16 0000000000000000  d17 0000000000000000
+ d18 3f8362b9bf971bcd  d19 3f991df3908c33ce
+ d20 3fadcf907c490a05  d21 3fddd7fc12ad2324
+ d22 3f739081735232c2  d23 3fd6f5638f34d71a
+ d24 3fb10d66a0d03d52  d25 bfb3b0f2af749a6e
+ d26 3fb745cdc54c206f  d27 3fc2492492008400
+ d28 3e5001000c008005  d29 3fd555555555550e
+ d30 3cb0020028028023  d31 bfbc71c6fe231672
+ scr 80000012
+
+         #00  pc 0000d02c  /system/lib/libc.so (__futex_syscall3)
+         #01  pc 00012170  /system/lib/libc.so (__pthread_cond_timedwait_relative)
+         #02  pc 000121f0  /system/lib/libc.so (__pthread_cond_timedwait)
+         #03  pc 000054dc  /system/lib/libsoundpool.so (_ZN7android9SoundPool3runEv)
+         #04  pc 000446b4  /system/lib/libandroid_runtime.so (_ZN7android14AndroidRuntime15javaThreadShellEPv)
+         #05  pc 0002435a  /system/lib/libutils.so
+         #06  pc 000120d8  /system/lib/libc.so (__thread_entry)
+         #07  pc 00011bf4  /system/lib/libc.so (pthread_create)
+
+code around pc:
+4006f00c e1912f9f e1813f90 e3330000 1afffffb  ./...?....3.....
+4006f01c e1a00002 e12fff1e e92d0090 e3a070f0  ....../...-..p..
+4006f02c ef000000 e8bd0090 e12fff1e e92d0090  ........../...-.
+4006f03c e1a03002 e1a02001 e3a01000 e3a070f0  .0... .......p..
+4006f04c ef000000 e8bd0090 e12fff1e e92d0090  ........../...-.
+
+code around lr:
+40074154 e5956000 ebfffcb0 e5951000 e1a03007  .`...........0..
+40074164 e1a02006 e1a00005 e2011001 ebfffab7  . ..............
+40074174 e1a05000 e1a00004 ebfffc40 e375006e  .P......@...n.u.
+40074184 03a0006e 13a00000 e8bd80f8 e92d4070  n...........p@-.
+40074194 e2524000 e24dd010 e1a06000 e1a05001  .@R...M..`...P..
+
+stack:
+    5f15fe10  00000000  
+    5f15fe14  0202cf20  [heap]
+    5f15fe18  60171f00  /dev/ashmem/AudioFlinger::Client (deleted)
+    5f15fe1c  00000000  
+    5f15fe20  0202cf20  [heap]
+    5f15fe24  00000000  
+    5f15fe28  00000000  
+    5f15fe2c  01f31cd0  [heap]
+    5f15fe30  01f31cdc  [heap]
+    5f15fe34  00000000  
+    5f15fe38  01d2a35c  [heap]
+    5f15fe3c  01d96fe0  [heap]
+    5f15fe40  01d8dddc  [heap]
+    5f15fe44  01d8dde0  [heap]
+    5f15fe48  ffffff8e  
+    5f15fe4c  00000000  
+#00 5f15fe50  01d8dddc  [heap]
+    5f15fe54  00000000  
+#01 5f15fe58  00000000  
+    5f15fe5c  00000000  
+    5f15fe60  01d8dddc  [heap]
+    5f15fe64  01d8dde0  [heap]
+    5f15fe68  01d2a35c  [heap]
+    5f15fe6c  400741f4  /system/lib/libc.so
+#02 5f15fe70  01d8dddc  [heap]
+    5f15fe74  01d8dde0  [heap]
+    5f15fe78  01d2a35c  [heap]
+    5f15fe7c  01d8ddd8  [heap]
+    5f15fe80  01d8ddd8  [heap]
+    5f15fe84  01d8dddc  [heap]
+    5f15fe88  01d8dde0  [heap]
+    5f15fe8c  5e7ed4df  /system/lib/libsoundpool.so
+#03 5f15fe90  4099fbe4  /system/lib/libdvm.so
+    5f15fe94  01d4bcd0  [heap]
+    5f15fe98  40246674  /system/lib/libandroid_runtime.so
+    5f15fe9c  5e7ed5c1  /system/lib/libsoundpool.so
+    5f15fea0  01d8ddd8  [heap]
+    5f15fea4  401cd6b7  /system/lib/libandroid_runtime.so
+#04 5f15fea8  00010004  
+    5f15feac  01d4bcd0  [heap]
+    5f15feb0  00000000  
+    5f15feb4  01ddabf0  [heap]
+    5f15feb8  01d637a0  [heap]
+    5f15febc  401cd679  /system/lib/libandroid_runtime.so
+    5f15fec0  01d3b350  [heap]
+    5f15fec4  00000000  
+    5f15fec8  4013a2cd  /system/lib/libutils.so
+    5f15fecc  4013a35d  /system/lib/libutils.so
+#05 5f15fed0  00000000  
+    5f15fed4  01d3f818  [heap]
+    5f15fed8  5f15ff00  
+    5f15fedc  5f15ff00  
+    5f15fee0  4013a2cd  /system/lib/libutils.so
+    5f15fee4  01d3f818  [heap]
+    5f15fee8  00000078  
+    5f15feec  400740dc  /system/lib/libc.so
+#06 5f15fef0  01dd5650  [heap]
+    5f15fef4  5f15ff00  
+    5f15fef8  5c7d3818  
+    5f15fefc  40073bf8  /system/lib/libc.so
+#07 5f15ff00  5f15ff00  
+    5f15ff04  01dd5650  [heap]
+    5f15ff08  00000000  
+    5f15ff0c  00000000  
+    5f15ff10  00000000  
+    5f15ff14  00000000  
+    5f15ff18  01dd4780  [heap]
+    5f15ff1c  00000000  
+    5f15ff20  00000000  
+    5f15ff24  00000000  
+    5f15ff28  00000000  
+    5f15ff2c  01ef6850  [heap]
+    5f15ff30  00000000  
+    5f15ff34  00000000  
+    5f15ff38  00000000  
+    5f15ff3c  00000000  
+    5f15ff40  00000000  
+    5f15ff44  00000000  
+--- --- --- --- --- --- --- --- --- --- --- --- --- --- --- ---
+pid: 1917, tid: 1941
+ r0 01d2aa3c  r1 00000080  r2 fffffee4  r3 00000000
+ r4 01d2aa38  r5 01d2aa3c  r6 fffffee4  r7 000000f0
+ r8 01d2aa38  r9 00100000  10 01da35e0  fp 00000001
+ ip 5e7ef2b8  sp 5f05ee20  lr 40074174  pc 4006f02c  cpsr 60000110
+ d0  0000000000000000  d1  000003f500000000
+ d2  000000040000001c  d3  5b79f0745b79f058
+ d4  0061006900640065  d5  00790061006c0050
+ d6  0065005300720065  d7  0063006900760072
+ d8  0000000000000000  d9  0000000000000000
+ d10 0000000000000000  d11 0000000000000000
+ d12 0000000000000000  d13 0000000000000000
+ d14 0000000000000000  d15 0000000000000000
+ d16 0000000000000000  d17 0000000000000000
+ d18 3f8362b9bf971bcd  d19 3f991df3908c33ce
+ d20 3fadcf907c490a05  d21 3fddd7fc12ad2324
+ d22 3f739081735232c2  d23 3fd6f5638f34d71a
+ d24 3fb10d66a0d03d52  d25 bfb3b0f2af749a6e
+ d26 3fb745cdc54c206f  d27 3fc2492492008400
+ d28 3e5001000c008005  d29 3fd555555555550e
+ d30 3cb0020028028023  d31 bfbc71c6fe231672
+ scr 20000012
+
+         #00  pc 0000d02c  /system/lib/libc.so (__futex_syscall3)
+         #01  pc 00012170  /system/lib/libc.so (__pthread_cond_timedwait_relative)
+         #02  pc 000121f0  /system/lib/libc.so (__pthread_cond_timedwait)
+         #03  pc 00005886  /system/lib/libsoundpool.so (_ZN7android15SoundPoolThread4readEv)
+         #04  pc 00005a64  /system/lib/libsoundpool.so (_ZN7android15SoundPoolThread3runEv)
+         #05  pc 000446b4  /system/lib/libandroid_runtime.so (_ZN7android14AndroidRuntime15javaThreadShellEPv)
+         #06  pc 0002435a  /system/lib/libutils.so
+         #07  pc 000120d8  /system/lib/libc.so (__thread_entry)
+         #08  pc 00011bf4  /system/lib/libc.so (pthread_create)
+
+code around pc:
+4006f00c e1912f9f e1813f90 e3330000 1afffffb  ./...?....3.....
+4006f01c e1a00002 e12fff1e e92d0090 e3a070f0  ....../...-..p..
+4006f02c ef000000 e8bd0090 e12fff1e e92d0090  ........../...-.
+4006f03c e1a03002 e1a02001 e3a01000 e3a070f0  .0... .......p..
+4006f04c ef000000 e8bd0090 e12fff1e e92d0090  ........../...-.
+
+code around lr:
+40074154 e5956000 ebfffcb0 e5951000 e1a03007  .`...........0..
+40074164 e1a02006 e1a00005 e2011001 ebfffab7  . ..............
+40074174 e1a05000 e1a00004 ebfffc40 e375006e  .P......@...n.u.
+40074184 03a0006e 13a00000 e8bd80f8 e92d4070  n...........p@-.
+40074194 e2524000 e24dd010 e1a06000 e1a05001  .@R...M..`...P..
+
+stack:
+    5f05ede0  00000000  
+    5f05ede4  00000001  
+    5f05ede8  00000047  
+    5f05edec  00000000  
+    5f05edf0  00000046  
+    5f05edf4  5f05ee24  
+    5f05edf8  1d300216  
+    5f05edfc  01d8de38  [heap]
+    5f05ee00  5e7ebb4d  /system/lib/libsoundpool.so
+    5f05ee04  5e7ec241  /system/lib/libsoundpool.so
+    5f05ee08  1d300216  
+    5f05ee0c  00000000  
+    5f05ee10  01d2aa38  [heap]
+    5f05ee14  01d2aa3c  [heap]
+    5f05ee18  fffffee4  
+    5f05ee1c  00000000  
+#00 5f05ee20  01d2aa38  [heap]
+    5f05ee24  00000000  
+#01 5f05ee28  00000000  
+    5f05ee2c  00000000  
+    5f05ee30  01d2aa38  [heap]
+    5f05ee34  01d2aa3c  [heap]
+    5f05ee38  5e7eddd8  /system/lib/libsoundpool.so
+    5f05ee3c  400741f4  /system/lib/libc.so
+#02 5f05ee40  01d2aa3c  [heap]
+    5f05ee44  5e7edde8  /system/lib/libsoundpool.so
+    5f05ee48  5e7eddd8  /system/lib/libsoundpool.so
+    5f05ee4c  01d2aa38  [heap]
+    5f05ee50  01d2aa38  [heap]
+    5f05ee54  01d2aa3c  [heap]
+    5f05ee58  5e7edde8  /system/lib/libsoundpool.so
+    5f05ee5c  5e7ed889  /system/lib/libsoundpool.so
+#03 5f05ee60  024d65e0  [heap]
+    5f05ee64  00470002  
+    5f05ee68  40981998  /system/lib/libdvm.so
+    5f05ee6c  00000002  
+    5f05ee70  01d2aa38  [heap]
+    5f05ee74  5e7edde8  /system/lib/libsoundpool.so
+    5f05ee78  5e7eddd8  /system/lib/libsoundpool.so
+    5f05ee7c  5e7eda69  /system/lib/libsoundpool.so
+#04 5f05ee80  00470002  
+    5f05ee84  40077400  /system/lib/libc.so
+    5f05ee88  4023eaf4  /system/lib/libandroid_runtime.so
+    5f05ee8c  00470002  
+    5f05ee90  01d43580  [heap]
+    5f05ee94  4099fbe4  /system/lib/libdvm.so
+    5f05ee98  01de1040  [heap]
+    5f05ee9c  40246674  /system/lib/libandroid_runtime.so
+    5f05eea0  5e7edaad  /system/lib/libsoundpool.so
+    5f05eea4  401cd6b7  /system/lib/libandroid_runtime.so
+#05 5f05eea8  00010004  
+    5f05eeac  01de1040  [heap]
+    5f05eeb0  00000000  
+    5f05eeb4  01d23048  [heap]
+    5f05eeb8  01de12d8  [heap]
+    5f05eebc  401cd679  /system/lib/libandroid_runtime.so
+    5f05eec0  01d43580  [heap]
+    5f05eec4  00000000  
+    5f05eec8  4013a2cd  /system/lib/libutils.so
+    5f05eecc  4013a35d  /system/lib/libutils.so
+#06 5f05eed0  00000000  
+    5f05eed4  01da35e0  [heap]
+    5f05eed8  5f05ef00  
+    5f05eedc  5f05ef00  
+    5f05eee0  4013a2cd  /system/lib/libutils.so
+    5f05eee4  01da35e0  [heap]
+    5f05eee8  00000078  
+    5f05eeec  400740dc  /system/lib/libc.so
+#07 5f05eef0  01dcea50  [heap]
+    5f05eef4  5f05ef00  
+    5f05eef8  5c7d37f8  
+    5f05eefc  40073bf8  /system/lib/libc.so
+#08 5f05ef00  5f05ef00  
+    5f05ef04  01dcea50  [heap]
+    5f05ef08  00000000  
+    5f05ef0c  00000000  
+    5f05ef10  00000000  
+    5f05ef14  00000000  
+    5f05ef18  01dd2190  [heap]
+    5f05ef1c  00000000  
+    5f05ef20  00000000  
+    5f05ef24  00000000  
+    5f05ef28  00000000  
+    5f05ef2c  01e973d8  [heap]
+    5f05ef30  00000000  
+    5f05ef34  00000000  
+    5f05ef38  00000000  
+    5f05ef3c  00000000  
+    5f05ef40  00000000  
+    5f05ef44  00000000  
+--------- log /dev/log/main
+05-19 09:57:17.309  1917  1917 I dalvikvm: Turning on JNI app bug workarounds for target SDK version 3...
+05-19 09:57:17.458  1917  1917 D dalvikvm: Trying to load lib /data/data/com.gameloft.android.ANMP.GloftAsphalt5.asphalt5/lib/libasphalt5.so 0x411a0e40
+05-19 09:57:17.465  1917  1917 D dalvikvm: Added shared lib /data/data/com.gameloft.android.ANMP.GloftAsphalt5.asphalt5/lib/libasphalt5.so 0x411a0e40
+05-19 09:57:17.465  1917  1917 D dalvikvm: No JNI_OnLoad found in /data/data/com.gameloft.android.ANMP.GloftAsphalt5.asphalt5/lib/libasphalt5.so 0x411a0e40, skipping init
+05-19 09:57:17.520  1917  1930 D dalvikvm: GC_FOR_ALLOC freed 85K, 3% free 6597K/6787K, paused 15ms
+05-19 09:57:17.528  1917  1930 I dalvikvm-heap: Grow heap (frag case) to 8.518MB for 2097168-byte allocation
+05-19 09:57:17.551  1917  1926 D dalvikvm: GC_FOR_ALLOC freed <1K, 3% free 8644K/8903K, paused 10ms
+05-19 09:57:17.559  1917  1918 D dalvikvm: GC_CONCURRENT freed 1K, 3% free 8648K/8903K, paused 1ms+1ms
+05-19 09:57:17.833  1917  1932 D libEGL  : loaded /system/lib/egl/libGLES_android.so
+05-19 09:57:17.840  1917  1932 D libEGL  : loaded /vendor/lib/egl/libEGL_POWERVR_SGX540_120.so
+05-19 09:57:17.848  1917  1932 D libEGL  : loaded /vendor/lib/egl/libGLESv1_CM_POWERVR_SGX540_120.so
+05-19 09:57:17.848  1917  1932 D libEGL  : loaded /vendor/lib/egl/libGLESv2_POWERVR_SGX540_120.so
+05-19 09:57:17.950  1917  1932 D dalvikvm: GC_FOR_ALLOC freed 489K, 7% free 8697K/9287K, paused 9ms
+05-19 09:57:17.950  1917  1932 I dalvikvm-heap: Grow heap (frag case) to 9.545MB for 1024016-byte allocation
+05-19 09:57:17.973  1917  1918 D dalvikvm: GC_CONCURRENT freed 1K, 6% free 9696K/10311K, paused 0ms+1ms
+05-19 09:57:18.067  1917  1932 D dalvikvm: GC_FOR_ALLOC freed 1001K, 16% free 8696K/10311K, paused 11ms
+05-19 09:57:18.067  1917  1932 I dalvikvm-heap: Grow heap (frag case) to 9.544MB for 1024016-byte allocation
+05-19 09:57:18.083  1917  1918 D dalvikvm: GC_CONCURRENT freed <1K, 6% free 9696K/10311K, paused 0ms+2ms
+05-19 09:57:18.184  1917  1932 D dalvikvm: GC_FOR_ALLOC freed 1001K, 16% free 8696K/10311K, paused 11ms
+05-19 09:57:18.184  1917  1932 I dalvikvm-heap: Grow heap (frag case) to 9.544MB for 1024016-byte allocation
+05-19 09:57:18.200  1917  1918 D dalvikvm: GC_CONCURRENT freed <1K, 6% free 9696K/10311K, paused 1ms+0ms
+05-19 09:57:18.294  1917  1932 D dalvikvm: GC_FOR_ALLOC freed 1001K, 16% free 8696K/10311K, paused 11ms
+05-19 09:57:18.294  1917  1932 I dalvikvm-heap: Grow heap (frag case) to 9.544MB for 1024016-byte allocation
+05-19 09:57:18.301  1917  1918 D dalvikvm: GC_CONCURRENT freed <1K, 6% free 9696K/10311K, paused 1ms+1ms
+05-19 09:57:18.395  1917  1932 D dalvikvm: GC_FOR_ALLOC freed 1001K, 16% free 8696K/10311K, paused 15ms
+05-19 09:57:18.395  1917  1932 I dalvikvm-heap: Grow heap (frag case) to 9.544MB for 1024016-byte allocation
+05-19 09:57:18.426  1917  1918 D dalvikvm: GC_CONCURRENT freed <1K, 6% free 9696K/10311K, paused 5ms+1ms
+05-19 09:57:18.450  1917  1932 D dalvikvm: GC_FOR_ALLOC freed 1008K, 16% free 8696K/10311K, paused 13ms
+05-19 09:57:18.450  1917  1932 I dalvikvm-heap: Grow heap (frag case) to 9.544MB for 1024016-byte allocation
+05-19 09:57:18.473  1917  1932 D dalvikvm: GC_FOR_ALLOC freed <1K, 6% free 9696K/10311K, paused 15ms
+05-19 09:57:18.497  1917  1932 D dalvikvm: GC_FOR_ALLOC freed 1001K, 16% free 8696K/10311K, paused 19ms
+05-19 09:57:18.497  1917  1932 I dalvikvm-heap: Grow heap (frag case) to 9.544MB for 1024016-byte allocation
+05-19 09:57:18.520  1917  1918 D dalvikvm: GC_CONCURRENT freed <1K, 6% free 9696K/10311K, paused 0ms+2ms
+05-19 09:57:18.653  1917  1932 D dalvikvm: GC_FOR_ALLOC freed 1001K, 16% free 8696K/10311K, paused 16ms
+05-19 09:57:18.653  1917  1932 I dalvikvm-heap: Grow heap (frag case) to 9.544MB for 1024016-byte allocation
+05-19 09:57:18.684  1917  1918 D dalvikvm: GC_CONCURRENT freed <1K, 6% free 9696K/10311K, paused 0ms+0ms
+05-19 09:57:18.817  1917  1932 D dalvikvm: GC_FOR_ALLOC freed 1401K, 20% free 8697K/10759K, paused 13ms
+05-19 09:57:18.817  1917  1932 I dalvikvm-heap: Grow heap (frag case) to 9.544MB for 1024016-byte allocation
+05-19 09:57:18.840  1917  1918 D dalvikvm: GC_CONCURRENT freed <1K, 10% free 9696K/10759K, paused 1ms+3ms
+05-19 09:57:18.864  1917  1932 D dalvikvm: GC_FOR_ALLOC freed 1001K, 20% free 8696K/10759K, paused 14ms
+05-19 09:57:18.864  1917  1932 I dalvikvm-heap: Grow heap (frag case) to 9.544MB for 1024016-byte allocation
+05-19 09:57:18.965  1917  1932 D dalvikvm: GC_FOR_ALLOC freed <1K, 10% free 9696K/10759K, paused 12ms
+05-19 09:57:18.981  1917  1932 D dalvikvm: GC_FOR_ALLOC freed 1001K, 20% free 8696K/10759K, paused 14ms
+05-19 09:57:18.981  1917  1932 I dalvikvm-heap: Grow heap (frag case) to 9.544MB for 1024016-byte allocation
+05-19 09:57:19.012  1917  1918 D dalvikvm: GC_CONCURRENT freed <1K, 10% free 9696K/10759K, paused 0ms+2ms
+05-19 09:57:20.403  1917  1932 D dalvikvm: GC_FOR_ALLOC freed 1011K, 20% free 8697K/10759K, paused 24ms
+05-19 09:57:20.403  1917  1932 I dalvikvm-heap: Grow heap (frag case) to 9.545MB for 1024016-byte allocation
+05-19 09:57:20.450  1917  1918 D dalvikvm: GC_CONCURRENT freed <1K, 10% free 9696K/10759K, paused 3ms+3ms
+05-19 09:57:20.497  1917  1932 D dalvikvm: GC_FOR_ALLOC freed 1001K, 20% free 8696K/10759K, paused 31ms
+05-19 09:57:20.497  1917  1932 I dalvikvm-heap: Grow heap (frag case) to 9.544MB for 1024016-byte allocation
+05-19 09:57:20.544  1917  1918 D dalvikvm: GC_CONCURRENT freed <1K, 10% free 9696K/10759K, paused 3ms+5ms
+05-19 09:57:20.653  1917  1932 D dalvikvm: GC_FOR_ALLOC freed 1001K, 20% free 8696K/10759K, paused 26ms
+05-19 09:57:20.653  1917  1932 I dalvikvm-heap: Grow heap (frag case) to 9.544MB for 1024016-byte allocation
+05-19 09:57:20.700  1917  1918 D dalvikvm: GC_CONCURRENT freed <1K, 10% free 9696K/10759K, paused 3ms+4ms
+05-19 09:57:20.895  1917  1932 D dalvikvm: GC_FOR_ALLOC freed 1001K, 20% free 8696K/10759K, paused 25ms
+05-19 09:57:20.895  1917  1932 I dalvikvm-heap: Grow heap (frag case) to 9.544MB for 1024016-byte allocation
+05-19 09:57:20.942  1917  1918 D dalvikvm: GC_CONCURRENT freed <1K, 10% free 9696K/10759K, paused 1ms+3ms
+05-19 09:57:21.059  1917  1932 D dalvikvm: GC_FOR_ALLOC freed 1001K, 20% free 8696K/10759K, paused 25ms
+05-19 09:57:21.059  1917  1932 I dalvikvm-heap: Grow heap (frag case) to 9.544MB for 1024016-byte allocation
+05-19 09:57:21.098  1917  1918 D dalvikvm: GC_CONCURRENT freed <1K, 10% free 9696K/10759K, paused 0ms+3ms
+05-19 09:57:21.239  1917  1932 D dalvikvm: GC_FOR_ALLOC freed 1001K, 20% free 8696K/10759K, paused 23ms
+05-19 09:57:21.239  1917  1932 I dalvikvm-heap: Grow heap (frag case) to 9.544MB for 1024016-byte allocation
+05-19 09:57:21.286  1917  1918 D dalvikvm: GC_CONCURRENT freed <1K, 10% free 9696K/10759K, paused 2ms+4ms
+05-19 09:57:21.317  1917  1932 D dalvikvm: GC_FOR_ALLOC freed 1001K, 20% free 8696K/10759K, paused 27ms
+05-19 09:57:21.317  1917  1932 I dalvikvm-heap: Grow heap (frag case) to 9.544MB for 1024016-byte allocation
+05-19 09:57:21.419  1917  1932 D dalvikvm: GC_FOR_ALLOC freed <1K, 10% free 9696K/10759K, paused 25ms
+05-19 09:57:21.473  1917  1932 D dalvikvm: GC_FOR_ALLOC freed 1001K, 20% free 8696K/10759K, paused 28ms
+05-19 09:57:21.473  1917  1932 I dalvikvm-heap: Grow heap (frag case) to 9.544MB for 1024016-byte allocation
+05-19 09:57:21.489  1917  1918 D dalvikvm: GC_CONCURRENT freed <1K, 10% free 9696K/10759K, paused 3ms+8ms
+05-19 09:57:21.590  1917  1932 D dalvikvm: GC_FOR_ALLOC freed 1019K, 20% free 8697K/10759K, paused 25ms
+05-19 09:57:21.590  1917  1932 I dalvikvm-heap: Grow heap (frag case) to 9.545MB for 1024016-byte allocation
+05-19 09:57:21.629  1917  1918 D dalvikvm: GC_CONCURRENT freed <1K, 10% free 9697K/10759K, paused 2ms+4ms
+05-19 09:57:21.669  1917  1932 D dalvikvm: GC_FOR_ALLOC freed 1001K, 20% free 8697K/10759K, paused 25ms
+05-19 09:57:21.669  1917  1932 I dalvikvm-heap: Grow heap (frag case) to 9.545MB for 1024016-byte allocation
+05-19 09:57:21.715  1917  1932 D dalvikvm: GC_FOR_ALLOC freed <1K, 10% free 9697K/10759K, paused 21ms
+05-19 09:57:21.762  1917  1932 D dalvikvm: GC_FOR_ALLOC freed 1001K, 20% free 8697K/10759K, paused 25ms
+05-19 09:57:21.762  1917  1932 I dalvikvm-heap: Grow heap (frag case) to 9.545MB for 1024016-byte allocation
+05-19 09:57:21.801  1917  1918 D dalvikvm: GC_CONCURRENT freed <1K, 10% free 9697K/10759K, paused 2ms+3ms
+05-19 09:57:21.840  1917  1932 D dalvikvm: GC_FOR_ALLOC freed 1001K, 20% free 8697K/10759K, paused 23ms
+05-19 09:57:21.840  1917  1932 I dalvikvm-heap: Grow heap (frag case) to 9.545MB for 1024016-byte allocation
+05-19 09:57:21.903  1917  1918 D dalvikvm: GC_CONCURRENT freed <1K, 10% free 9697K/10759K, paused 3ms+5ms
+05-19 09:57:21.934  1917  1932 D dalvikvm: GC_FOR_ALLOC freed 1001K, 20% free 8697K/10759K, paused 26ms
+05-19 09:57:21.934  1917  1932 I dalvikvm-heap: Grow heap (frag case) to 9.545MB for 1024016-byte allocation
+05-19 09:57:21.958  1917  1932 D dalvikvm: GC_FOR_ALLOC freed <1K, 10% free 9697K/10759K, paused 17ms
+05-19 09:57:22.020  1917  1932 D dalvikvm: GC_FOR_ALLOC freed 1001K, 20% free 8697K/10759K, paused 24ms
+05-19 09:57:22.020  1917  1932 I dalvikvm-heap: Grow heap (frag case) to 9.545MB for 1024016-byte allocation
+05-19 09:57:22.067  1917  1918 D dalvikvm: GC_CONCURRENT freed <1K, 10% free 9697K/10759K, paused 3ms+3ms
+05-19 09:57:22.098  1917  1932 D dalvikvm: GC_FOR_ALLOC freed 1001K, 20% free 8697K/10759K, paused 24ms
+05-19 09:57:22.098  1917  1932 I dalvikvm-heap: Grow heap (frag case) to 9.545MB for 1024016-byte allocation
+05-19 09:57:22.114  1917  1932 D dalvikvm: GC_FOR_ALLOC freed <1K, 10% free 9697K/10759K, paused 26ms
+05-19 09:57:22.184  1917  1932 D dalvikvm: GC_FOR_ALLOC freed 1001K, 20% free 8697K/10759K, paused 24ms
+05-19 09:57:22.184  1917  1932 I dalvikvm-heap: Grow heap (frag case) to 9.545MB for 1024016-byte allocation
+05-19 09:57:22.223  1917  1918 D dalvikvm: GC_CONCURRENT freed <1K, 10% free 9697K/10759K, paused 1ms+5ms
+05-19 09:57:22.278  1917  1932 D dalvikvm: GC_FOR_ALLOC freed 1001K, 20% free 8697K/10759K, paused 26ms
+05-19 09:57:22.278  1917  1932 I dalvikvm-heap: Grow heap (frag case) to 9.545MB for 1024016-byte allocation
+05-19 09:57:22.317  1917  1918 D dalvikvm: GC_CONCURRENT freed <1K, 10% free 9697K/10759K, paused 2ms+4ms
+05-19 09:57:22.434  1917  1932 D dalvikvm: GC_FOR_ALLOC freed 1001K, 20% free 8697K/10759K, paused 20ms
+05-19 09:57:22.434  1917  1932 I dalvikvm-heap: Grow heap (frag case) to 9.545MB for 1024016-byte allocation
+05-19 09:57:22.465  1917  1918 D dalvikvm: GC_CONCURRENT freed <1K, 10% free 9697K/10759K, paused 1ms+3ms
+05-19 09:57:22.567  1917  1932 D dalvikvm: GC_FOR_ALLOC freed 1001K, 20% free 8697K/10759K, paused 45ms
+05-19 09:57:22.567  1917  1932 I dalvikvm-heap: Grow heap (frag case) to 9.545MB for 1024016-byte allocation
+05-19 09:57:22.606  1917  1918 D dalvikvm: GC_CONCURRENT freed <1K, 10% free 9697K/10759K, paused 1ms+3ms
+05-19 09:57:22.739  1917  1932 D dalvikvm: GC_FOR_ALLOC freed 1001K, 20% free 8697K/10759K, paused 34ms
+05-19 09:57:22.739  1917  1932 I dalvikvm-heap: Grow heap (frag case) to 9.545MB for 1024016-byte allocation
+05-19 09:57:22.770  1917  1918 D dalvikvm: GC_CONCURRENT freed <1K, 10% free 9697K/10759K, paused 2ms+5ms
+05-19 09:57:22.856  1917  1932 D dalvikvm: GC_FOR_ALLOC freed 1001K, 20% free 8697K/10759K, paused 28ms
+05-19 09:57:22.856  1917  1932 I dalvikvm-heap: Grow heap (frag case) to 9.545MB for 1024016-byte allocation
+05-19 09:57:22.903  1917  1918 D dalvikvm: GC_CONCURRENT freed <1K, 10% free 9697K/10759K, paused 1ms+12ms
+05-19 09:57:23.184  1917  1932 D dalvikvm: GC_FOR_ALLOC freed 1001K, 20% free 8697K/10759K, paused 24ms
+05-19 09:57:23.184  1917  1932 I dalvikvm-heap: Grow heap (frag case) to 9.545MB for 1024016-byte allocation
+05-19 09:57:23.223  1917  1918 D dalvikvm: GC_CONCURRENT freed <1K, 10% free 9697K/10759K, paused 1ms+4ms
+05-19 09:57:23.278  1917  1932 D dalvikvm: GC_FOR_ALLOC freed 1001K, 20% free 8697K/10759K, paused 30ms
+05-19 09:57:23.278  1917  1932 I dalvikvm-heap: Grow heap (frag case) to 9.545MB for 1024016-byte allocation
+05-19 09:57:23.340  1917  1918 D dalvikvm: GC_CONCURRENT freed <1K, 10% free 9697K/10759K, paused 2ms+3ms
+05-19 09:57:23.575  1917  1932 D dalvikvm: GC_FOR_ALLOC freed 1001K, 20% free 8697K/10759K, paused 24ms
+05-19 09:57:23.575  1917  1932 I dalvikvm-heap: Grow heap (frag case) to 9.545MB for 1024016-byte allocation
+05-19 09:57:23.622  1917  1918 D dalvikvm: GC_CONCURRENT freed <1K, 10% free 9697K/10759K, paused 1ms+0ms
+05-19 09:57:23.715  1917  1932 D dalvikvm: GC_FOR_ALLOC freed 1001K, 20% free 8697K/10759K, paused 24ms
+05-19 09:57:23.715  1917  1932 I dalvikvm-heap: Grow heap (frag case) to 9.545MB for 1024016-byte allocation
+05-19 09:57:23.754  1917  1918 D dalvikvm: GC_CONCURRENT freed <1K, 10% free 9697K/10759K, paused 2ms+2ms
+05-19 09:57:23.794  1917  1932 D dalvikvm: GC_FOR_ALLOC freed 1001K, 20% free 8697K/10759K, paused 26ms
+05-19 09:57:23.794  1917  1932 I dalvikvm-heap: Grow heap (frag case) to 9.545MB for 1024016-byte allocation
+05-19 09:57:23.833  1917  1932 D dalvikvm: GC_FOR_ALLOC freed <1K, 10% free 9697K/10759K, paused 25ms
+05-19 09:57:23.872  1917  1932 D dalvikvm: GC_FOR_ALLOC freed 1001K, 20% free 8697K/10759K, paused 25ms
+05-19 09:57:23.872  1917  1932 I dalvikvm-heap: Grow heap (frag case) to 9.545MB for 1024016-byte allocation
+05-19 09:57:23.919  1917  1918 D dalvikvm: GC_CONCURRENT freed <1K, 10% free 9697K/10759K, paused 1ms+4ms
+05-19 09:57:24.059  1917  1932 D dalvikvm: GC_FOR_ALLOC freed 1001K, 20% free 8697K/10759K, paused 22ms
+05-19 09:57:24.059  1917  1932 I dalvikvm-heap: Grow heap (frag case) to 9.545MB for 1024016-byte allocation
+05-19 09:57:24.098  1917  1918 D dalvikvm: GC_CONCURRENT freed <1K, 10% free 9697K/10759K, paused 3ms+2ms
+05-19 09:57:24.247  1917  1932 D dalvikvm: GC_FOR_ALLOC freed 1001K, 20% free 8697K/10759K, paused 22ms
+05-19 09:57:24.254  1917  1932 I dalvikvm-heap: Grow heap (frag case) to 9.545MB for 1024016-byte allocation
+05-19 09:57:24.301  1917  1918 D dalvikvm: GC_CONCURRENT freed <1K, 10% free 9697K/10759K, paused 1ms+4ms
+05-19 09:57:24.340  1917  1932 D dalvikvm: GC_FOR_ALLOC freed 1401K, 20% free 8697K/10759K, paused 24ms
+05-19 09:57:24.340  1917  1932 I dalvikvm-heap: Grow heap (frag case) to 9.545MB for 1024016-byte allocation
+05-19 09:57:24.379  1917  1918 D dalvikvm: GC_CONCURRENT freed <1K, 10% free 9697K/10759K, paused 3ms+3ms
+05-19 09:57:24.419  1917  1932 D dalvikvm: GC_FOR_ALLOC freed 1001K, 20% free 8697K/10759K, paused 25ms
+05-19 09:57:24.419  1917  1932 I dalvikvm-heap: Grow heap (frag case) to 9.545MB for 1024016-byte allocation
+05-19 09:57:24.458  1917  1932 D dalvikvm: GC_FOR_ALLOC freed <1K, 10% free 9697K/10759K, paused 24ms
+05-19 09:57:24.489  1917  1932 D dalvikvm: GC_FOR_ALLOC freed 1001K, 20% free 8697K/10759K, paused 22ms
+05-19 09:57:24.504  1917  1932 I dalvikvm-heap: Grow heap (frag case) to 9.545MB for 1024016-byte allocation
+05-19 09:57:24.544  1917  1918 D dalvikvm: GC_CONCURRENT freed <1K, 10% free 9697K/10759K, paused 2ms+1ms
+05-19 09:57:24.575  1917  1932 D dalvikvm: GC_FOR_ALLOC freed 1001K, 20% free 8697K/10759K, paused 25ms
+05-19 09:57:24.575  1917  1932 I dalvikvm-heap: Grow heap (frag case) to 9.545MB for 1024016-byte allocation
+05-19 09:57:24.622  1917  1932 D dalvikvm: GC_FOR_ALLOC freed <1K, 10% free 9697K/10759K, paused 30ms
+05-19 09:57:24.653  1917  1932 D dalvikvm: GC_FOR_ALLOC freed 1001K, 20% free 8697K/10759K, paused 25ms
+05-19 09:57:24.653  1917  1932 I dalvikvm-heap: Grow heap (frag case) to 9.545MB for 1024016-byte allocation
+05-19 09:57:24.684  1917  1918 D dalvikvm: GC_CONCURRENT freed <1K, 10% free 9697K/10759K, paused 2ms+0ms
+05-19 09:57:24.856  1917  1932 D dalvikvm: GC_FOR_ALLOC freed 1001K, 20% free 8697K/10759K, paused 27ms
+05-19 09:57:24.856  1917  1932 I dalvikvm-heap: Grow heap (frag case) to 9.545MB for 1024016-byte allocation
+05-19 09:57:24.895  1917  1918 D dalvikvm: GC_CONCURRENT freed <1K, 10% free 9697K/10759K, paused 2ms+1ms
+05-19 09:57:24.950  1917  1932 D dalvikvm: GC_FOR_ALLOC freed 1001K, 20% free 8697K/10759K, paused 19ms
+05-19 09:57:24.965  1917  1932 I dalvikvm-heap: Grow heap (frag case) to 9.545MB for 1024016-byte allocation
+05-19 09:57:25.004  1917  1918 D dalvikvm: GC_CONCURRENT freed <1K, 10% free 9697K/10759K, paused 2ms+0ms
+05-19 09:57:25.051  1917  1932 D dalvikvm: GC_FOR_ALLOC freed 1001K, 20% free 8697K/10759K, paused 34ms
+05-19 09:57:25.067  1917  1932 I dalvikvm-heap: Grow heap (frag case) to 9.545MB for 1024016-byte allocation
+05-19 09:57:25.106  1917  1918 D dalvikvm: GC_CONCURRENT freed <1K, 10% free 9697K/10759K, paused 1ms+3ms
+05-19 09:57:25.262  1917  1932 D dalvikvm: GC_FOR_ALLOC freed 1006K, 20% free 8698K/10759K, paused 26ms
+05-19 09:57:25.262  1917  1932 I dalvikvm-heap: Grow heap (frag case) to 9.546MB for 1024016-byte allocation
+05-19 09:57:25.309  1917  1918 D dalvikvm: GC_CONCURRENT freed <1K, 10% free 9698K/10759K, paused 2ms+2ms
+05-19 09:57:25.559  1917  1932 D dalvikvm: GC_FOR_ALLOC freed 1001K, 20% free 8698K/10759K, paused 37ms
+05-19 09:57:25.559  1917  1932 I dalvikvm-heap: Grow heap (frag case) to 9.546MB for 1024016-byte allocation
+05-19 09:57:25.606  1917  1918 D dalvikvm: GC_CONCURRENT freed <1K, 10% free 9698K/10759K, paused 0ms+3ms
+05-19 09:57:25.747  1917  1932 D dalvikvm: GC_FOR_ALLOC freed 1001K, 20% free 8698K/10759K, paused 39ms
+05-19 09:57:25.747  1917  1932 I dalvikvm-heap: Grow heap (frag case) to 9.546MB for 1024016-byte allocation
+05-19 09:57:25.786  1917  1918 D dalvikvm: GC_CONCURRENT freed <1K, 10% free 9698K/10759K, paused 2ms+0ms
+05-19 09:57:25.958  1917  1932 D dalvikvm: GC_FOR_ALLOC freed 1001K, 20% free 8698K/10759K, paused 26ms
+05-19 09:57:25.973  1917  1932 I dalvikvm-heap: Grow heap (frag case) to 9.546MB for 1024016-byte allocation
+05-19 09:57:26.004  1917  1918 D dalvikvm: GC_CONCURRENT freed <1K, 10% free 9698K/10759K, paused 3ms+2ms
+05-19 09:57:26.036  1917  1932 D dalvikvm: GC_FOR_ALLOC freed 1001K, 20% free 8698K/10759K, paused 25ms
+05-19 09:57:26.036  1917  1932 I dalvikvm-heap: Grow heap (frag case) to 9.546MB for 1024016-byte allocation
+05-19 09:57:26.137  1917  1932 D dalvikvm: GC_FOR_ALLOC freed <1K, 10% free 9698K/10759K, paused 28ms
+05-19 09:57:26.247  1917  1932 D dalvikvm: GC_FOR_ALLOC freed 1001K, 20% free 8698K/10759K, paused 27ms
+05-19 09:57:26.247  1917  1932 I dalvikvm-heap: Grow heap (frag case) to 9.546MB for 1024016-byte allocation
+05-19 09:57:26.278  1917  1918 D dalvikvm: GC_CONCURRENT freed <1K, 10% free 9698K/10759K, paused 2ms+0ms
+05-19 09:57:26.403  1917  1932 D dalvikvm: GC_FOR_ALLOC freed 1001K, 20% free 8698K/10759K, paused 25ms
+05-19 09:57:26.403  1917  1932 I dalvikvm-heap: Grow heap (frag case) to 9.546MB for 1024016-byte allocation
+05-19 09:57:26.434  1917  1918 D dalvikvm: GC_CONCURRENT freed <1K, 10% free 9698K/10759K, paused 1ms+3ms
+05-19 09:57:26.465  1917  1932 D dalvikvm: GC_FOR_ALLOC freed 1001K, 20% free 8698K/10759K, paused 29ms
+05-19 09:57:26.465  1917  1932 I dalvikvm-heap: Grow heap (frag case) to 9.546MB for 1024016-byte allocation
+05-19 09:57:26.669  1917  1932 D dalvikvm: GC_FOR_ALLOC freed <1K, 10% free 9698K/10759K, paused 24ms
+05-19 09:57:26.700  1917  1932 D dalvikvm: GC_FOR_ALLOC freed 1001K, 20% free 8698K/10759K, paused 25ms
+05-19 09:57:26.700  1917  1932 I dalvikvm-heap: Grow heap (frag case) to 9.546MB for 1024016-byte allocation
+05-19 09:57:26.739  1917  1918 D dalvikvm: GC_CONCURRENT freed <1K, 10% free 9698K/10759K, paused 1ms+2ms
+05-19 09:57:27.044  1917  1932 D dalvikvm: GC_FOR_ALLOC freed 1001K, 20% free 8698K/10759K, paused 26ms
+05-19 09:57:27.044  1917  1932 I dalvikvm-heap: Grow heap (frag case) to 9.546MB for 1024016-byte allocation
+05-19 09:57:27.090  1917  1918 D dalvikvm: GC_CONCURRENT freed <1K, 10% free 9698K/10759K, paused 3ms+3ms
+05-19 09:57:27.129  1917  1932 D dalvikvm: GC_FOR_ALLOC freed 1001K, 20% free 8698K/10759K, paused 33ms
+05-19 09:57:27.129  1917  1932 I dalvikvm-heap: Grow heap (frag case) to 9.546MB for 1024016-byte allocation
+05-19 09:57:27.262  1917  1932 D dalvikvm: GC_FOR_ALLOC freed <1K, 10% free 9698K/10759K, paused 24ms
+05-19 09:57:27.301  1917  1932 D dalvikvm: GC_FOR_ALLOC freed 1001K, 20% free 8698K/10759K, paused 24ms
+05-19 09:57:27.301  1917  1932 I dalvikvm-heap: Grow heap (frag case) to 9.546MB for 1024016-byte allocation
+05-19 09:57:27.340  1917  1918 D dalvikvm: GC_CONCURRENT freed <1K, 10% free 9698K/10759K, paused 0ms+15ms
+05-19 09:57:27.458  1917  1932 D dalvikvm: GC_FOR_ALLOC freed 1001K, 20% free 8698K/10759K, paused 27ms
+05-19 09:57:27.458  1917  1932 I dalvikvm-heap: Grow heap (frag case) to 9.546MB for 1024016-byte allocation
+05-19 09:57:27.512  1917  1918 D dalvikvm: GC_CONCURRENT freed <1K, 10% free 9698K/10759K, paused 2ms+3ms
+05-19 09:57:27.661  1917  1932 D dalvikvm: GC_FOR_ALLOC freed 1001K, 20% free 8698K/10759K, paused 26ms
+05-19 09:57:27.661  1917  1932 I dalvikvm-heap: Grow heap (frag case) to 9.546MB for 1024016-byte allocation
+05-19 09:57:27.708  1917  1918 D dalvikvm: GC_CONCURRENT freed <1K, 10% free 9698K/10759K, paused 1ms+0ms
+05-19 09:57:27.747  1917  1932 D dalvikvm: GC_FOR_ALLOC freed 1001K, 20% free 8698K/10759K, paused 27ms
+05-19 09:57:27.747  1917  1932 I dalvikvm-heap: Grow heap (frag case) to 9.546MB for 1024016-byte allocation
+05-19 09:57:27.794  1917  1918 D dalvikvm: GC_CONCURRENT freed <1K, 10% free 9698K/10759K, paused 3ms+7ms
+05-19 09:57:27.840  1917  1932 D dalvikvm: GC_FOR_ALLOC freed 1001K, 20% free 8698K/10759K, paused 29ms
+05-19 09:57:27.840  1917  1932 I dalvikvm-heap: Grow heap (frag case) to 9.546MB for 1024016-byte allocation
+05-19 09:57:27.887  1917  1918 D dalvikvm: GC_CONCURRENT freed <1K, 10% free 9698K/10759K, paused 2ms+4ms
+05-19 09:57:39.208  1917  1932 D dalvikvm: GC_FOR_ALLOC freed 1001K, 20% free 8700K/10759K, paused 24ms
+05-19 09:57:39.208  1917  1932 I dalvikvm-heap: Grow heap (frag case) to 9.548MB for 1024016-byte allocation
+05-19 09:57:39.247  1917  1918 D dalvikvm: GC_CONCURRENT freed <1K, 10% free 9700K/10759K, paused 1ms+2ms
+05-19 09:57:39.309  1917  1932 D dalvikvm: GC_FOR_ALLOC freed 1001K, 20% free 8700K/10759K, paused 35ms
+05-19 09:57:39.309  1917  1932 I dalvikvm-heap: Grow heap (frag case) to 9.548MB for 1024016-byte allocation
+05-19 09:57:39.333  1917  1918 D dalvikvm: GC_CONCURRENT freed <1K, 10% free 9700K/10759K, paused 3ms+0ms
+05-19 09:57:39.372  1917  1932 D dalvikvm: GC_FOR_ALLOC freed 1001K, 20% free 8700K/10759K, paused 24ms
+05-19 09:57:39.372  1917  1932 I dalvikvm-heap: Grow heap (frag case) to 9.548MB for 1024016-byte allocation
+05-19 09:57:39.395  1917  1932 D dalvikvm: GC_FOR_ALLOC freed <1K, 10% free 9700K/10759K, paused 23ms
+05-19 09:57:39.458  1917  1932 D dalvikvm: GC_FOR_ALLOC freed 1001K, 20% free 8700K/10759K, paused 24ms
+05-19 09:57:39.458  1917  1932 I dalvikvm-heap: Grow heap (frag case) to 9.548MB for 1024016-byte allocation
+05-19 09:57:39.504  1917  1918 D dalvikvm: GC_CONCURRENT freed <1K, 10% free 9700K/10759K, paused 1ms+3ms
+05-19 09:57:39.598  1917  1932 D dalvikvm: GC_FOR_ALLOC freed 1001K, 20% free 8701K/10759K, paused 34ms
+05-19 09:57:39.598  1917  1932 I dalvikvm-heap: Grow heap (frag case) to 9.548MB for 1024016-byte allocation
+05-19 09:57:39.637  1917  1918 D dalvikvm: GC_CONCURRENT freed <1K, 10% free 9700K/10759K, paused 2ms+0ms
+05-19 09:57:39.700  1917  1932 D dalvikvm: GC_FOR_ALLOC freed 1001K, 20% free 8700K/10759K, paused 25ms
+05-19 09:57:39.700  1917  1932 I dalvikvm-heap: Grow heap (frag case) to 9.548MB for 1024016-byte allocation
+05-19 09:57:39.715  1917  1918 D dalvikvm: GC_CONCURRENT freed <1K, 10% free 9700K/10759K, paused 3ms+5ms
+05-19 09:57:39.778  1917  1932 D dalvikvm: GC_FOR_ALLOC freed 1001K, 20% free 8700K/10759K, paused 36ms
+05-19 09:57:39.778  1917  1932 I dalvikvm-heap: Grow heap (frag case) to 9.548MB for 1024016-byte allocation
+05-19 09:57:39.833  1917  1918 D dalvikvm: GC_CONCURRENT freed <1K, 10% free 9700K/10759K, paused 0ms+3ms
+05-19 09:57:39.965  1917  1932 D dalvikvm: GC_FOR_ALLOC freed 1001K, 20% free 8700K/10759K, paused 29ms
+05-19 09:57:39.965  1917  1932 I dalvikvm-heap: Grow heap (frag case) to 9.548MB for 1024016-byte allocation
+05-19 09:57:40.012  1917  1918 D dalvikvm: GC_CONCURRENT freed <1K, 10% free 9700K/10759K, paused 1ms+4ms
+05-19 09:57:40.044  1917  1932 D dalvikvm: GC_FOR_ALLOC freed 1001K, 20% free 8700K/10759K, paused 20ms
+05-19 09:57:40.044  1917  1932 I dalvikvm-heap: Grow heap (frag case) to 9.548MB for 1024016-byte allocation
+05-19 09:57:40.090  1917  1932 D dalvikvm: GC_FOR_ALLOC freed <1K, 10% free 9700K/10759K, paused 36ms
+05-19 09:57:40.137  1917  1932 D dalvikvm: GC_FOR_ALLOC freed 1001K, 20% free 8700K/10759K, paused 24ms
+05-19 09:57:40.137  1917  1932 I dalvikvm-heap: Grow heap (frag case) to 9.548MB for 1024016-byte allocation
+05-19 09:57:40.184  1917  1918 D dalvikvm: GC_CONCURRENT freed <1K, 10% free 9700K/10759K, paused 2ms+0ms
+05-19 09:57:40.215  1917  1932 D dalvikvm: GC_FOR_ALLOC freed 1001K, 20% free 8700K/10759K, paused 25ms
+05-19 09:57:40.215  1917  1932 I dalvikvm-heap: Grow heap (frag case) to 9.548MB for 1024016-byte allocation
+05-19 09:57:40.254  1917  1932 D dalvikvm: GC_FOR_ALLOC freed <1K, 10% free 9700K/10759K, paused 24ms
+05-19 09:57:40.294  1917  1932 D dalvikvm: GC_FOR_ALLOC freed 1001K, 20% free 8700K/10759K, paused 24ms
+05-19 09:57:40.294  1917  1932 I dalvikvm-heap: Grow heap (frag case) to 9.548MB for 1024016-byte allocation
+05-19 09:57:40.340  1917  1918 D dalvikvm: GC_CONCURRENT freed <1K, 10% free 9700K/10759K, paused 3ms+10ms
+05-19 09:57:40.372  1917  1932 D dalvikvm: GC_FOR_ALLOC freed 1001K, 20% free 8700K/10759K, paused 26ms
+05-19 09:57:40.372  1917  1932 I dalvikvm-heap: Grow heap (frag case) to 9.548MB for 1024016-byte allocation
+05-19 09:57:40.403  1917  1932 D dalvikvm: GC_FOR_ALLOC freed <1K, 10% free 9700K/10759K, paused 24ms
+05-19 09:57:40.442  1917  1932 D dalvikvm: GC_FOR_ALLOC freed 1001K, 20% free 8700K/10759K, paused 25ms
+05-19 09:57:40.442  1917  1932 I dalvikvm-heap: Grow heap (frag case) to 9.548MB for 1024016-byte allocation
+05-19 09:57:40.481  1917  1918 D dalvikvm: GC_CONCURRENT freed <1K, 10% free 9700K/10759K, paused 2ms+7ms
+05-19 09:57:40.520  1917  1932 D dalvikvm: GC_FOR_ALLOC freed 1001K, 20% free 8701K/10759K, paused 25ms
+05-19 09:57:40.520  1917  1932 I dalvikvm-heap: Grow heap (frag case) to 9.548MB for 1024016-byte allocation
+05-19 09:57:40.567  1917  1932 D dalvikvm: GC_FOR_ALLOC freed <1K, 10% free 9700K/10759K, paused 41ms
+05-19 09:57:40.645  1917  1932 D dalvikvm: GC_FOR_ALLOC freed 1001K, 20% free 8700K/10759K, paused 34ms
+05-19 09:57:40.645  1917  1932 I dalvikvm-heap: Grow heap (frag case) to 9.548MB for 1024016-byte allocation
+05-19 09:57:40.669  1917  1918 D dalvikvm: GC_CONCURRENT freed <1K, 10% free 9700K/10759K, paused 3ms+4ms
+05-19 09:57:40.708  1917  1932 D dalvikvm: GC_FOR_ALLOC freed 1001K, 20% free 8700K/10759K, paused 24ms
+05-19 09:57:40.708  1917  1932 I dalvikvm-heap: Grow heap (frag case) to 9.548MB for 1024016-byte allocation
+05-19 09:57:40.754  1917  1932 D dalvikvm: GC_FOR_ALLOC freed <1K, 10% free 9700K/10759K, paused 24ms
+05-19 09:57:40.786  1917  1932 D dalvikvm: GC_FOR_ALLOC freed 1001K, 20% free 8700K/10759K, paused 25ms
+05-19 09:57:40.786  1917  1932 I dalvikvm-heap: Grow heap (frag case) to 9.548MB for 1024016-byte allocation
+05-19 09:57:40.840  1917  1918 D dalvikvm: GC_CONCURRENT freed <1K, 10% free 9700K/10759K, paused 3ms+2ms
+05-19 09:57:40.919  1917  1932 D dalvikvm: GC_FOR_ALLOC freed 1001K, 20% free 8700K/10759K, paused 26ms
+05-19 09:57:40.919  1917  1932 I dalvikvm-heap: Grow heap (frag case) to 9.548MB for 1024016-byte allocation
+05-19 09:57:40.958  1917  1918 D dalvikvm: GC_CONCURRENT freed <1K, 10% free 9700K/10759K, paused 4ms+13ms
+05-19 09:57:40.989  1917  1932 D dalvikvm: GC_FOR_ALLOC freed 1001K, 20% free 8700K/10759K, paused 24ms
+05-19 09:57:40.989  1917  1932 I dalvikvm-heap: Grow heap (frag case) to 9.548MB for 1024016-byte allocation
+05-19 09:57:41.044  1917  1932 D dalvikvm: GC_FOR_ALLOC freed <1K, 10% free 9700K/10759K, paused 36ms
+05-19 09:57:41.098  1917  1932 D dalvikvm: GC_FOR_ALLOC freed 1001K, 20% free 8701K/10759K, paused 24ms
+05-19 09:57:41.098  1917  1932 I dalvikvm-heap: Grow heap (frag case) to 9.548MB for 1024016-byte allocation
+05-19 09:57:41.145  1917  1918 D dalvikvm: GC_CONCURRENT freed <1K, 10% free 9700K/10759K, paused 0ms+0ms
+05-19 09:57:41.200  1917  1932 D dalvikvm: GC_FOR_ALLOC freed 1001K, 20% free 8700K/10759K, paused 42ms
+05-19 09:57:41.200  1917  1932 I dalvikvm-heap: Grow heap (frag case) to 9.548MB for 1024016-byte allocation
+05-19 09:57:41.231  1917  1932 D dalvikvm: GC_FOR_ALLOC freed <1K, 10% free 9700K/10759K, paused 25ms
+05-19 09:57:41.270  1917  1932 D dalvikvm: GC_FOR_ALLOC freed 1001K, 20% free 8701K/10759K, paused 23ms
+05-19 09:57:41.270  1917  1932 I dalvikvm-heap: Grow heap (frag case) to 9.548MB for 1024016-byte allocation
+05-19 09:57:41.325  1917  1918 D dalvikvm: GC_CONCURRENT freed <1K, 10% free 9700K/10759K, paused 1ms+3ms
+05-19 09:57:41.356  1917  1932 D dalvikvm: GC_FOR_ALLOC freed 1001K, 20% free 8700K/10759K, paused 22ms
+05-19 09:57:41.356  1917  1932 I dalvikvm-heap: Grow heap (frag case) to 9.548MB for 1024016-byte allocation
+05-19 09:57:41.395  1917  1932 D dalvikvm: GC_FOR_ALLOC freed <1K, 10% free 9700K/10759K, paused 24ms
+05-19 09:57:41.426  1917  1932 D dalvikvm: GC_FOR_ALLOC freed 1001K, 20% free 8701K/10759K, paused 23ms
+05-19 09:57:41.426  1917  1932 I dalvikvm-heap: Grow heap (frag case) to 9.548MB for 1024016-byte allocation
+05-19 09:57:41.473  1917  1918 D dalvikvm: GC_CONCURRENT freed <1K, 10% free 9700K/10759K, paused 0ms+5ms
+05-19 09:57:41.504  1917  1932 D dalvikvm: GC_FOR_ALLOC freed 1001K, 20% free 8700K/10759K, paused 27ms
+05-19 09:57:41.504  1917  1932 I dalvikvm-heap: Grow heap (frag case) to 9.548MB for 1024016-byte allocation
+05-19 09:57:41.544  1917  1932 D dalvikvm: GC_FOR_ALLOC freed <1K, 10% free 9700K/10759K, paused 23ms
+05-19 09:57:41.583  1917  1932 D dalvikvm: GC_FOR_ALLOC freed 1001K, 20% free 8700K/10759K, paused 24ms
+05-19 09:57:41.583  1917  1932 I dalvikvm-heap: Grow heap (frag case) to 9.548MB for 1024016-byte allocation
+05-19 09:57:41.614  1917  1918 D dalvikvm: GC_CONCURRENT freed <1K, 10% free 9700K/10759K, paused 1ms+5ms
+05-19 09:57:41.661  1917  1932 D dalvikvm: GC_FOR_ALLOC freed 1001K, 20% free 8700K/10759K, paused 23ms
+05-19 09:57:41.661  1917  1932 I dalvikvm-heap: Grow heap (frag case) to 9.548MB for 1024016-byte allocation
+05-19 09:57:41.708  1917  1918 D dalvikvm: GC_CONCURRENT freed <1K, 10% free 9700K/10759K, paused 1ms+3ms
+05-19 09:57:41.786  1917  1932 D dalvikvm: GC_FOR_ALLOC freed 1001K, 20% free 8700K/10759K, paused 24ms
+05-19 09:57:41.794  1917  1932 I dalvikvm-heap: Grow heap (frag case) to 9.548MB for 1024016-byte allocation
+05-19 09:57:41.840  1917  1918 D dalvikvm: GC_CONCURRENT freed <1K, 10% free 9700K/10759K, paused 1ms+1ms
+05-19 09:57:41.864  1917  1932 D dalvikvm: GC_FOR_ALLOC freed 1001K, 20% free 8700K/10759K, paused 23ms
+05-19 09:57:41.872  1917  1932 I dalvikvm-heap: Grow heap (frag case) to 9.548MB for 1024016-byte allocation
+05-19 09:57:41.903  1917  1932 D dalvikvm: GC_FOR_ALLOC freed <1K, 10% free 9700K/10759K, paused 23ms
+05-19 09:57:41.981  1917  1932 D dalvikvm: GC_FOR_ALLOC freed 1001K, 20% free 8700K/10759K, paused 25ms
+05-19 09:57:41.981  1917  1932 I dalvikvm-heap: Grow heap (frag case) to 9.548MB for 1024016-byte allocation
+05-19 09:57:42.004  1917  1932 D dalvikvm: GC_FOR_ALLOC freed <1K, 10% free 9700K/10759K, paused 24ms
+05-19 09:57:42.075  1917  1918 D dalvikvm: GC_CONCURRENT freed 0K, 10% free 9701K/10759K, paused 2ms+3ms
+05-19 09:57:42.114  1917  1932 D dalvikvm: GC_FOR_ALLOC freed 1001K, 20% free 8700K/10759K, paused 37ms
+05-19 09:57:42.114  1917  1932 I dalvikvm-heap: Grow heap (frag case) to 9.548MB for 1024016-byte allocation
+05-19 09:57:42.153  1917  1932 D dalvikvm: GC_FOR_ALLOC freed <1K, 10% free 9700K/10759K, paused 23ms
+05-19 09:57:42.176  1917  1932 D dalvikvm: GC_FOR_ALLOC freed 1001K, 20% free 8700K/10759K, paused 25ms
+05-19 09:57:42.176  1917  1932 I dalvikvm-heap: Grow heap (frag case) to 9.548MB for 1024016-byte allocation
+05-19 09:57:42.231  1917  1918 D dalvikvm: GC_CONCURRENT freed <1K, 10% free 9700K/10759K, paused 2ms+3ms
+05-19 09:57:42.254  1917  1932 D dalvikvm: GC_FOR_ALLOC freed 1001K, 20% free 8700K/10759K, paused 24ms
+05-19 09:57:42.254  1917  1932 I dalvikvm-heap: Grow heap (frag case) to 9.548MB for 1024016-byte allocation
+05-19 09:57:42.294  1917  1932 D dalvikvm: GC_FOR_ALLOC freed <1K, 10% free 9700K/10759K, paused 24ms
+05-19 09:57:42.325  1917  1932 D dalvikvm: GC_FOR_ALLOC freed 1001K, 20% free 8700K/10759K, paused 24ms
+05-19 09:57:42.340  1917  1932 I dalvikvm-heap: Grow heap (frag case) to 9.548MB for 1024016-byte allocation
+05-19 09:57:42.387  1917  1918 D dalvikvm: GC_CONCURRENT freed <1K, 10% free 9700K/10759K, paused 1ms+4ms
+05-19 09:57:42.426  1917  1932 D dalvikvm: GC_FOR_ALLOC freed 1001K, 20% free 8700K/10759K, paused 29ms
+05-19 09:57:42.426  1917  1932 I dalvikvm-heap: Grow heap (frag case) to 9.548MB for 1024016-byte allocation
+05-19 09:57:42.520  1917  1932 D dalvikvm: GC_FOR_ALLOC freed <1K, 10% free 9700K/10759K, paused 25ms
+05-19 09:57:42.739  1917  1932 D dalvikvm: GC_FOR_ALLOC freed 1001K, 20% free 8700K/10759K, paused 24ms
+05-19 09:57:42.739  1917  1932 I dalvikvm-heap: Grow heap (frag case) to 9.548MB for 1024016-byte allocation
+05-19 09:57:42.786  1917  1918 D dalvikvm: GC_CONCURRENT freed <1K, 10% free 9700K/10759K, paused 3ms+4ms
+05-19 09:57:42.856  1917  1932 D dalvikvm: GC_FOR_ALLOC freed 1001K, 20% free 8700K/10759K, paused 24ms
+05-19 09:57:42.856  1917  1932 I dalvikvm-heap: Grow heap (frag case) to 9.548MB for 1024016-byte allocation
+05-19 09:57:42.887  1917  1918 D dalvikvm: GC_CONCURRENT freed <1K, 10% free 9700K/10759K, paused 3ms+3ms
+05-19 09:57:42.981  1917  1932 D dalvikvm: GC_FOR_ALLOC freed 1001K, 20% free 8700K/10759K, paused 23ms
+05-19 09:57:42.981  1917  1932 I dalvikvm-heap: Grow heap (frag case) to 9.548MB for 1024016-byte allocation
+05-19 09:57:43.028  1917  1918 D dalvikvm: GC_CONCURRENT freed <1K, 10% free 9700K/10759K, paused 2ms+10ms
+05-19 09:57:43.051  1917  1932 D dalvikvm: GC_FOR_ALLOC freed 1001K, 20% free 8700K/10759K, paused 24ms
+05-19 09:57:43.051  1917  1932 I dalvikvm-heap: Grow heap (frag case) to 9.548MB for 1024016-byte allocation
+05-19 09:57:43.114  1917  1918 D dalvikvm: GC_CONCURRENT freed <1K, 10% free 9700K/10759K, paused 3ms+0ms
+05-19 09:57:43.145  1917  1932 D dalvikvm: GC_FOR_ALLOC freed 1001K, 20% free 8700K/10759K, paused 23ms
+05-19 09:57:43.153  1917  1932 I dalvikvm-heap: Grow heap (frag case) to 9.548MB for 1024016-byte allocation
+05-19 09:57:43.200  1917  1918 D dalvikvm: GC_CONCURRENT freed <1K, 10% free 9700K/10759K, paused 3ms+0ms
+05-19 09:57:43.247  1917  1932 D dalvikvm: GC_FOR_ALLOC freed 1001K, 20% free 8700K/10759K, paused 24ms
+05-19 09:57:43.247  1917  1932 I dalvikvm-heap: Grow heap (frag case) to 9.548MB for 1024016-byte allocation
+05-19 09:57:43.278  1917  1918 D dalvikvm: GC_CONCURRENT freed <1K, 10% free 9700K/10759K, paused 3ms+0ms
+05-19 09:57:43.325  1917  1932 D dalvikvm: GC_FOR_ALLOC freed 1001K, 20% free 8700K/10759K, paused 25ms
+05-19 09:57:43.325  1917  1932 I dalvikvm-heap: Grow heap (frag case) to 9.548MB for 1024016-byte allocation
+05-19 09:57:43.356  1917  1918 D dalvikvm: GC_CONCURRENT freed <1K, 10% free 9700K/10759K, paused 3ms+6ms
+05-19 09:57:43.426  1917  1932 D dalvikvm: GC_FOR_ALLOC freed 1001K, 20% free 8701K/10759K, paused 25ms
+05-19 09:57:43.434  1917  1932 I dalvikvm-heap: Grow heap (frag case) to 9.548MB for 1024016-byte allocation
+05-19 09:57:43.489  1917  1918 D dalvikvm: GC_CONCURRENT freed <1K, 10% free 9700K/10759K, paused 3ms+5ms
+05-19 09:57:43.598  1917  1932 D dalvikvm: GC_FOR_ALLOC freed 1001K, 20% free 8700K/10759K, paused 25ms
+05-19 09:57:43.598  1917  1932 I dalvikvm-heap: Grow heap (frag case) to 9.548MB for 1024016-byte allocation
+05-19 09:57:43.653  1917  1918 D dalvikvm: GC_CONCURRENT freed <1K, 10% free 9700K/10759K, paused 2ms+2ms
+05-19 09:57:43.723  1917  1932 D dalvikvm: GC_FOR_ALLOC freed 1001K, 20% free 8700K/10759K, paused 24ms
+05-19 09:57:43.723  1917  1932 I dalvikvm-heap: Grow heap (frag case) to 9.548MB for 1024016-byte allocation
+05-19 09:57:43.770  1917  1918 D dalvikvm: GC_CONCURRENT freed <1K, 10% free 9700K/10759K, paused 1ms+3ms
+05-19 09:57:43.864  1917  1932 D dalvikvm: GC_FOR_ALLOC freed 1001K, 20% free 8700K/10759K, paused 21ms
+05-19 09:57:43.864  1917  1932 I dalvikvm-heap: Grow heap (frag case) to 9.548MB for 1024016-byte allocation
+05-19 09:57:43.895  1917  1918 D dalvikvm: GC_CONCURRENT freed <1K, 10% free 9700K/10759K, paused 1ms+0ms
+05-19 09:57:43.958  1917  1932 D dalvikvm: GC_FOR_ALLOC freed 1001K, 20% free 8700K/10759K, paused 22ms
+05-19 09:57:43.965  1917  1932 I dalvikvm-heap: Grow heap (frag case) to 9.548MB for 1024016-byte allocation
+05-19 09:57:44.012  1917  1918 D dalvikvm: GC_CONCURRENT freed <1K, 10% free 9700K/10759K, paused 2ms+4ms
+05-19 09:57:44.512  1917  1932 D dalvikvm: GC_FOR_ALLOC freed 1001K, 20% free 8700K/10759K, paused 25ms
+05-19 09:57:44.512  1917  1932 I dalvikvm-heap: Grow heap (frag case) to 9.548MB for 1024016-byte allocation
+05-19 09:57:44.528  1917  1918 D dalvikvm: GC_CONCURRENT freed <1K, 10% free 9700K/10759K, paused 3ms+2ms
+05-19 09:57:44.583  1917  1932 D dalvikvm: GC_FOR_ALLOC freed 1001K, 20% free 8700K/10759K, paused 9ms
+05-19 09:57:44.583  1917  1932 I dalvikvm-heap: Grow heap (frag case) to 9.548MB for 1024016-byte allocation
+05-19 09:57:44.606  1917  1918 D dalvikvm: GC_CONCURRENT freed <1K, 10% free 9700K/10759K, paused 0ms+1ms
+05-19 09:57:44.622  1917  1932 D dalvikvm: GC_FOR_ALLOC freed 1001K, 20% free 8700K/10759K, paused 9ms
+05-19 09:57:44.629  1917  1932 I dalvikvm-heap: Grow heap (frag case) to 9.548MB for 1024016-byte allocation
+05-19 09:57:44.645  1917  1918 D dalvikvm: GC_CONCURRENT freed <1K, 10% free 9700K/10759K, paused 1ms+0ms
+05-19 09:57:44.661  1917  1932 D dalvikvm: GC_FOR_ALLOC freed 1001K, 20% free 8700K/10759K, paused 8ms
+05-19 09:57:44.661  1917  1932 I dalvikvm-heap: Grow heap (frag case) to 9.548MB for 1024016-byte allocation
+05-19 09:57:44.676  1917  1932 D dalvikvm: GC_FOR_ALLOC freed <1K, 10% free 9700K/10759K, paused 4ms
+05-19 09:57:44.692  1917  1932 D dalvikvm: GC_FOR_ALLOC freed 1001K, 20% free 8700K/10759K, paused 8ms
+05-19 09:57:44.700  1917  1932 I dalvikvm-heap: Grow heap (frag case) to 9.548MB for 1024016-byte allocation
+05-19 09:57:44.708  1917  1918 D dalvikvm: GC_CONCURRENT freed <1K, 10% free 9700K/10759K, paused 0ms+0ms
+05-19 09:57:44.715  1917  1932 D dalvikvm: GC_FOR_ALLOC freed 1001K, 20% free 8700K/10759K, paused 9ms
+05-19 09:57:44.715  1917  1932 I dalvikvm-heap: Grow heap (frag case) to 9.548MB for 1024016-byte allocation
+05-19 09:57:44.731  1917  1932 D dalvikvm: GC_FOR_ALLOC freed <1K, 10% free 9700K/10759K, paused 5ms
+05-19 09:57:44.747  1917  1932 D dalvikvm: GC_FOR_ALLOC freed 1001K, 20% free 8700K/10759K, paused 10ms
+05-19 09:57:44.747  1917  1932 I dalvikvm-heap: Grow heap (frag case) to 9.548MB for 1024016-byte allocation
+05-19 09:57:44.762  1917  1918 D dalvikvm: GC_CONCURRENT freed <1K, 10% free 9700K/10759K, paused 1ms+0ms
+05-19 09:57:44.770  1917  1932 D dalvikvm: GC_FOR_ALLOC freed 1001K, 20% free 8700K/10759K, paused 6ms
+05-19 09:57:44.770  1917  1932 I dalvikvm-heap: Grow heap (frag case) to 9.548MB for 1024016-byte allocation
+05-19 09:57:44.786  1917  1932 D dalvikvm: GC_FOR_ALLOC freed <1K, 10% free 9700K/10759K, paused 6ms
+05-19 09:57:44.809  1917  1932 D dalvikvm: GC_FOR_ALLOC freed 1001K, 20% free 8700K/10759K, paused 8ms
+05-19 09:57:44.809  1917  1932 I dalvikvm-heap: Grow heap (frag case) to 9.548MB for 1024016-byte allocation
+05-19 09:57:44.833  1917  1918 D dalvikvm: GC_CONCURRENT freed <1K, 10% free 9700K/10759K, paused 0ms+2ms
+05-19 09:57:44.879  1917  1932 D dalvikvm: GC_FOR_ALLOC freed 1001K, 20% free 8700K/10759K, paused 10ms
+05-19 09:57:44.879  1917  1932 I dalvikvm-heap: Grow heap (frag case) to 9.548MB for 1024016-byte allocation
+05-19 09:57:44.895  1917  1918 D dalvikvm: GC_CONCURRENT freed <1K, 10% free 9700K/10759K, paused 1ms+0ms
+05-19 09:57:44.911  1917  1932 D dalvikvm: GC_FOR_ALLOC freed 1001K, 20% free 8700K/10759K, paused 9ms
+05-19 09:57:44.911  1917  1932 I dalvikvm-heap: Grow heap (frag case) to 9.548MB for 1024016-byte allocation
+05-19 09:57:44.926  1917  1932 D dalvikvm: GC_FOR_ALLOC freed <1K, 10% free 9700K/10759K, paused 6ms
+05-19 09:57:44.942  1917  1932 D dalvikvm: GC_FOR_ALLOC freed 1001K, 20% free 8700K/10759K, paused 10ms
+05-19 09:57:44.942  1917  1932 I dalvikvm-heap: Grow heap (frag case) to 9.548MB for 1024016-byte allocation
+05-19 09:57:44.965  1917  1918 D dalvikvm: GC_CONCURRENT freed <1K, 10% free 9700K/10759K, paused 0ms+0ms
+05-19 09:57:44.989  1917  1932 D dalvikvm: GC_FOR_ALLOC freed 1001K, 20% free 8701K/10759K, paused 7ms
+05-19 09:57:44.997  1917  1932 I dalvikvm-heap: Grow heap (frag case) to 9.548MB for 1024016-byte allocation
+05-19 09:57:45.020  1917  1918 D dalvikvm: GC_CONCURRENT freed <1K, 10% free 9700K/10759K, paused 1ms+0ms
+05-19 09:57:45.036  1917  1932 D dalvikvm: GC_FOR_ALLOC freed 1001K, 20% free 8700K/10759K, paused 10ms
+05-19 09:57:45.036  1917  1932 I dalvikvm-heap: Grow heap (frag case) to 9.548MB for 1024016-byte allocation
+05-19 09:57:45.051  1917  1932 D dalvikvm: GC_FOR_ALLOC freed <1K, 10% free 9700K/10759K, paused 10ms
+05-19 09:57:45.075  1917  1932 D dalvikvm: GC_FOR_ALLOC freed 1001K, 20% free 8700K/10759K, paused 10ms
+05-19 09:57:45.075  1917  1932 I dalvikvm-heap: Grow heap (frag case) to 9.548MB for 1024016-byte allocation
+05-19 09:57:45.083  1917  1918 D dalvikvm: GC_CONCURRENT freed <1K, 10% free 9700K/10759K, paused 0ms+0ms
+05-19 09:57:45.106  1917  1932 D dalvikvm: GC_FOR_ALLOC freed 1001K, 20% free 8700K/10759K, paused 6ms
+05-19 09:57:45.114  1917  1932 I dalvikvm-heap: Grow heap (frag case) to 9.548MB for 1024016-byte allocation
+05-19 09:57:45.122  1917  1918 D dalvikvm: GC_CONCURRENT freed <1K, 10% free 9700K/10759K, paused 0ms+2ms
+05-19 09:57:45.161  1917  1932 D dalvikvm: GC_FOR_ALLOC freed 1001K, 20% free 8701K/10759K, paused 10ms
+05-19 09:57:45.161  1917  1932 I dalvikvm-heap: Grow heap (frag case) to 9.548MB for 1024016-byte allocation
+05-19 09:57:45.192  1917  1918 D dalvikvm: GC_CONCURRENT freed <1K, 10% free 9700K/10759K, paused 0ms+3ms
+05-19 09:57:45.215  1917  1932 D dalvikvm: GC_FOR_ALLOC freed 1001K, 20% free 8700K/10759K, paused 12ms
+05-19 09:57:45.215  1917  1932 I dalvikvm-heap: Grow heap (frag case) to 9.548MB for 1024016-byte allocation
+05-19 09:57:45.239  1917  1932 D dalvikvm: GC_FOR_ALLOC freed <1K, 10% free 9700K/10759K, paused 13ms
+05-19 09:57:45.262  1917  1932 D dalvikvm: GC_FOR_ALLOC freed 1001K, 20% free 8700K/10759K, paused 13ms
+05-19 09:57:45.278  1917  1932 I dalvikvm-heap: Grow heap (frag case) to 9.548MB for 1024016-byte allocation
+05-19 09:57:45.301  1917  1918 D dalvikvm: GC_CONCURRENT freed <1K, 10% free 9700K/10759K, paused 0ms+2ms
+05-19 09:57:45.356  1917  1932 D dalvikvm: GC_FOR_ALLOC freed 1001K, 20% free 8700K/10759K, paused 13ms
+05-19 09:57:45.364  1917  1932 I dalvikvm-heap: Grow heap (frag case) to 9.548MB for 1024016-byte allocation
+05-19 09:57:45.379  1917  1918 D dalvikvm: GC_CONCURRENT freed <1K, 10% free 9700K/10759K, paused 2ms+2ms
+05-19 09:57:45.411  1917  1932 D dalvikvm: GC_FOR_ALLOC freed 1001K, 20% free 8700K/10759K, paused 14ms
+05-19 09:57:45.411  1917  1932 I dalvikvm-heap: Grow heap (frag case) to 9.548MB for 1024016-byte allocation
+05-19 09:57:45.426  1917  1918 D dalvikvm: GC_CONCURRENT freed <1K, 10% free 9700K/10759K, paused 0ms+0ms
+05-19 09:57:45.442  1917  1932 D dalvikvm: GC_FOR_ALLOC freed 1001K, 20% free 8700K/10759K, paused 14ms
+05-19 09:57:45.442  1917  1932 I dalvikvm-heap: Grow heap (frag case) to 9.548MB for 1024016-byte allocation
+05-19 09:57:45.473  1917  1932 D dalvikvm: GC_FOR_ALLOC freed <1K, 10% free 9700K/10759K, paused 13ms
+05-19 09:57:45.504  1917  1932 D dalvikvm: GC_FOR_ALLOC freed 1001K, 20% free 8700K/10759K, paused 11ms
+05-19 09:57:45.504  1917  1932 I dalvikvm-heap: Grow heap (frag case) to 9.548MB for 1024016-byte allocation
+05-19 09:57:45.520  1917  1918 D dalvikvm: GC_CONCURRENT freed <1K, 10% free 9700K/10759K, paused 1ms+2ms
+05-19 09:57:45.622  1917  1932 D dalvikvm: GC_FOR_ALLOC freed 1001K, 20% free 8700K/10759K, paused 8ms
+05-19 09:57:45.629  1917  1932 I dalvikvm-heap: Grow heap (frag case) to 9.548MB for 1024016-byte allocation
+05-19 09:57:45.645  1917  1918 D dalvikvm: GC_CONCURRENT freed <1K, 10% free 9700K/10759K, paused 1ms+0ms
+05-19 09:57:45.684  1917  1932 D dalvikvm: GC_FOR_ALLOC freed 1001K, 20% free 8700K/10759K, paused 13ms
+05-19 09:57:45.684  1917  1932 I dalvikvm-heap: Grow heap (frag case) to 9.548MB for 1024016-byte allocation
+05-19 09:57:45.708  1917  1918 D dalvikvm: GC_CONCURRENT freed <1K, 10% free 9700K/10759K, paused 2ms+2ms
+05-19 09:57:45.715  1917  1932 D dalvikvm: GC_FOR_ALLOC freed 1001K, 20% free 8700K/10759K, paused 10ms
+05-19 09:57:45.715  1917  1932 I dalvikvm-heap: Grow heap (frag case) to 9.548MB for 1024016-byte allocation
+05-19 09:57:45.739  1917  1932 D dalvikvm: GC_FOR_ALLOC freed <1K, 10% free 9700K/10759K, paused 13ms
+05-19 09:57:45.770  1917  1932 D dalvikvm: GC_FOR_ALLOC freed 1001K, 20% free 8700K/10759K, paused 5ms
+05-19 09:57:45.778  1917  1932 I dalvikvm-heap: Grow heap (frag case) to 9.548MB for 1024016-byte allocation
+05-19 09:57:45.794  1917  1918 D dalvikvm: GC_CONCURRENT freed <1K, 10% free 9700K/10759K, paused 1ms+0ms
+05-19 09:57:45.809  1917  1932 D dalvikvm: GC_FOR_ALLOC freed 1001K, 20% free 8700K/10759K, paused 13ms
+05-19 09:57:45.825  1917  1932 I dalvikvm-heap: Grow heap (frag case) to 9.548MB for 1024016-byte allocation
+05-19 09:57:45.848  1917  1918 D dalvikvm: GC_CONCURRENT freed <1K, 10% free 9700K/10759K, paused 0ms+2ms
+05-19 09:57:45.872  1917  1932 D dalvikvm: GC_FOR_ALLOC freed 1001K, 20% free 8700K/10759K, paused 1ms
+05-19 09:57:45.887  1917  1932 I dalvikvm-heap: Grow heap (frag case) to 9.548MB for 1024016-byte allocation
+05-19 09:57:45.911  1917  1918 D dalvikvm: GC_CONCURRENT freed <1K, 10% free 9700K/10759K, paused 0ms+1ms
+05-19 09:57:45.942  1917  1932 D dalvikvm: GC_FOR_ALLOC freed 1001K, 20% free 8700K/10759K, paused 14ms
+05-19 09:57:45.942  1917  1932 I dalvikvm-heap: Grow heap (frag case) to 9.548MB for 1024016-byte allocation
+05-19 09:57:45.950  1917  1918 D dalvikvm: GC_CONCURRENT freed <1K, 10% free 9700K/10759K, paused 1ms+0ms
+05-19 09:57:45.973  1917  1932 D dalvikvm: GC_FOR_ALLOC freed 1001K, 20% free 8700K/10759K, paused 13ms
+05-19 09:57:45.981  1917  1932 I dalvikvm-heap: Grow heap (frag case) to 9.548MB for 1024016-byte allocation
+05-19 09:57:46.012  1917  1918 D dalvikvm: GC_CONCURRENT freed <1K, 10% free 9700K/10759K, paused 1ms+2ms
+05-19 09:57:46.044  1917  1932 D dalvikvm: GC_FOR_ALLOC freed 1001K, 20% free 8700K/10759K, paused 11ms
+05-19 09:57:46.044  1917  1932 I dalvikvm-heap: Grow heap (frag case) to 9.548MB for 1024016-byte allocation
+05-19 09:57:46.059  1917  1918 D dalvikvm: GC_CONCURRENT freed <1K, 10% free 9700K/10759K, paused 2ms+0ms
+05-19 09:57:46.083  1917  1932 D dalvikvm: GC_FOR_ALLOC freed 1001K, 20% free 8700K/10759K, paused 13ms
+05-19 09:57:46.083  1917  1932 I dalvikvm-heap: Grow heap (frag case) to 9.548MB for 1024016-byte allocation
+05-19 09:57:46.106  1917  1932 D dalvikvm: GC_FOR_ALLOC freed <1K, 10% free 9700K/10759K, paused 13ms
+05-19 09:57:46.137  1917  1932 D dalvikvm: GC_FOR_ALLOC freed 1001K, 20% free 8700K/10759K, paused 13ms
+05-19 09:57:46.137  1917  1932 I dalvikvm-heap: Grow heap (frag case) to 9.548MB for 1024016-byte allocation
+05-19 09:57:46.153  1917  1918 D dalvikvm: GC_CONCURRENT freed <1K, 10% free 9700K/10759K, paused 1ms+2ms
+05-19 09:57:46.192  1917  1932 D dalvikvm: GC_FOR_ALLOC freed 1001K, 20% free 8700K/10759K, paused 11ms
+05-19 09:57:46.192  1917  1932 I dalvikvm-heap: Grow heap (frag case) to 9.548MB for 1024016-byte allocation
+05-19 09:57:46.215  1917  1918 D dalvikvm: GC_CONCURRENT freed <1K, 10% free 9700K/10759K, paused 0ms+0ms
+05-19 09:57:46.239  1917  1932 D dalvikvm: GC_FOR_ALLOC freed 1001K, 20% free 8700K/10759K, paused 15ms
+05-19 09:57:46.239  1917  1932 I dalvikvm-heap: Grow heap (frag case) to 9.548MB for 1024016-byte allocation
+05-19 09:57:46.254  1917  1932 D dalvikvm: GC_FOR_ALLOC freed <1K, 10% free 9700K/10759K, paused 12ms
+05-19 09:57:46.301  1917  1932 D dalvikvm: GC_FOR_ALLOC freed 1001K, 20% free 8700K/10759K, paused 14ms
+05-19 09:57:46.301  1917  1932 I dalvikvm-heap: Grow heap (frag case) to 9.548MB for 1024016-byte allocation
+05-19 09:57:46.317  1917  1918 D dalvikvm: GC_CONCURRENT freed <1K, 10% free 9700K/10759K, paused 0ms+3ms
+05-19 09:57:46.356  1917  1932 D dalvikvm: GC_FOR_ALLOC freed 1001K, 20% free 8700K/10759K, paused 10ms
+05-19 09:57:46.356  1917  1932 I dalvikvm-heap: Grow heap (frag case) to 9.548MB for 1024016-byte allocation
+05-19 09:57:46.379  1917  1918 D dalvikvm: GC_CONCURRENT freed <1K, 10% free 9700K/10759K, paused 0ms+2ms
+05-19 09:57:46.395  1917  1932 D dalvikvm: GC_FOR_ALLOC freed 1001K, 20% free 8700K/10759K, paused 16ms
+05-19 09:57:46.395  1917  1932 I dalvikvm-heap: Grow heap (frag case) to 9.548MB for 1024016-byte allocation
+05-19 09:57:46.419  1917  1932 D dalvikvm: GC_FOR_ALLOC freed <1K, 10% free 9700K/10759K, paused 13ms
+05-19 09:57:46.473  1917  1932 D dalvikvm: GC_FOR_ALLOC freed 1001K, 20% free 8700K/10759K, paused 13ms
+05-19 09:57:46.473  1917  1932 I dalvikvm-heap: Grow heap (frag case) to 9.548MB for 1024016-byte allocation
+05-19 09:57:46.497  1917  1918 D dalvikvm: GC_CONCURRENT freed <1K, 10% free 9700K/10759K, paused 2ms+0ms
+05-19 09:57:46.520  1917  1932 D dalvikvm: GC_FOR_ALLOC freed 1001K, 20% free 8700K/10759K, paused 13ms
+05-19 09:57:46.520  1917  1932 I dalvikvm-heap: Grow heap (frag case) to 9.548MB for 1024016-byte allocation
+05-19 09:57:46.551  1917  1918 D dalvikvm: GC_CONCURRENT freed <1K, 10% free 9700K/10759K, paused 1ms+1ms
+05-19 09:57:46.583  1917  1932 D dalvikvm: GC_FOR_ALLOC freed 1001K, 20% free 8700K/10759K, paused 12ms
+05-19 09:57:46.598  1917  1932 I dalvikvm-heap: Grow heap (frag case) to 9.548MB for 1024016-byte allocation
+05-19 09:57:46.606  1917  1918 D dalvikvm: GC_CONCURRENT freed <1K, 10% free 9700K/10759K, paused 1ms+0ms
+05-19 09:57:46.637  1917  1932 D dalvikvm: GC_FOR_ALLOC freed 1001K, 20% free 8700K/10759K, paused 14ms
+05-19 09:57:46.653  1917  1932 I dalvikvm-heap: Grow heap (frag case) to 9.548MB for 1024016-byte allocation
+05-19 09:57:46.661  1917  1918 D dalvikvm: GC_CONCURRENT freed <1K, 10% free 9700K/10759K, paused 1ms+0ms
+05-19 09:57:46.684  1917  1932 D dalvikvm: GC_FOR_ALLOC freed 1001K, 20% free 8700K/10759K, paused 8ms
+05-19 09:57:46.692  1917  1932 I dalvikvm-heap: Grow heap (frag case) to 9.548MB for 1024016-byte allocation
+05-19 09:57:46.708  1917  1918 D dalvikvm: GC_CONCURRENT freed <1K, 10% free 9700K/10759K, paused 0ms+2ms
+05-19 09:57:46.739  1917  1932 D dalvikvm: GC_FOR_ALLOC freed 1001K, 20% free 8700K/10759K, paused 11ms
+05-19 09:57:46.739  1917  1932 I dalvikvm-heap: Grow heap (frag case) to 9.548MB for 1024016-byte allocation
+05-19 09:57:46.754  1917  1918 D dalvikvm: GC_CONCURRENT freed <1K, 10% free 9700K/10759K, paused 0ms+2ms
+05-19 09:57:46.770  1917  1932 D dalvikvm: GC_FOR_ALLOC freed 1001K, 20% free 8700K/10759K, paused 7ms
+05-19 09:57:46.786  1917  1932 I dalvikvm-heap: Grow heap (frag case) to 9.548MB for 1024016-byte allocation
+05-19 09:57:46.809  1917  1918 D dalvikvm: GC_CONCURRENT freed <1K, 10% free 9700K/10759K, paused 1ms+0ms
+05-19 09:57:46.840  1917  1932 D dalvikvm: GC_FOR_ALLOC freed 1001K, 20% free 8700K/10759K, paused 17ms
+05-19 09:57:46.840  1917  1932 I dalvikvm-heap: Grow heap (frag case) to 9.548MB for 1024016-byte allocation
+05-19 09:57:46.856  1917  1918 D dalvikvm: GC_CONCURRENT freed <1K, 10% free 9700K/10759K, paused 1ms+0ms
+05-19 09:57:46.934  1917  1932 D dalvikvm: GC_FOR_ALLOC freed 1001K, 20% free 8700K/10759K, paused 13ms
+05-19 09:57:46.934  1917  1932 I dalvikvm-heap: Grow heap (frag case) to 9.548MB for 1024016-byte allocation
+05-19 09:57:46.958  1917  1918 D dalvikvm: GC_CONCURRENT freed <1K, 10% free 9700K/10759K, paused 1ms+0ms
+05-19 09:57:47.020  1917  1932 D dalvikvm: GC_FOR_ALLOC freed 1001K, 20% free 8700K/10759K, paused 6ms
+05-19 09:57:47.020  1917  1932 I dalvikvm-heap: Grow heap (frag case) to 9.548MB for 1024016-byte allocation
+05-19 09:57:47.036  1917  1918 D dalvikvm: GC_CONCURRENT freed <1K, 10% free 9700K/10759K, paused 0ms+0ms
+05-19 09:57:47.075  1917  1932 D dalvikvm: GC_FOR_ALLOC freed 1001K, 20% free 8700K/10759K, paused 13ms
+05-19 09:57:47.075  1917  1932 I dalvikvm-heap: Grow heap (frag case) to 9.548MB for 1024016-byte allocation
+05-19 09:57:47.106  1917  1918 D dalvikvm: GC_CONCURRENT freed <1K, 10% free 9700K/10759K, paused 2ms+1ms
+05-19 09:57:47.169  1917  1932 D dalvikvm: GC_FOR_ALLOC freed 1001K, 20% free 8700K/10759K, paused 13ms
+05-19 09:57:47.169  1917  1932 I dalvikvm-heap: Grow heap (frag case) to 9.548MB for 1024016-byte allocation
+05-19 09:57:47.200  1917  1918 D dalvikvm: GC_CONCURRENT freed <1K, 10% free 9700K/10759K, paused 1ms+2ms
+05-19 09:57:47.239  1917  1932 D dalvikvm: GC_FOR_ALLOC freed 1001K, 20% free 8700K/10759K, paused 21ms
+05-19 09:57:47.239  1917  1932 I dalvikvm-heap: Grow heap (frag case) to 9.548MB for 1024016-byte allocation
+05-19 09:57:47.262  1917  1918 D dalvikvm: GC_CONCURRENT freed <1K, 10% free 9700K/10759K, paused 0ms+2ms
+05-19 09:57:51.934  1917  1932 D dalvikvm: GC_FOR_ALLOC freed 1050K, 20% free 8710K/10759K, paused 15ms
+05-19 09:57:51.942  1917  1932 I dalvikvm-heap: Grow heap (frag case) to 9.558MB for 1024016-byte allocation
+05-19 09:57:51.958  1917  1918 D dalvikvm: GC_CONCURRENT freed 5K, 10% free 9705K/10759K, paused 2ms+2ms
+05-19 09:57:52.028  1917  1932 D dalvikvm: GC_FOR_ALLOC freed 1001K, 20% free 8705K/10759K, paused 13ms
+05-19 09:57:52.036  1917  1932 I dalvikvm-heap: Grow heap (frag case) to 9.553MB for 1024016-byte allocation
+05-19 09:57:52.059  1917  1918 D dalvikvm: GC_CONCURRENT freed <1K, 10% free 9705K/10759K, paused 2ms+5ms
+05-19 09:57:52.231  1917  1932 D dalvikvm: GC_FOR_ALLOC freed 1001K, 20% free 8705K/10759K, paused 15ms
+05-19 09:57:52.239  1917  1932 I dalvikvm-heap: Grow heap (frag case) to 9.553MB for 1024016-byte allocation
+05-19 09:57:52.270  1917  1918 D dalvikvm: GC_CONCURRENT freed <1K, 10% free 9705K/10759K, paused 2ms+5ms
+05-19 09:57:52.356  1917  1932 D dalvikvm: GC_FOR_ALLOC freed 1001K, 20% free 8705K/10759K, paused 13ms
+05-19 09:57:52.356  1917  1932 I dalvikvm-heap: Grow heap (frag case) to 9.553MB for 1024016-byte allocation
+05-19 09:57:52.387  1917  1918 D dalvikvm: GC_CONCURRENT freed <1K, 10% free 9705K/10759K, paused 1ms+2ms
+05-19 09:57:52.536  1917  1932 D dalvikvm: GC_FOR_ALLOC freed 1001K, 20% free 8705K/10759K, paused 13ms
+05-19 09:57:52.536  1917  1932 I dalvikvm-heap: Grow heap (frag case) to 9.553MB for 1024016-byte allocation
+05-19 09:57:52.559  1917  1918 D dalvikvm: GC_CONCURRENT freed <1K, 10% free 9705K/10759K, paused 1ms+1ms
+05-19 09:57:52.575  1917  1932 D dalvikvm: GC_FOR_ALLOC freed 1001K, 20% free 8705K/10759K, paused 12ms
+05-19 09:57:52.575  1917  1932 I dalvikvm-heap: Grow heap (frag case) to 9.553MB for 1024016-byte allocation
+05-19 09:57:52.606  1917  1932 D dalvikvm: GC_FOR_ALLOC freed <1K, 10% free 9705K/10759K, paused 9ms
+05-19 09:57:52.676  1917  1932 D dalvikvm: GC_FOR_ALLOC freed 1001K, 20% free 8705K/10759K, paused 14ms
+05-19 09:57:52.676  1917  1932 I dalvikvm-heap: Grow heap (frag case) to 9.553MB for 1024016-byte allocation
+05-19 09:57:52.708  1917  1918 D dalvikvm: GC_CONCURRENT freed <1K, 10% free 9705K/10759K, paused 1ms+3ms
+05-19 09:59:07.419  1917  1932 F libc    : Fatal signal 11 (SIGSEGV) at 0x0000000a (code=1)

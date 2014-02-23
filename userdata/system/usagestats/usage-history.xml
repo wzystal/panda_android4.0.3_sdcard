@@ -1,0 +1,34 @@
+<?xml version='1.0' encoding='utf-8' standalone='yes' ?>
+<usage-history>
+<pkg name="com.android.browser">
+<comp name="com.android.browser.BrowserActivity" lrt="946684947762" />
+</pkg>
+<pkg name="com.android.launcher">
+<comp name="com.android.launcher2.Launcher" lrt="946684848464" />
+</pkg>
+<pkg name="com.miian.android.sensors">
+<comp name="com.miian.android.sensors.SensorList" lrt="946684862434" />
+</pkg>
+<pkg name="com.android.settings">
+<comp name="com.android.settings.Settings" lrt="946684944455" />
+<comp name="com.android.settings.SubSettings" lrt="946684910827" />
+</pkg>
+<pkg name="com.the511plus.MultiTouchTester">
+<comp name="com.the511plus.MultiTouchTester.MultiTouchTester" lrt="946684843479" />
+</pkg>
+<pkg name="com.halfbrick.fruitninjahd">
+<comp name="com.halfbrick.fruitninja.FruitNinjaActivity" lrt="946684840487" />
+</pkg>
+<pkg name="com.rovio.angrybirdsrio">
+<comp name="com.rovio.ka3d.App" lrt="946684917771" />
+</pkg>
+<pkg name="com.chipsee.sensortool">
+<comp name="com.chipsee.sensortool.ChipseeSensorTool" lrt="946684894749" />
+</pkg>
+<pkg name="com.eamobile.nfsshift_row_wf">
+<comp name="com.eamobile.nfsshift_row_wf.Main" lrt="1369035209246" />
+</pkg>
+<pkg name="com.android.deskclock">
+<comp name="com.android.deskclock.AlarmClock" lrt="1369031774680" />
+</pkg>
+</usage-history>
